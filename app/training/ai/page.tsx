@@ -1,4 +1,4 @@
-export default function Home() {
+const DeepInsightPage = () => {
   return (
     <iframe
       src="/deep-insight.html"
@@ -7,4 +7,6 @@ export default function Home() {
       style={{ border: "none" }}
     />
   );
-}
+};
+
+export default DeepInsightPage;
