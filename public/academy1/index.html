@@ -1,0 +1,728 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>  </title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+    margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-default_background {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-uiBlue { background-color: rgba(35, 131, 226, .07); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-transparentGray { background-color: rgba(227, 226, 224, 0); }
+.select-value-color-translucentGray { background-color: rgba(0, 0, 0, 0.06); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="13603d01-d871-80b3-895b-ea7c444a9adc" class="page sans"><header><h1 class="page-title">  </h1><p class="page-description"></p></header><div class="page-body"><figure id="13603d01-d871-81f3-81fa-e71813b59090" class="image"><a href=".%2013603d01d87180b3895bea7c444a9adc/_EC_A0_9C_EB_AA_A9_EC_9D_84-_EC_9E_85_EB_A0_A5_ED_95_B4_EC_A3_BC_EC_84_B8_EC_9A_94_-012.png"><img style="width:708px" src="/academy1/images/_EC_A0_9C_EB_AA_A9_EC_9D_84-_EC_9E_85_EB_A0_A5_ED_95_B4_EC_A3_BC_EC_84_B8_EC_9A_94_-012.png"/></a></figure><div id="13603d01-d871-81f3-8392-c9da618d207c" class="column-list"><div id="13603d01-d871-8103-b73d-ee1feda5c5f4" style="width:56.25%" class="column"><figure class="block-color-default callout" style="white-space:pre-wrap;display:flex" id="13603d01-d871-81ff-8417-faea50fe357b"><div style="font-size:1.5em"><span class="icon">📅</span></div><div style="width:100%"><strong>교육 기간 <br/>- <br/></strong>2024년 10월 19일(토) ~ 12월 21일(토) / 매주 토요일 (총 10주)<br/>- 교육 시간 : 10:00 - 17:00 (6시간/점심시간 1시간)<br/></div></figure></div><div id="13603d01-d871-81a0-a2da-e6fbc80ab8aa" style="width:43.75%" class="column"><figure class="block-color-default callout" style="white-space:pre-wrap;display:flex" id="13603d01-d871-8157-be80-efa3da760983"><div style="font-size:1.5em"><span class="icon">🏨</span></div><div style="width:100%"><strong>교육 장소<br/>: <br/></strong>판교 경기스타트업캠퍼스 7층 (성균관대 판교캠퍼스) 또는 킨스타워(정자역 3분거리)</div></figure></div></div><div id="13603d01-d871-8157-b3fd-fa5546e66444" class="column-list"><div id="13603d01-d871-8164-9a94-fcea54fa1b18" style="width:56.25%" class="column"><figure class="block-color-default callout" style="white-space:pre-wrap;display:flex" id="13603d01-d871-81ad-a5f6-e4d2ff9ba4bf"><div style="font-size:1.5em"><span class="icon">👥</span></div><div style="width:100%"><strong>교육 대상<br/>:<br/></strong> 반도체 관련 기업 재직자(선착순 40명 모집)<br/><br/><mark class="highlight-gray">- Cadence, PSpice, Quartus 등 반도체 설계 툴 실습을 통해 설계 역량을 강화하고 싶은 재직자<br/>✅ 재직증명서 확인 필수<br/>✅ 재직중인 기업이 고용보험에 가입되어 있지 않으면 수강이 불가능합니다.<br/></mark></div></figure><p id="13603d01-d871-815e-86b8-fd078b22bb3c" class="">
+</p></div><div id="13603d01-d871-81e8-8252-d1d1422d3629" style="width:43.75%" class="column"><figure class="block-color-default callout" style="white-space:pre-wrap;display:flex" id="13603d01-d871-8113-bff6-f40ee6ca4adc"><div style="font-size:1.5em"><span class="icon">💸</span></div><div style="width:100%"><strong>교육 혜택<br/>:<br/></strong> 무료 교육 / 중식·주차 제공 / 수료증 제공</div></figure></div></div><p id="13603d01-d871-8161-a6b0-e3b9fa5381de" class="">
+</p><p id="13603d01-d871-8109-b42c-e4a633aab8d5" class="">
+</p><h1 id="13603d01-d871-81d2-8af1-d6bd5749047b" class="">성균관대학교,<br/>국내 최고 명문 반도체 교육 대학<br/></h1><p id="13603d01-d871-8106-9be5-e88ea1609795" class="">성균관대학교는 국내 최초로 삼성전자와 공동으로 시스템반도체공학과를 신설하여, 회로 및 소자 설계, 시스템 아키텍처, 시스템 소프트웨어 등 국내 최고의 반도체 설계 전문 교육 역량을 보유하고 있습니다.</p><figure id="13603d01-d871-815e-8e96-e063cad3a20c" class="image"><a href=".%2013603d01d87180b3895bea7c444a9adc/004.png"><img style="width:720px" src="/academy1/images/004.png"/></a></figure><p id="13603d01-d871-819d-8bd6-ec7f191979f7" class="">
+</p><p id="13603d01-d871-81c5-8fa3-e057a76ff478" class="">
+</p><h1 id="13603d01-d871-8144-adf2-ee18b7ba0a43" class="">성균관대학교 아카데미만의<br/>반도체 레이아웃/회로설계 실습과정은?<br/></h1><p id="13603d01-d871-8168-8298-df4d5a2d3709" class="">
+</p><figure id="13603d01-d871-8122-aad4-e8fc413694da" class="image"><a href=".%2013603d01d87180b3895bea7c444a9adc/_EB_B0_98_EB_8F_84_EC_B2_B43_EB_8C_80_EC_A7_80_953x.png"><img style="width:6001px" src="/academy1/images/_EB_B0_98_EB_8F_84_EC_B2_B43_EB_8C_80_EC_A7_80_953x.png"/></a></figure><ul id="13603d01-d871-813b-8e02-c631caf3528f" class="toggle"><li><details open=""><summary><mark class="highlight-pink">🤔</mark><mark class="highlight-pink"><strong>어떻게 무료로 제공할 수 있는 걸까요?</strong></mark></summary><p id="13603d01-d871-812e-a1f1-d38fb4adee4c" class="">산업인력공단 주관 하에 성균관대학교에서 운영되는 재직자 과정은 각 기업에서 납부하고 있는 고용보험기금을 통해 운영됩니다. 따라서 고용보험기금을 납부하는 회사에 재직하고 있는 모든 분들은 교육을 무료로 받으실 수 있습니다. </p></details></li></ul><p id="13603d01-d871-8193-98c5-f4cc05175f57" class="">
+</p><h1 id="13603d01-d871-817a-a001-cbba47fa3d1e" class="">반도체 설계 실무 환경 100% 재현<br/>마음껏 사용 가능한 Cadence 실습 환경 제공<br/></h1><p id="13603d01-d871-8148-b9fb-d5b5cf1581e0" class="">본 교육 과정은 현업과 동일한 리눅스 서버를 구축하여, 실무에서 가장 많이 사용되고 있는 Cadence, PSpice 설계 라이선스를 교육생들에게 무상으로 제공하고 있습니다. 현업과 동일한 반도체 설계 환경에서 충분한 실습을 통해 반도체 설계 전문가의 역량을 키우세요!</p><figure id="13603d01-d871-81c9-b5e0-e0d409daa926" class="image"><a href=".%2013603d01d87180b3895bea7c444a9adc/8.png"><img style="width:708px" src="/academy1/images/8.png"/></a></figure><p id="13603d01-d871-818b-b8a9-dd5884c89961" class="">
+</p><p id="13603d01-d871-815d-83dd-cb17f7271fec" class="">
+</p><h1 id="13603d01-d871-81dd-896d-dd19f057a09a" class="">반도체 설계 실무 역량 강화를 위한<br/>핵심 커리큘럼<br/></h1><p id="13603d01-d871-81ae-a366-f726743e4025" class="">본 교육과정은 실습 중심 교육으로 이루어집니다.</p><hr id="13603d01-d871-818f-b6d9-c563a24ec45f"/><div id="13603d01-d871-81f9-a96e-d3629d6c9ba6" class="column-list"><div id="13603d01-d871-819a-916e-d420b9e567df" style="width:37.5%" class="column"><figure id="13603d01-d871-818a-995a-d28b7de25e3a" class="image"><a href=".%2013603d01d87180b3895bea7c444a9adc/13.png"><img style="width:288px" src="/academy1/images/13.png"/></a></figure></div><div id="13603d01-d871-8118-9286-f80fc07d5f57" style="width:62.5%" class="column"><h2 id="13603d01-d871-8122-91a2-ce87ccb3d77b" class="">반도체 소자 구조, 동작 및 특성</h2><p id="13603d01-d871-8174-a04f-ed6bbcf22d63" class="">반도체 설계에 필요한 반도체 소자의 구조와 특성을 학습하고, CMOS 인버터의 구조와 특성 이해를 통한 레이아웃 설계 및 회로설계 실습을 진행합니다.</p><p id="13603d01-d871-81e8-a887-cc8b7b6b20ff" class="">- 훈련시간 : 18h (3 Days)</p><ul id="13603d01-d871-811a-a882-e3d424ef0182" class="toggle"><li><details open=""><summary>세부내용</summary><ul id="13603d01-d871-8124-ad9f-c9cc2cce3829" class="bulleted-list"><li style="list-style-type:disc">반도체 소자 구조, 동작 및 특성<ul id="13603d01-d871-8152-bb52-dbd595489b9c" class="bulleted-list"><li style="list-style-type:circle">PN접합, 다이오드 구조, 동작 및 특성</li></ul><ul id="13603d01-d871-81d0-ab0c-e9aca40044d2" class="bulleted-list"><li style="list-style-type:circle">BJT 구조, 동작 및 특성</li></ul><ul id="13603d01-d871-813c-ba89-eecd366e26c0" class="bulleted-list"><li style="list-style-type:circle">MOSFET 구조 및 특성</li></ul></li></ul><ul id="13603d01-d871-81a7-8ead-c9133018f6ad" class="bulleted-list"><li style="list-style-type:disc">CMOS 인버터 구조 및 특성<ul id="13603d01-d871-818b-b9d4-d37d291b8b91" class="bulleted-list"><li style="list-style-type:circle">CMOS 인버터 구조, 동작 및 특성</li></ul><ul id="13603d01-d871-8125-8155-e41bc17168a3" class="bulleted-list"><li style="list-style-type:circle">CMOS 인버터 Design Process</li></ul></li></ul></details></li></ul></div></div><hr id="13603d01-d871-81a0-a7f2-f3f40ba68704"/><div id="13603d01-d871-81e0-9657-e0f5d35cd711" class="column-list"><div id="13603d01-d871-819c-996d-fbf4ec66b10c" style="width:37.5%" class="column"><figure id="13603d01-d871-81b0-b000-dc8ee0bd69cb" class="image"><a href=".%2013603d01d87180b3895bea7c444a9adc/12.png"><img style="width:336px" src="/academy1/images/12.png"/></a></figure></div><div id="13603d01-d871-818b-b638-e34b87196423" style="width:62.5%" class="column"><h2 id="13603d01-d871-814d-84ea-c6c87f6a40c7" class="">반도체 디자인 룰 및 DRC 검증</h2><p id="13603d01-d871-8191-ad50-dfb8014d4355" class="">반도체의 수직 구조를 이해하고, 레이아웃 디자인 후 설계 규칙(DRC, Design Rule Check) 오류를 해석하여 안전한 설계를 하는 것을 목표로 실습을 진행합니다.</p><p id="13603d01-d871-8117-a0c3-ce34080a3dcb" class="">- 훈련시간 : 24h (4 Days)</p><ul id="13603d01-d871-819d-9b50-c7652c5694e9" class="toggle"><li><details open=""><summary>세부내용</summary><ul id="13603d01-d871-812d-b131-e06a0bd87794" class="bulleted-list"><li style="list-style-type:disc">반도체 소자의 수직 구조<ul id="13603d01-d871-8194-8ae1-d92b3e42f16c" class="bulleted-list"><li style="list-style-type:circle">NWell의 수직 구조</li></ul><ul id="13603d01-d871-81f2-ad14-c18ab737f823" class="bulleted-list"><li style="list-style-type:circle">Active/Gate의 수직 구조</li></ul></li></ul><ul id="13603d01-d871-8116-b0fa-c462c1bbbf7a" class="bulleted-list"><li style="list-style-type:disc">Design Rule 및 DRC<ul id="13603d01-d871-81c8-9765-e570b48b1414" class="bulleted-list"><li style="list-style-type:circle">Implant D/R 및 DRC</li></ul><ul id="13603d01-d871-81a3-a9e2-d6fb7e870134" class="bulleted-list"><li style="list-style-type:circle">Contact D/R 및 DRC</li></ul></li></ul><ul id="13603d01-d871-8145-979f-c4dd9654e092" class="bulleted-list"><li style="list-style-type:disc">DRC 프로젝트<ul id="13603d01-d871-81cc-989e-fcd1cc0bb2f4" class="bulleted-list"><li style="list-style-type:circle">Metal Space DRC 실습</li></ul><ul id="13603d01-d871-8133-a837-c7e7614356e8" class="bulleted-list"><li style="list-style-type:circle">Metal Density DRC 실습</li></ul></li></ul></details></li></ul></div></div><hr id="13603d01-d871-81b2-a1b5-c4b12e5fb2b5"/><div id="13603d01-d871-81ac-aee7-e4544a5b85d7" class="column-list"><div id="13603d01-d871-810d-987d-f0134f0cad3e" style="width:37.5%" class="column"><figure id="13603d01-d871-81a1-9e85-f7037fef1188" class="image"><a href=".%2013603d01d87180b3895bea7c444a9adc/11.png"><img style="width:288px" src="/academy1/images/11.png"/></a></figure></div><div id="13603d01-d871-8115-ad92-d9210e9d682a" style="width:62.5%" class="column"><h2 id="13603d01-d871-8142-9955-e445c1907c64" class="">반도체 회로설계</h2><p id="13603d01-d871-81ad-bdd4-f2f31f35ce5c" class="">반도체 Digital/Analog 회로설계를 위한 시스템 사양 분석  및 설계공정 분석 실습을 진행합니다.</p><p id="13603d01-d871-8162-bb08-e6cd7775bdc6" class="">-  훈련시간 : 18h (3 Days)</p><ul id="13603d01-d871-8106-9aef-ce6de2ec6240" class="toggle"><li><details open=""><summary>세부내용</summary><ul id="13603d01-d871-8176-9f19-ee4743c12dc5" class="bulleted-list"><li style="list-style-type:disc">Digital 회로 및 Analog 회로 특성 이해<ul id="13603d01-d871-8195-ba52-f8465627c1af" class="bulleted-list"><li style="list-style-type:circle">Digital 회로 특성</li></ul><ul id="13603d01-d871-8138-8e86-c2281954e19f" class="bulleted-list"><li style="list-style-type:circle">Analog 회로 특성</li></ul></li></ul><ul id="13603d01-d871-8190-9db3-d4e2778a730a" class="bulleted-list"><li style="list-style-type:disc">Cadence(Virtuoso Schematic Editor 및 Spectre, ADE)의 툴을 활용한 직접회로 설계<ul id="13603d01-d871-8140-8af3-d39177786f01" class="bulleted-list"><li style="list-style-type:circle">Digital IC 회로설계</li></ul><ul id="13603d01-d871-8175-8164-c9c15cbf054d" class="bulleted-list"><li style="list-style-type:circle">Analog IC 회로설계</li></ul></li></ul></details></li></ul></div></div><hr id="13603d01-d871-813d-a483-d70d6b56eaf3"/><ul id="13603d01-d871-81e6-bcf4-d39eb8742c27" class="toggle"><li><details open=""><summary><mark class="highlight-purple_background"><strong>세부 NCS 확인하기</strong></mark></summary><table id="13603d01-d871-816e-84ae-ed66988df826" class="simple-table"><thead class="simple-table-header"><tr id="13603d01-d871-81bf-bda8-fff2f2c9a479"><th id="t`kY" class="simple-table-header-color simple-table-header" style="width:71px">Day</th><th id="FTcM" class="simple-table-header-color simple-table-header" style="width:213px"><strong>교과목명</strong></th><th id="Q]UA" class="simple-table-header-color simple-table-header" style="width:213px"><strong>NCS 능력단위</strong></th><th id="fFpZ" class="simple-table-header-color simple-table-header" style="width:249px"><strong>NCS 능력단위요소</strong></th><th id="AOGi" class="simple-table-header-color simple-table-header" style="width:89px"><strong>교육 시간</strong></th></tr></thead><tbody><tr id="13603d01-d871-8169-8a44-ff11d0e09cb2"><td id="t`kY" class="" style="width:71px">1일차</td><td id="FTcM" class="" style="width:213px">반도체 소자 구조, 동작 및 특성</td><td id="Q]UA" class="" style="width:213px">메모리 반도체 제조공정 개발</td><td id="fFpZ" class="" style="width:249px">메모리 반도체 단위소자 개발하기</td><td id="AOGi" class="" style="width:89px">6시간</td></tr><tr id="13603d01-d871-81c1-a930-ea60df324f29"><td id="t`kY" class="" style="width:71px">2일차</td><td id="FTcM" class="" style="width:213px">반도체 소자 구조, 동작 및 특성</td><td id="Q]UA" class="" style="width:213px">시스템 반도체 제조공정 개발</td><td id="fFpZ" class="" style="width:249px">시스템 반도체 단위소자 개발하기</td><td id="AOGi" class="" style="width:89px">6시간</td></tr><tr id="13603d01-d871-813f-99c8-f6799be36ec2"><td id="t`kY" class="" style="width:71px">3일차</td><td id="FTcM" class="" style="width:213px">반도체 소자 구조, 동작 및 특성</td><td id="Q]UA" class="" style="width:213px">시스템 반도체 제조공정 개발</td><td id="fFpZ" class="" style="width:249px">메모리 반도체 공정흐름도 해석하기<br/>시스템 반도체 공정흐름도 해석하기<br/></td><td id="AOGi" class="" style="width:89px">6시간</td></tr><tr id="13603d01-d871-81be-9d83-d0a6bb825b39"><td id="t`kY" class="" style="width:71px">4일차</td><td id="FTcM" class="" style="width:213px">반도체 디자인 룰 및 DRC 검증</td><td id="Q]UA" class="" style="width:213px">커스텀 레이아웃 설계</td><td id="fFpZ" class="" style="width:249px">회로도 이해하기<br/>레이아웃 방법 결정하기<br/></td><td id="AOGi" class="" style="width:89px">6시간</td></tr><tr id="13603d01-d871-81b1-aeb8-e94f8157c688"><td id="t`kY" class="" style="width:71px">5일차</td><td id="FTcM" class="" style="width:213px">반도체 디자인 룰 및 DRC 검증</td><td id="Q]UA" class="" style="width:213px">커스텀 레이아웃 설계</td><td id="fFpZ" class="" style="width:249px">레이아웃 설계툴 사용하기<br/>커스텀 레이아웃 수행하기<br/></td><td id="AOGi" class="" style="width:89px">6시간</td></tr><tr id="13603d01-d871-81c8-862c-c0ec368567f3"><td id="t`kY" class="" style="width:71px">6일차</td><td id="FTcM" class="" style="width:213px">반도체 디자인 룰 및 DRC 검증</td><td id="Q]UA" class="" style="width:213px">커스텀 레이아웃 설계</td><td id="fFpZ" class="" style="width:249px">DRC 검증하기<br/>LVS 검증하기<br/></td><td id="AOGi" class="" style="width:89px">6시간</td></tr><tr id="13603d01-d871-819b-826a-c62331b910dc"><td id="t`kY" class="" style="width:71px">7일차</td><td id="FTcM" class="" style="width:213px">반도체 디자인 룰 및 DRC 검증</td><td id="Q]UA" class="" style="width:213px">커스텀 레이아웃 설계</td><td id="fFpZ" class="" style="width:249px">LVS 검증하기<br/>LPE 검증하기<br/></td><td id="AOGi" class="" style="width:89px">6시간</td></tr><tr id="13603d01-d871-81c0-a275-dbc2526d9836"><td id="t`kY" class="" style="width:71px">8일차</td><td id="FTcM" class="" style="width:213px">반도체 회로설계</td><td id="Q]UA" class="" style="width:213px">아날로그 회로 아키텍처 설계</td><td id="fFpZ" class="" style="width:249px">시스템 사양 분석하기</td><td id="AOGi" class="" style="width:89px">6시간</td></tr><tr id="13603d01-d871-81e4-94cb-d95bc117169a"><td id="t`kY" class="" style="width:71px">9일차</td><td id="FTcM" class="" style="width:213px">반도체 회로설계</td><td id="Q]UA" class="" style="width:213px">아날로그 회로 아키텍처 설계</td><td id="fFpZ" class="" style="width:249px">설계공정 분석하기</td><td id="AOGi" class="" style="width:89px">6시간</td></tr><tr id="13603d01-d871-817f-b622-e3cd76e65312"><td id="t`kY" class="" style="width:71px">10일차</td><td id="FTcM" class="" style="width:213px">반도체 회로설계</td><td id="Q]UA" class="" style="width:213px">아날로그 회로 아키텍처 설계</td><td id="fFpZ" class="" style="width:249px">블록단위 설계하기</td><td id="AOGi" class="" style="width:89px">6시간</td></tr><tr id="13603d01-d871-8153-862a-c87e33474997"><td id="t`kY" class="block-color-pink_background" style="width:71px"><strong>Total</strong></td><td id="FTcM" class="block-color-pink_background" style="width:213px"></td><td id="Q]UA" class="block-color-pink_background" style="width:213px"></td><td id="fFpZ" class="block-color-pink_background" style="width:249px"></td><td id="AOGi" class="block-color-pink_background" style="width:89px"><strong>60시간</strong></td></tr></tbody></table></details></li></ul><ul id="13603d01-d871-81ea-a63c-cb3e61095857" class="toggle"><li><details open=""><summary><mark class="highlight-blue_background"><strong>프로젝트 내용 엿보기</strong></mark><mark class="highlight-blue_background">👀👇</mark></summary><figure id="13603d01-d871-8160-adce-e39445d3446a" class="image"><a href=".%2013603d01d87180b3895bea7c444a9adc/Untitled.png"><img style="width:951px" src="/academy1/images/Untitled.png"/></a></figure><figure id="13603d01-d871-8101-b200-ef484df7e903" class="image"><a href=".%2013603d01d87180b3895bea7c444a9adc/2-stage_comparator_simulation__ED_99_98_EA_B2_BD.png"><img style="width:672px" src="/academy1/images/2-stage_comparator_simulation__ED_99_98_EA_B2_BD.png"/></a></figure><p id="13603d01-d871-81c7-9627-fe7bd266b8d8" class="">&lt;2-stage comparator_simulation 환경&gt;</p><figure id="13603d01-d871-81c5-8edf-fc1c60783d64" class="image"><a href=".%2013603d01d87180b3895bea7c444a9adc/2-stage_comparator.png"><img style="width:720px" src="/academy1/images/2-stage_comparator.png"/></a></figure><p id="13603d01-d871-815a-b1db-c1434babe4ca" class="">&lt;2-stage comparator&gt;</p><figure id="13603d01-d871-81d2-a001-ed7fad37a03d" class="image"><a href=".%2013603d01d87180b3895bea7c444a9adc/2-stage_comparator_EC_9D_98_AC_simulation__EA_B2_B0_EA_B3_BC.png"><img style="width:1502px" src="/academy1/images/2-stage_comparator_EC_9D_98_AC_simulation__EA_B2_B0_EA_B3_BC.png"/></a></figure><p id="13603d01-d871-81af-9b41-c449db651c20" class="">&lt;2-stage comparator의 AC simulation 결과&gt;</p><figure id="13603d01-d871-81b3-8828-f5919d9fa860" class="image"><a href=".%2013603d01d87180b3895bea7c444a9adc/2-stage_comparator_EC_9D_98_transient_simulation__EA_B2_B0_EA_B3_BC.png"><img style="width:1763px" src="/academy1/images/2-stage_comparator_EC_9D_98_transient_simulation__EA_B2_B0_EA_B3_BC.png"/></a></figure><p id="13603d01-d871-8158-b076-e2a7c0aa29f7" class="">&lt;2-stage comparator의 transient simulation 결과&gt;</p></details></li></ul><p id="13603d01-d871-81da-b446-e5e2459b21df" class="">
+</p><p id="13603d01-d871-81f0-b4a9-d24aa8ade644" class="">
+</p><h1 id="13603d01-d871-81f3-b209-e38385d17754" class="">전원 S전자 출신의 전문 강사진<br/>반도체 설계 분야 현업 노하우를 그대로!<br/></h1><p id="13603d01-d871-8179-8d15-fe783cfbfeef" class="">S전자 반도체 패널 설계 및 면접 위원으로 10년 이상 근무한 강사진부터, 12년 이상 반도체 연구소에서 근무 후 갓 퇴사한 강사진까지! 반도체 설계 핵심 전문가들로 강사진을 구성했습니다.</p><hr id="13603d01-d871-8165-a849-f16cf2f9e3bf"/><div id="13603d01-d871-8161-a2bb-d786d3b206a0" class="column-list"><div id="13603d01-d871-81d2-bd3f-d0c0a6a57193" style="width:31.25%" class="column"><figure id="13603d01-d871-81b0-9942-f9917dd4ec66" class="image"><a href=".%2013603d01d87180b3895bea7c444a9adc/5.png"><img style="width:2449px" src="/academy1/images/5.png"/></a></figure></div><div id="13603d01-d871-81da-8375-d1b3a9bf4f23" style="width:68.75%" class="column"><h2 id="13603d01-d871-8114-aeaa-c2396619ef0e" class="">안○○ 강사 </h2><p id="13603d01-d871-819f-9f22-d50e3ad32010" class="">S전자 반도체 Panel DDI 설계팀 / 면접위원 출신</p><p id="13603d01-d871-811b-875c-f47c607efce5" class="">성균관대학교 전자전기 박사</p></div></div><hr id="13603d01-d871-81fb-be4e-dd1c6ad3a7da"/><div id="13603d01-d871-81d1-8138-cd187655f969" class="column-list"><div id="13603d01-d871-814f-b8a0-f7f7a8320990" style="width:31.25%" class="column"><figure id="13603d01-d871-8176-8f7e-c81933ce7e07" class="image"><a href=".%2013603d01d87180b3895bea7c444a9adc/4.png"><img style="width:2449px" src="/academy1/images/4.png"/></a></figure></div><div id="13603d01-d871-814b-b19a-d997a8917b3f" style="width:68.75%" class="column"><h2 id="13603d01-d871-81d1-9ef0-f1b0e86ca489" class="">윤△△ 강사</h2><p id="13603d01-d871-8197-a391-fd7939410ec7" class="">S전자 반도체 연구소 플래시 개발 / 레이아웃 담당 출신</p><p id="13603d01-d871-811f-92e2-ee823a7d2ed4" class="">서울대학교 전기컴퓨터 박사</p></div></div><hr id="13603d01-d871-819e-86b7-fe15431540d1"/><div id="13603d01-d871-81f0-a5a1-dcff68b032fb" class="column-list"><div id="13603d01-d871-81fb-96bd-fcbea70dabdd" style="width:31.25%" class="column"><figure id="13603d01-d871-81a1-a62f-e46534a1860c" class="image"><a href=".%2013603d01d87180b3895bea7c444a9adc/7.png"><img style="width:2449px" src="/academy1/images/7.png"/></a></figure></div><div id="13603d01-d871-8169-a6fa-d3bfb3216179" style="width:68.75%" class="column"><h2 id="13603d01-d871-81a8-8c25-d7a746c97e3a" class="">이ㅁㅁ 강사</h2><p id="13603d01-d871-81db-a02f-fd497fc8e805" class="">S전자 반도체 DDI PA팀 출신</p><p id="13603d01-d871-81ea-aaf3-fa7a96eff7dc" class="">플로리라대학교 박사</p></div></div><hr id="13603d01-d871-81e7-8826-dd3da9b6de76"/><p id="13603d01-d871-81d4-bdd2-c84e91011bc5" class="">
+</p><p id="13603d01-d871-8181-b55e-dfd75ba9f986" class="">
+</p><p id="13603d01-d871-8148-b8fb-f2c34d39f4b1" class="">
+</p><h1 id="13603d01-d871-81f0-8a31-e1fe5426de91" class="">성대 반도체 설계 교육만의<br/>혜택 풀패키지<br/></h1><hr id="13603d01-d871-8141-a8c4-c53a689410cb"/><div id="13603d01-d871-8167-9748-cf2845967d7a" class="column-list"><div id="13603d01-d871-8191-ab5e-e6ca90cea6fd" style="width:31.25%" class="column"><figure id="13603d01-d871-8173-bd15-dbeea09e48b4" class="image"><a href=".%2013603d01d87180b3895bea7c444a9adc/_EC_83_81_EC_84_B8_ED_8E_98_EC_9D_B4_EC_A7_80-13.png"><img style="width:1920px" src="/academy1/images/_EC_83_81_EC_84_B8_ED_8E_98_EC_9D_B4_EC_A7_80-13.png"/></a></figure></div><div id="13603d01-d871-818e-b257-d33611a68092" style="width:68.75%" class="column"><h2 id="13603d01-d871-81f6-a2c3-d6125b6d4063" class="">반도체 설계 실무 현장과 동일한 환경 조성</h2><p id="13603d01-d871-8193-a8ce-fb9316d8b278" class="">리눅스 서버 구축 및 Cadence, PSpice, Quartus2 설계 라이선스 제공!</p><p id="13603d01-d871-819a-b1cd-fb6cf9796a92" class="">실제 반도체 설계 현업과 동일한 환경에서 맘껏 실습 가능!</p></div></div><hr id="13603d01-d871-81a0-bea1-fdcc9ba1d785"/><div id="13603d01-d871-81d6-b5ed-dd85f28bd26e" class="column-list"><div id="13603d01-d871-8187-9f7c-f7e1824b025f" style="width:31.25%" class="column"><figure id="13603d01-d871-811a-8ce5-c05741135ee8" class="image"><a href=".%2013603d01d87180b3895bea7c444a9adc/_EC_83_81_EC_84_B8_ED_8E_98_EC_9D_B4_EC_A7_80-14.png"><img style="width:122.67044830322266px" src="/academy1/images/_EC_83_81_EC_84_B8_ED_8E_98_EC_9D_B4_EC_A7_80-14.png"/></a></figure></div><div id="13603d01-d871-817b-94bf-ef8f74bead77" style="width:68.75%" class="column"><h2 id="13603d01-d871-8115-84de-c6c94301646f" class="">노트북 제공 및 다양한 교육 편의 제공</h2><p id="13603d01-d871-8175-9e89-da66cc4bb182" class="">최신 노트북과 듀얼 모니터 제공!</p><p id="13603d01-d871-81f4-9613-f6dd9b01ff7f" class="">넓은 강의실, 프로젝트실, 구내식당 등 교육에만 집중할 수 있는 최적의 교육 장소!</p><p id="13603d01-d871-8146-ab19-d3f09c791227" class="">중식 제공과 주차 지원!</p></div></div><hr id="13603d01-d871-81bf-a6c8-f5b4757a8027"/><div id="13603d01-d871-8109-a565-d3303e72d8e3" class="column-list"><div id="13603d01-d871-81c9-9d7d-cd5ae57131a9" style="width:31.25%" class="column"><figure id="13603d01-d871-819d-8a73-c6f5930d6545" class="image"><a href=".%2013603d01d87180b3895bea7c444a9adc/_EC_83_81_EC_84_B8_ED_8E_98_EC_9D_B4_EC_A7_80-17.png"><img style="width:2429px" src="/academy1/images/_EC_83_81_EC_84_B8_ED_8E_98_EC_9D_B4_EC_A7_80-17.png"/></a></figure></div><div id="13603d01-d871-814e-aaa1-e3f4a57061cb" style="width:68.75%" class="column"><h2 id="13603d01-d871-8171-8cc1-c8ca466ba18a" class="">다양한 교육 혜택</h2><p id="13603d01-d871-81fe-8ff4-d37d1bcab5fc" class="">100% 실습비 지원 무료 교육!</p><p id="13603d01-d871-818c-8e0b-d3f30b726b8f" class="">수료시 성균관대 수료증과 기념픔 제공!</p><p id="13603d01-d871-81db-a034-c80c27aaff9d" class="">3권의 반도체 시중 교재 무료 제공!</p></div></div><hr id="13603d01-d871-811c-b690-e8270019cdcb"/><p id="13603d01-d871-81a4-855c-c694ae5b9fb7" class="">
+</p><p id="13603d01-d871-8124-9bfb-c8aec16cc4cb" class="">
+</p><p id="13603d01-d871-8166-aa0d-eb1af0b6a992" class="">
+</p><h1 id="13603d01-d871-81b8-af2c-e2910a7d6431" class="">교육 선발 대상</h1><div id="13603d01-d871-81eb-ac0e-f58bbacf2355" class="column-list"><div id="13603d01-d871-813a-b55a-fca79e12557d" style="width:50.000000000000014%" class="column"><figure id="13603d01-d871-81b0-8281-da882efc9150" class="image"><a href=".%2013603d01d87180b3895bea7c444a9adc/_EC_83_81_EC_84_B8_ED_8E_98_EC_9D_B4_EC_A7_80-20.png"><img style="width:196.26419067382812px" src="/academy1/images/_EC_83_81_EC_84_B8_ED_8E_98_EC_9D_B4_EC_A7_80-20.png"/></a></figure><h3 id="13603d01-d871-819a-b4ed-c15ee806cd41" class="">반도체 관련 기업 재직자</h3><p id="13603d01-d871-81fc-b49d-d991d43452d1" class="">본 과정은 재직자 과정으로, 반도체 관련 분야 기업에 재직중인 재직자 및 신입 직원을 우선 선발하고 있습니다.</p><p id="13603d01-d871-8196-acd7-e4f5dadec58b" class="">
+</p></div><div id="13603d01-d871-8112-ac16-cb8c5e3191d6" style="width:50.000000000000014%" class="column"><figure id="13603d01-d871-8107-ad3e-d299676166e9" class="image"><a href=".%2013603d01d87180b3895bea7c444a9adc/_EC_83_81_EC_84_B8_ED_8E_98_EC_9D_B4_EC_A7_80-21.png"><img style="width:196.26419067382812px" src="/academy1/images/_EC_83_81_EC_84_B8_ED_8E_98_EC_9D_B4_EC_A7_80-21.png"/></a></figure><h3 id="13603d01-d871-818f-b590-eb8b1ca45e34" class="">10시-17시 교육 시간에<br/>풀타임 참여 가능한 분<br/></h3><p id="13603d01-d871-8150-aeda-d17bdaebe146" class="">매주 토요일, 하루 6시간, 10주 동안 교육이 이루어집니다. 해당 기간 동안 풀타임으로 참여가 가능하신 분들을 선발합니다. (80% 이상 출석 시 수료)</p></div></div><figure class="callout" style="white-space:pre-wrap;display:flex" id="13603d01-d871-8167-8cab-c2e595d535b1"><div style="font-size:1.5em"><span class="icon">✅</span></div><div style="width:100%"><mark class="highlight-default"><strong>교육 신청 전 체크리스트!</strong></mark><ul id="13603d01-d871-8133-990e-e49b2d7f559c" class="toggle"><li><details open=""><summary><mark class="highlight-default">본 교육 과정은 재직자 대상 과정으로,  반도체/IT 관련 기업 재직자 분들만 교육 신청이 가능합니다.</mark></summary><ul id="13603d01-d871-811e-94cf-c2d769a12124" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-gray">교육 진행 시 재직증명서 제출 필수</mark></li></ul><ul id="13603d01-d871-8144-b69f-e45a9a0c5b31" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-gray">재직중인 기업이 고용보험에 가입되어 있지 않으면 수강이 불가능합니다.</mark></li></ul><ul id="13603d01-d871-81f6-94b5-ef778bef65a6" class="bulleted-list"><li style="list-style-type:disc">고용보험에 가입되어 있지 않는 인턴의 경우 수강이 불가능합니다.</li></ul></details></li></ul><ul id="13603d01-d871-8113-97ee-f74b0299c03c" class="toggle"><li><details open=""><summary>풀타임으로 교육에 참여가 가능하신 경우에만 선발하고 있습니다.</summary><ul id="13603d01-d871-8190-a7c4-df8c303bee29" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-gray">실습 프로젝트 중심 과정으로, 결석 시 프로젝트 진행에 어려움이 있을 수 있습니다.</mark></li></ul><ul id="13603d01-d871-813f-b946-c2c993bc1d53" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-gray">대면으로 진행되는 교육으로 진행됩니다.</mark></li></ul><ul id="13603d01-d871-8153-a1b5-e6f96eb4836f" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-gray">80% 미만 출석으로 인한 미수료 시, 추후 해당 기업에 대한 교육 신청이 제한될 수 있습니다.</mark></li></ul></details></li></ul></div></figure><p id="13603d01-d871-812c-9cd7-ebc0ba089ac9" class="">
+</p><p id="13603d01-d871-81af-a004-dbef829688d9" class="">
+</p><h1 id="13603d01-d871-817c-9e79-f464dc5c72f5" class="">선발 과정</h1><div id="13603d01-d871-81ad-acea-ee1f614c250e" class="column-list"><div id="13603d01-d871-811e-b804-cc615c0191d0" style="width:33.333333333333336%" class="column"><figure class="block-color-default callout" style="white-space:pre-wrap;display:flex" id="13603d01-d871-810c-acc1-e2799e5d9216"><div style="font-size:1.5em"><span class="icon">1️⃣</span></div><div style="width:100%"><strong>신청서 작성</strong><br/>*구글폼 작성을 통해 신청해주세요.<br/>(~10/13 마감)<br/></div></figure></div><div id="13603d01-d871-81c3-8804-e416c2802904" style="width:33.333333333333336%" class="column"><figure class="block-color-default callout" style="white-space:pre-wrap;display:flex" id="13603d01-d871-81cd-ace0-d9e433711a02"><div style="font-size:1.5em"><span class="icon">2️⃣</span></div><div style="width:100%"><strong>재직 확인 </strong><br/>*개별 안내 문자 드립니다.<br/>(10월 초 재직증명서 요청)<br/></div></figure></div><div id="13603d01-d871-813c-9c99-f36cc4bc1e02" style="width:33.33333333333333%" class="column"><figure class="block-color-default callout" style="white-space:pre-wrap;display:flex" id="13603d01-d871-81c6-8da6-c537dd815a27"><div style="font-size:1.5em"><span class="icon">3️⃣</span></div><div style="width:100%"><strong>교육 시작</strong><br/>*사전 안내 문자 드립니다.<br/></div></figure><p id="13603d01-d871-812d-b43b-c067dbcc1005" class="">
+</p></div></div><p id="13603d01-d871-817e-8035-eb4788ee82f0" class="">
+</p><p id="13603d01-d871-8136-a2be-cd346bfd3d85" class="">
+</p><p id="13603d01-d871-8197-b304-ef49d6d6c876" class="">
+</p><h1 id="13603d01-d871-819c-9304-eb25d5a8304a" class="">한국의 실리콘밸리,<br/>판교 캠퍼스에서 교육이 진행됩니다.<br/></h1><p id="13603d01-d871-810c-96c6-f4e526e8e92a" class="">본 교육은 전면 대면 수업으로 진행되며, 교육 기간 동안 대면 출석이 가능하신 분만 수강하실 수 있습니다.  </p><p id="13603d01-d871-81c7-a1c6-c95cb53ead23" class="">*성균관대 판교캠퍼스 이전으로 인해 경기스타트업캠퍼스 또는 킨스타워(정자역 3분거리)에서 교육이 진행됩니다.</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="13603d01-d871-81ca-a04c-ea8b431ccb96"><div style="font-size:1.5em"><span class="icon">📢</span></div><div style="width:100%">oopy:slide<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="13603d01-d871-810e-bf2f-ed19215f0cb0" class="code"><code class="language-YAML">type: &quot;crossfade&quot; # Pro 플랜 전용) 애니메이션 효과가 크로스페이드로 적용됩니다.
+speed: 1000 # 슬라이드가 넘어가는데 걸리는 시간입니다. 기본값: 1000 (ms, 밀리세컨드)
+ratio: 1.5 # 슬라이드 너비 : 슬라이드 높이 비율을 지정합니다. 기본값: 2.76 (708px : 256px)
+full: false # 슬라이드를 화면에 꽉 차도록 합니다. full 옵션이 true 일때도 ratio는 유지됩니다. 슬라이드가 컬럼이나 토글에 들어가는 경우 해당 옵션은 동작하지 않습니다. 기본값: false
+autoplay: 
+  period: 6000 # 슬라이드가 자동으로 넘어가기까지 걸리는 시간입니다. 자동 재생을 원하지 않는다면 값을 0으로 주세요!
+indicator: # 슬라이드 아래에 나타나는 이동을 위한 점들을 의미합니다.
+  show: true # 점들을 숨기려면 값을 false로 변경하세요
+	color: &quot;#A5DF00&quot; # 현재 보이는 슬라이드에 대응되는 점의 색깔입니다. 기본값: #6196FF
+borderRadius: 20 # 슬라이드의 모서리를 둥글게 하는 값입니다. 기본값: 16
+backgroundColor: &quot;transperent&quot; # 슬라이드의 배경화면 색상을 지정합니다. *) 배경을 투명색으로 사용하려면 &quot;transparent&quot; 를 입력하세요.</code></pre><figure id="13603d01-d871-8170-8394-ece18a5e87ab" class="image"><a href=".%2013603d01d87180b3895bea7c444a9adc/_EC_8B_9C_EC_84_A4__EC_9D_B4_EB_AF_B8_EC_A7_80(1).png"><img style="width:378.57952880859375px" src="/academy1/images/_EC_8B_9C_EC_84_A4__EC_9D_B4_EB_AF_B8_EC_A7_80(1).png"/></a></figure><figure id="13603d01-d871-81fb-a71d-eccfa36b2722" class="image"><a href=".%2013603d01d87180b3895bea7c444a9adc/KakaoTalk_20230615_091146853_02.jpg"><img style="width:4608px" src="/academy1/images/KakaoTalk_20230615_091146853_02.jpg"/></a></figure><figure id="13603d01-d871-812e-a944-d4feb404b324" class="image"><a href=".%2013603d01d87180b3895bea7c444a9adc/_EC_8B_9C_EC_84_A4__EC_9D_B4_EB_AF_B8_EC_A7_80(3).png"><img style="width:378.57952880859375px" src="/academy1/images/_EC_8B_9C_EC_84_A4__EC_9D_B4_EB_AF_B8_EC_A7_80(3).png"/></a></figure><figure id="13603d01-d871-8167-8b2d-c0895fa8c319" class="image"><a href=".%2013603d01d87180b3895bea7c444a9adc/KakaoTalk_20230421_145934567_03.jpg"><img style="width:4032px" src="/academy1/images/KakaoTalk_20230421_145934567_03.jpg"/></a></figure><figure id="13603d01-d871-8131-abe4-ed89dcfb6ee0" class="image"><a href=".%2013603d01d87180b3895bea7c444a9adc/_EA_B5_AC_EB_82_B4_EC_8B_9D_EB_8B_B9.jpg"><img style="width:672px" src="/academy1/images/_EA_B5_AC_EB_82_B4_EC_8B_9D_EB_8B_B9.jpg"/></a></figure></div></figure><p id="13603d01-d871-819a-82cf-f2f0b8b5bdd4" class="">
+</p><p id="13603d01-d871-8180-94f5-c0129ebf3513" class="">
+</p><figure id="13603d01-d871-8198-8761-f0ccb44465a6" class="image"><a href=".%2013603d01d87180b3895bea7c444a9adc/_EC_A0_9C_EB_AA_A9_EC_9D_84-_EC_9E_85_EB_A0_A5_ED_95_B4_EC_A3_BC_EC_84_B8_EC_9A_94_-012%201.png"><img style="width:708px" src="/academy1/images/_EC_A0_9C_EB_AA_A9_EC_9D_84-_EC_9E_85_EB_A0_A5_ED_95_B4_EC_A3_BC_EC_84_B8_EC_9A_94_-012%201.png"/></a></figure><p id="13603d01-d871-81c0-ad04-fdec3fa1c4fd" class="">
+</p><h1 id="13603d01-d871-8140-aa37-fb8f7487fc8a" class="">FAQ</h1><h3 id="13603d01-d871-81cb-ba66-c7571614bd13" class="">자주 묻는 질문</h3><p id="13603d01-d871-81b4-9f49-eb81446975cc" class=""> * <mark class="highlight-gray">▶버튼을 누르면 답변을 확인할 수 있습니다! </mark></p><ul id="13603d01-d871-812f-a481-e10145ca1347" class="toggle"><li><details open=""><summary><mark class="highlight-yellow_background">재직자</mark>만 교육 신청이 가능한가요?</summary><p id="13603d01-d871-811a-bd1b-c085a5254aa1" class="">고용보험 가입 중인 재직자 대상의 교육 과정으로, 재직자가 아닌 경우 수강하실 수 없습니다.</p></details></li></ul><ul id="13603d01-d871-813c-b923-f08199eb08f2" class="toggle"><li><details open=""><summary><mark class="highlight-pink_background">대면 수업</mark>인가요? <mark class="highlight-pink_background">비대면 수업</mark>인가요?</summary><p id="13603d01-d871-8133-9180-f01929f6d348" class=""><mark class="highlight-gray">본 교육 과정은 전면 대면 수업으로, 교육은 판교 스타트업캠퍼스에서 진행됩니다.</mark></p></details></li></ul><ul id="13603d01-d871-81a8-9d4d-eedace8d20a1" class="toggle"><li><details open=""><summary><mark class="highlight-pink_background">수료 기준</mark>이 있나요?</summary><p id="13603d01-d871-8118-991f-efd018151958" class=""><mark class="highlight-gray">전체 출석률이 80% 이상이면, 수료가 가능합니다. </mark></p></details></li></ul><ul id="13603d01-d871-810e-839d-ebc86f2cbd2d" class="toggle"><li><details open=""><summary><mark class="highlight-gray_background">노트북</mark>을 제공해주나요? </summary><p id="13603d01-d871-813d-a57b-f8c80da425a9" class=""><mark class="highlight-gray">고사양의 노트북을 제공해드립니다! 그 외 교육생 1인마다 모니터, 마우스, 키보드, 멀티허브 등을 지원해드립니다.</mark></p><p id="13603d01-d871-819e-9ca6-c28ff416d918" class=""><mark class="highlight-gray">단, 반출은 불가능합니다.</mark></p></details></li></ul><ul id="13603d01-d871-814d-be2b-e4369de209e4" class="toggle"><li><details open=""><summary><mark class="highlight-gray_background">개인 노트북</mark>을 사용해도 되나요?</summary><p id="13603d01-d871-818a-96b3-cb8625ff4c43" class=""><mark class="highlight-gray">네! 개인 노트북 사용이 가능합니다만, 교육장에서 제공되는 노트북에서만 유료 소프트웨어를 사용하실 수 있으므로, 실습 시 교육장 노트북 사용을 권장드립니다.</mark></p></details></li></ul><p id="13603d01-d871-8158-90b0-e0cbef6dff3b" class="">
+</p><p id="13603d01-d871-81e9-a07e-c7353d7bf8e7" class="">
+</p><hr id="13603d01-d871-81a2-a7d9-ea4d98a3285f"/><p id="13603d01-d871-81ef-b4bf-caf6391ea593" class="">
+</p><h2 id="13603d01-d871-815b-895d-de66e3eb52e9" class="">📕<strong>교육문의</strong></h2><h3 id="13603d01-d871-8128-9327-cfbd03f7dc61" class=""><strong>성균관대학교 K-디지털 사업단</strong></h3><p id="13603d01-d871-8125-96d5-e623e0968b4d" class=""><mark class="highlight-gray">담당자 :  031-299-6876 /  010-4417-3315 </mark></p><p id="13603d01-d871-813e-a523-ea659455453f" class="">
+</p><p id="13603d01-d871-8107-b806-c80ff6336d6e" class="">
+</p><hr id="13603d01-d871-811e-8e97-ed85633b5b2c"/><h1 id="13603d01-d871-8151-97c9-d9026369264f" class="">성균관대학교 K-디지털 트레이닝</h1><div id="13603d01-d871-8112-a801-c40747be4733" class="column-list"><div id="13603d01-d871-81e5-87e5-e0a3fe5bafda" style="width:33.33333333333333%" class="column"><p id="13603d01-d871-81a7-8cf7-efded8343456" class=""><strong><a href="https://www.notion.so/b8a542ac6e864b44ae2afa9186b9adca?pvs=21">개인정보처리방침</a></strong><strong> </strong></p></div><div id="13603d01-d871-8139-9f7b-e8ec1976e08b" style="width:33.33333333333333%" class="column"><p id="13603d01-d871-81d5-86df-f4ce9742cd49" class="">
+</p></div><div id="13603d01-d871-8163-a754-f4ea99feff8c" style="width:33.33333333333333%" class="column"><p id="13603d01-d871-8134-ad40-f1f0a36176aa" class="">
+</p></div></div><p id="13603d01-d871-81c6-a02d-fe85f3bb6402" class=""><strong>🏠 [13488] 경기도 성남시 분당구 판교로 289번길 20 경기스타트업캠퍼스 1동 7층</strong></p><p id="13603d01-d871-8141-963d-c24187741ed0" class=""><strong>☎️ 031-299-6876</strong></p><p id="13603d01-d871-81fa-8b7f-ed0b7d1904c8" class=""><strong>2024 성균관대학교 산학협력단 All Rights Reserved</strong></p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>

@@ -39,7 +39,7 @@
   position: relative;
 }
 
-.navigation a {
+.navigation div {
   text-decoration: none;
   font-weight: 700;
   color: inherit;
@@ -48,11 +48,11 @@
   transition: color 0.3s ease, box-shadow 0.3s ease;
 }
 
-.navigation a:hover {
+.navigation div:hover {
   color: #1a237e;
 }
 
-.navigation a::after {
+.navigation div::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -63,7 +63,7 @@
   transition: width 0.3s ease;
 }
 
-.navigation a:hover::after {
+.navigation div:hover::after {
   width: 100%;
 }
 
@@ -101,11 +101,15 @@
   color: #333;
   text-decoration: none;
   font-weight: 500;
-  transition: color 0.3s ease;
+  padding: 8px 16px;
+  display: block;
+  transition: color 0.3s ease, background-color 0.3s ease;
+  border-radius: 10px;
 }
 
 .submenu li a:hover {
-  color: #1a237e;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
 }
 
 .actions {

@@ -1,8 +1,12 @@
-export default function DigitalTwin() {
+const Academy2Page = () => {
   return (
-    <div>
-      <h1>MS 인공지능/빅데이터 과정</h1>
-      <p>MS 인공지능/빅데이터 기술을 배우는 과정에 대한 정보입니다.</p>
-    </div>
+    <iframe
+      src="/academy2/index.html"
+      width="100%"
+      height="1000px"
+      style={{ border: "none" }}
+    />
   );
-}
+};
+
+export default Academy2Page;

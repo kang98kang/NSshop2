@@ -1,0 +1,702 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>  </title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+    margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-default_background {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-uiBlue { background-color: rgba(35, 131, 226, .07); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-transparentGray { background-color: rgba(227, 226, 224, 0); }
+.select-value-color-translucentGray { background-color: rgba(0, 0, 0, 0.06); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="13603d01-d871-8009-9102-dca486b211cb" class="page sans"><header><h1 class="page-title">  </h1><p class="page-description"></p></header><div class="page-body"><figure id="13603d01-d871-8159-b405-cc078161a261" class="image"><a href=".%2013603d01d87180099102dca486b211cb/skku_academy2.png"><img style="width:707.95458984375px" src="/main/images/skku_academy2.png"/></a></figure><p id="13603d01-d871-817a-be2f-e94d039f80df" class="">
+</p><figure class="block-color-default callout" style="white-space:pre-wrap;display:flex" id="13603d01-d871-81be-8b2c-f465773086ea"><div style="font-size:1.5em"><span class="icon">👩‍🎓</span></div><div style="width:100%">SKKU K-Digital Training은 <strong>성균관대학교 판교캠퍼스</strong>에서 진행됩니다.<br/><br/><mark class="highlight-blue"><strong>교육전문가</strong></mark>의 커리큘럼과 <mark class="highlight-blue"><strong>IT기업 실무자</strong></mark>의 경험을 기반으로 <mark class="highlight-default"><strong>체계적인 실무 교육</strong></mark>이 이루어집니다.</div></figure><p id="13603d01-d871-8171-8485-c459a28a2a51" class="">
+</p><h2 id="13603d01-d871-814f-aeeb-d3b8f14910b5" class=""><mark class="highlight-pink">[모집중]</mark> GEN AI NETWORK DAY에 초대합니다! (11/23)</h2><figure id="13603d01-d871-811f-958e-cf5faf241d91" class="image"><a href=".%2013603d01d87180099102dca486b211cb/_EC_A0_9C_EB_AA_A9_EC_9D_84-_EC_9E_85_EB_A0_A5_ED_95_B4_EC_A3_BC_EC_84_B8_EC_9A_94_-002_(5).png"><img style="width:707.9260864257812px" src="/main/images/_EC_A0_9C_EB_AA_A9_EC_9D_84-_EC_9E_85_EB_A0_A5_ED_95_B4_EC_A3_BC_EC_84_B8_EC_9A_94_-002_(5).png"/></a><figcaption><a href="https://www.notion.so/da514da42067402383c157147164c260?pvs=21">https://www.skkukdt.re.kr/skku_networkday1</a></figcaption></figure><p id="13603d01-d871-8104-bb17-c3b7093ff14d" class="">
+</p><h2 id="13603d01-d871-8196-8875-c69f661cd0a3" class="">K-Digital Training 교육과정</h2><hr id="13603d01-d871-8125-9d06-eb417134855c"/><h3 id="13603d01-d871-81b4-a6c9-eca6503f63a7" class=""><a href="https://skkukdt.re.kr/semiconductor">반도체 설계 4기 </a><mark class="highlight-blue"><a href="https://skkukdt.re.kr/semiconductor">[모집중]</a></mark></h3><figure id="13603d01-d871-817b-bf79-e5f486554d5f" class="image"><a href=".%2013603d01d87180099102dca486b211cb/_EB_94_94_ED_82_A4_EB_AF_B8_EC_BA_90_EB_A6_AD_ED_84_B0_EB_8C_80_EC_A7_80_4__EC_82_AC_EB_B3_B83x.png"><img style="width:707.9260864257812px" src="/main/images/_EB_94_94_ED_82_A4_EB_AF_B8_EC_BA_90_EB_A6_AD_ED_84_B0_EB_8C_80_EC_A7_80_4__EC_82_AC_EB_B3_B83x.png"/></a><figcaption><a href="https://www.notion.so/12b5b71964c28064a847d6ff633e4078?pvs=21">https://www.skkukdt.re.kr/semiconductor</a></figcaption></figure><p id="13603d01-d871-818b-a82d-da3d88183f37" class="">
+</p><p id="13603d01-d871-813f-9f07-c2845887aa52" class="">
+</p><h3 id="13603d01-d871-81b9-b540-ded3e76fcad8" class=""><strong><a href="https://www.notion.so/6c7a0e4bce2d44289c339284af6a5919?pvs=21">AI 과정 7기</a></strong><mark class="highlight-blue"><strong><a href="https://www.notion.so/33942251736c429bb11fe0c519a52830?pvs=21"> [준비중]</a></strong></mark></h3><figure id="13603d01-d871-81c0-850b-ce3aefc40b9e" class="image"><a href=".%2013603d01d87180099102dca486b211cb/_EB_94_94_ED_82_A4_EB_AF_B8_EC_BA_90_EB_A6_AD_ED_84_B0_EB_8C_80_EC_A7_80_73x.png"><img style="width:707.977294921875px" src="/main/images/_EB_94_94_ED_82_A4_EB_AF_B8_EC_BA_90_EB_A6_AD_ED_84_B0_EB_8C_80_EC_A7_80_73x.png"/></a><figcaption><a href="https://www.skkukdt.re.kr/ai">https://www.skkukdt.re.kr/ai</a></figcaption></figure><p id="13603d01-d871-8171-b690-f4c83949b482" class="">
+</p><p id="13603d01-d871-81ec-915c-f6789735ec06" class="">
+</p><h3 id="13603d01-d871-81ea-9d32-cdb7573adc27" class=""><strong><a href="http://skkukdt.re.kr/digitaltwin">디지털트윈 2기 </a></strong><mark class="highlight-blue"><strong><a href="http://skkukdt.re.kr/digitaltwin">[준비중]</a></strong></mark></h3><figure id="13603d01-d871-81ec-81b1-fde6c8115d73" class="image"><a href=".%2013603d01d87180099102dca486b211cb/KDT__EB_A9_94_EC_9D_B8_ED_8E_98_EC_9D_B4_EC_A7_80-01.png"><img style="width:2580px" src="/main/images/KDT__EB_A9_94_EC_9D_B8_ED_8E_98_EC_9D_B4_EC_A7_80-01.png"/></a><figcaption><a href="https://www.notion.so/05e311beecc4414686c3284b26a2fe58?pvs=21">https://www.skkukdt.re.kr/digitaltwin</a></figcaption></figure><p id="13603d01-d871-8164-a587-de43a0d6bb1d" class="">
+</p><p id="13603d01-d871-8148-83f6-ec7144c23906" class="">
+</p><h1 id="13603d01-d871-8124-b8c3-ccf94205e6c0" class="">K-Hightech Platform 재직자 과정</h1><hr id="13603d01-d871-81db-81ed-da95e131cb7a"/><h3 id="13603d01-d871-816e-848a-e92e214df65b" class=""><a href="https://www.notion.so/f85c296c8cf249d0b2a7d74b7e994746?pvs=21">반도체 레이아웃/회로설계 </a><mark class="highlight-pink"><a href="https://www.notion.so/f85c296c8cf249d0b2a7d74b7e994746?pvs=21">[모집완료]</a></mark></h3><figure id="13603d01-d871-81ed-8c6a-fa00ebcb2247" class="image"><a href=".%2013603d01d87180099102dca486b211cb/_EC_A0_9C_EB_AA_A9_EC_9D_84-_EC_9E_85_EB_A0_A5_ED_95_B4_EC_A3_BC_EC_84_B8_EC_9A_94_-008.png"><img style="width:707.9659423828125px" src="/main/images/_EC_A0_9C_EB_AA_A9_EC_9D_84-_EC_9E_85_EB_A0_A5_ED_95_B4_EC_A3_BC_EC_84_B8_EC_9A_94_-008.png"/></a><figcaption><a href="https://www.skkukdt.re.kr/skku_academy1">https://www.skkukdt.re.kr/skku_academy1</a></figcaption></figure><p id="13603d01-d871-8169-8b41-e4c7f9797e13" class="">
+</p><h3 id="13603d01-d871-8107-86fd-c5d7285218da" class=""><a href="https://www.skkukdt.re.kr/skku_academy2">MS 인공지능 과정 </a><mark class="highlight-pink"><a href="https://www.skkukdt.re.kr/skku_academy2">[모집중]</a></mark></h3><figure id="13603d01-d871-8103-bce9-d01d908dbff1" class="image"><a href=".%2013603d01d87180099102dca486b211cb/026.png"><img style="width:707.9886474609375px" src="/main/images/026.png"/></a><figcaption><a href="https://www.skkukdt.re.kr/skku_academy2">https://www.skkukdt.re.kr/skku_academy2</a></figcaption></figure><p id="13603d01-d871-8150-b78e-cfcef49f0931" class="">
+</p><h3 id="13603d01-d871-8174-8bb2-df3c451da53b" class=""><a href="https://www.notion.so/89bfc63401f941d19f49064ed610e5da?pvs=21">Google 인공지능 과정 </a><mark class="highlight-pink"><a href="https://www.notion.so/89bfc63401f941d19f49064ed610e5da?pvs=21">[준비중]</a></mark></h3><figure id="13603d01-d871-810e-a1b2-c6d5b50952a2" class="image"><a href=".%2013603d01d87180099102dca486b211cb/027.png"><img style="width:707.977294921875px" src="/main/images/027.png"/></a></figure><p id="13603d01-d871-81a7-9098-e042123fd35f" class="">
+</p><h1 id="13603d01-d871-812d-8fdc-d18f50ad85e2" class="">FAQ</h1><hr id="13603d01-d871-81ab-bd80-d770575a3baf"/><h3 id="13603d01-d871-8167-994c-fba496b4e78f" class="">(K-디지털 트레이닝)자주 묻는 질문</h3><p id="13603d01-d871-818a-85df-cd0906bfa850" class=""> * <mark class="highlight-gray">▶버튼을 누르면 답변을 확인할 수 있습니다! </mark></p><ul id="13603d01-d871-81da-829e-ca663a3b3d7d" class="toggle"><li><details open=""><summary><mark class="highlight-purple_background">K-디지털 트레이닝</mark>이 뭔가요?</summary><p id="13603d01-d871-8157-aee1-db1292939dfd" class=""><mark class="highlight-gray">✅ ｢한국판 뉴딜｣ 일환으로 고용노동부에서 추진 중인 K-디지털 트레이닝은, 디지털 분야 기업들과 혁신 훈련기관이 협약을 맺고 함께 설계된 교육 과정 입니다. </mark></p><p id="13603d01-d871-8178-a7e8-e688bdbb753d" class=""><mark class="highlight-gray">✅ 보통 6개월·주5일·8시간 씩 운영되는 집중적인 훈련과정이며, 기업 참여를 통해 프로젝트 중심 훈련으로 진행이 됩니다. 단순히 기존의 강의형 지식 전달이 아닌, 경험·문제해결에 중점을 둔 개인 맞춤형 훈련 과정 등 효과적인 훈련 방식을 적용하여 진행되는 과정입니다.</mark></p><p id="13603d01-d871-810c-b7e0-eb84605e5638" class=""><mark class="highlight-gray">✅ 지원 대상은 국민내일배움카드를 발급받은 사람이며, 훈련비 전액이 지원됩니다!</mark></p></details></li></ul><ul id="13603d01-d871-81e7-988f-e3a1d4f89acb" class="toggle"><li><details open=""><summary><mark class="highlight-teal_background">국민내일배움카드</mark>가 있어야 교육 신청이 가능한가요?</summary><p id="13603d01-d871-8141-91af-d86eaef22f04" class=""><mark class="highlight-gray">국민내일배움카드 없이 교육 접수는 가능하지만, 최종적으로 HRD-Net에 교육 신청을 하기 위해선 카드 발급이 필요합니다! 교육 시작 일주일 전까지 카드 발급 후, HRD-Net에 수강 신청을 해야 정상적으로 신청이 완료됩니다. 내일배움카드는 </mark><mark class="highlight-gray"><a href="https://www.hrd.go.kr">HRD-Net 홈페이지</a></mark><mark class="highlight-gray">에서 발급 신청이 가능합니다!</mark></p></details></li></ul><ul id="13603d01-d871-81ca-8a7f-df040d61cb53" class="toggle"><li><details open=""><summary><mark class="highlight-teal_background">국민내일배움카드</mark>는 누구나 신청이 가능한가요?</summary><p id="13603d01-d871-816b-a710-d6501892b1e4" class=""><mark class="highlight-gray">누구나 발급이 가능합니다!</mark></p><p id="13603d01-d871-8122-8999-e2a739122646" class=""><mark class="highlight-gray">단, 아래에 해당하는 사람은 지원 제외 대상입니다.</mark></p><ul id="13603d01-d871-81f3-a354-ce9e65c3e1ba" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-gray">현직 공무원, 사립학교 교직원</mark></li></ul><ul id="13603d01-d871-81f6-8eba-f606e13b1937" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-gray">만 75세 이상인 사람</mark></li></ul><ul id="13603d01-d871-8146-bd9c-eb0e89ac9be5" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-gray">졸업까지 남은 수업연한이 2년을 초과하는 대학생,</mark></li></ul><ul id="13603d01-d871-81eb-af5e-d9388d71c011" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-gray">연 매출 1억 5천만원 이상의 자영업자,</mark></li></ul><ul id="13603d01-d871-812f-8949-c823e2b152d1" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-gray">월 임금 300만원 이상인 특수형태근로종사자와</mark></li></ul><ul id="13603d01-d871-8114-a22a-c9d0f623e747" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-gray">월 임금 300만원 이상이면서 45세 미만인 대규모기업종사자 등</mark></li></ul><p id="13603d01-d871-8166-8607-f404a2dfa192" class=""><mark class="highlight-gray">그외 발급 여부는 거주지 관할 고용센터에 문의하시기 바랍니다(고용노동부 1350)</mark></p></details></li></ul><ul id="13603d01-d871-814c-b8c5-d9093a504742" class="toggle"><li><details open=""><summary><mark class="highlight-yellow_background">대학교 3학년</mark>도 <mark class="highlight-teal_background">국민내일배움카드</mark>를 발급받을 수 있나요?</summary><p id="13603d01-d871-81c4-a666-c7f71732f341" class=""><mark class="highlight-gray">「국민 평생 직업능력 개발법 시행령」개정 시행(’21.9.29.)로 국민내일배움카드의 지원범위가 확대됨에 따라, 카드 발급대상이 대학생 중 ‘졸업예정자’에서 대학교 3학년 등으로 늘었습니다. </mark></p><p id="13603d01-d871-8136-9097-da1c9c23d31a" class=""><mark class="highlight-gray">‘졸업까지 남은 수업연한이 2년 이내’인 대학(원)생도 국민내일배움카드를 발급받을 수 있습니다.</mark></p></details></li></ul><ul id="13603d01-d871-8135-90dd-e14504c6e680" class="toggle"><li><details open=""><summary><mark class="highlight-yellow_background">재직자</mark>도 교육 신청이 가능한가요?</summary><p id="13603d01-d871-8167-a64e-e5158e63bccf" class=""><mark class="highlight-gray">국민내일배움카드를 발급 받은 재직자라면 교육 신청이 가능하지만, 훈련 수당을 받지 못한다는 점이 있습니다. 또한 본 교육 과정은 주 5일 8시간 수업과 관련 직종으로 취업하실 분들을 수강대상으로 하고 있어, 선발에 어려움이 있을 수 있습니다. 자세한 사항은 문의 부탁드립니다!</mark></p></details></li></ul><ul id="13603d01-d871-811d-8e03-ed135eceb684" class="toggle"><li><details open=""><summary><mark class="highlight-pink_background">대면 수업</mark>인가요? <mark class="highlight-pink_background">비대면 수업</mark>인가요?</summary><p id="13603d01-d871-816b-a805-e805ff755778" class=""><mark class="highlight-gray">본 교육 과정은 전면 대면 수업으로 평일 월-금 9:30-18:30 대면 출석이 가능한 분만 수강이 가능합니다. 수업은 판교 스타트업캠퍼스에서 진행됩니다.</mark></p></details></li></ul><ul id="13603d01-d871-81d3-93ff-ee9789b89ece" class="toggle"><li><details open=""><summary><mark class="highlight-pink_background">수료 기준</mark>이 있나요?</summary><p id="13603d01-d871-81fd-9101-ccf6810e28f5" class=""><mark class="highlight-gray">전체 출석률이 80% 이상이면, 수료가 가능합니다. </mark></p><p id="13603d01-d871-8101-b7ca-e61eb90c3dea" class=""><mark class="highlight-gray">✅ 수업일수 120일 기준 96일 이상 출석시 수료 가능</mark></p><p id="13603d01-d871-81e2-8522-e2c76cdc7b1b" class=""><mark class="highlight-gray">✅ 결석처리 기준 : 수업시간 50%미만 참석, 지각/조퇴/외출 3회 누적 시 1회 결석 처리</mark></p></details></li></ul><ul id="13603d01-d871-8184-adf4-c68a389706bd" class="toggle"><li><details open=""><summary><mark class="highlight-pink_background">다른 국비지원 교육</mark>을 들은 적이 있는데 신청이 가능한가요?</summary><p id="13603d01-d871-81f5-823c-f42797ab941d" class=""><mark class="highlight-gray">이전에 들었던 교육이 K-디지털 트레이닝(KDT) 교육이 아니라면 신청이 가능하지만, 국민내일배움카드 잔여금 부족 등 경우에 따라 수강이 불가능한 경우가 있으니 자세한 수강 가능 여부는 거주지 관할 고용센터에 문의하시기 바랍니다! (고용노동부 1350)</mark></p></details></li></ul><ul id="13603d01-d871-81a7-a3b7-c7460e6a7d28" class="toggle"><li><details open=""><summary><mark class="highlight-blue_background">훈련 장려금</mark>과 <mark class="highlight-blue_background">국민취업지원제도</mark>로 총 얼마까지 받을 수 있는 건가요?</summary><p id="13603d01-d871-811c-8248-fdadf74fccdb" class="">⭕<mark class="highlight-red">훈련특별수당 + 훈련장려금으로</mark><mark class="highlight-red"><strong> 월 최대 316,000원</strong></mark><mark class="highlight-red">을 받으실 수 있습니다.</mark><div class="indented"><p id="13603d01-d871-817b-8c4c-d546cc9f0186" class="">✅ <mark class="highlight-gray">KDT 훈련특별수당 : 1일 10,000원 x 최대 20일 = 총 200,000원</mark></p><p id="13603d01-d871-81df-b1e0-d342705e69f0" class=""><mark class="highlight-gray">✅ 훈련장려금 : 1일 5,800원 x 최대 20일 = 총 116,000원</mark></p><ul id="13603d01-d871-8141-8926-cbd1c7374cca" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-gray">대상자 : 실업자, 주 15시간 미만 재직자, 근로장려금 수급자, 무급휴직자 등</mark></li></ul><ul id="13603d01-d871-81b0-9994-dc677bf6f7d1" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-gray">지급 제외 대상 : 청년구직활동지원금, 청년수당, 실업급여, 미취업 청년 취업장려금, 희망사다리 장려금 등 정부 및 지자체에서 지원받을 경우 제외</mark></li></ul></div></p><p id="13603d01-d871-8101-937a-db2ad42d55b2" class="">⭕<mark class="highlight-red">국민취업지원제도 신청 시 추가로 </mark><mark class="highlight-red"><strong>월 최대 284,000원/500,000원</strong></mark><mark class="highlight-red">을 받으실 수 있습니다.</mark><div class="indented"><p id="13603d01-d871-8118-a855-ecb847dc5dc5" class="">✅ <mark class="highlight-gray">국민취업지원제도 I유형  = 월 284,000원</mark></p><p id="13603d01-d871-81c9-bde2-ce4f8bf6609f" class=""><mark class="highlight-gray">✅ 국민취업지원제도 II유형  = 월 500,000원</mark></p><ul id="13603d01-d871-816a-9a8e-cb492f802558" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-gray">결석한 일수만큼 훈련장려금과 국민취업지원제도가 1일분씩 차감됩니다.</mark></li></ul></div></p></details></li></ul><ul id="13603d01-d871-81a2-bc11-ed30b83eef86" class="toggle"><li><details open=""><summary><mark class="highlight-blue_background">국민취업지원제도</mark>는 어떻게 신청할 수 있나요?</summary><p id="13603d01-d871-8148-822e-e38597ec798a" class=""><mark class="highlight-gray"><a href="https://www.kua.go.kr/uaptm010/selectMain.do">국민취업지원제도 홈페이지</a></mark><mark class="highlight-gray">에서 신청이 가능합니다.</mark></p><ul id="13603d01-d871-815d-a35d-e870c1a8bbcf" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-gray">I유형은 ‘구직촉진수당’과 ‘취업지원서비스’를 제공받습니다. 가구단위 중위소득*60% 이하이고 재산 4억원 이하이면서, 최근 2년 안에 100일 또는 800시간 이상의 취업경험이 있는 사람을 중심으로 합니다.</mark></li></ul><ul id="13603d01-d871-81c8-9fec-e46e58386e7c" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-gray">II유형은 ‘취업활동비용’과 ‘취업지원서비스’를 제공받습니다. I유형에 해당하지 않는 특정계층, 청년, 중장년 등이 지원 대상입니다.</mark></li></ul></details></li></ul><ul id="13603d01-d871-8194-9ac4-da4dd6ac2f97" class="toggle"><li><details open=""><summary><mark class="highlight-gray_background">노트북</mark>을 제공해주나요? </summary><p id="13603d01-d871-814c-80c1-c115e14a521c" class=""><mark class="highlight-gray">최신형 개발자 노트북을 제공해드립니다! 그 외 교육생 1인마다 모니터, 마우스, 키보드, 멀티허브 등을 제공합니다.</mark></p><p id="13603d01-d871-8135-9b45-c0f8c5ecae40" class=""><mark class="highlight-gray">단, 반출은 불가능합니다.</mark></p></details></li></ul><ul id="13603d01-d871-81ad-af78-ddcdba9d2fff" class="toggle"><li><details open=""><summary><mark class="highlight-gray_background">개인 노트북</mark>을 사용해도 되나요?</summary><p id="13603d01-d871-8122-b810-f4e9332d3d8a" class=""><mark class="highlight-gray">네! 개인 노트북 사용이 가능합니다.</mark></p><p id="13603d01-d871-81cc-95a3-fbdccc7db516" class=""><mark class="highlight-gray">단, 실습 환경이 윈도우에서 이루어져 윈도우 사용 가능 노트북을 권장합니다.</mark></p></details></li></ul><p id="13603d01-d871-81d0-8a32-ebcddbb78811" class="">
+</p><p id="13603d01-d871-81d7-b759-f6aef5f7a7b4" class="">
+</p><h2 id="13603d01-d871-818d-aa98-fe5d56af117a" class="">📕<strong>교육문의</strong></h2><hr id="13603d01-d871-8140-80d0-dab87cc63867"/><h3 id="13603d01-d871-818a-8456-e96305c6675c" class=""><strong>성균관대학교 K-디지털 사업단</strong></h3><p id="13603d01-d871-8174-9b57-d3ab0f729d91" class=""><mark class="highlight-gray">담당자 :  T.031-299-6876</mark></p><p id="13603d01-d871-81ed-bb5f-c7f5c09d407a" class="">
+</p><hr id="13603d01-d871-8198-9504-d051adf6edab"/><p id="13603d01-d871-81d8-b29f-c001a85d8731" class="">
+</p><h1 id="13603d01-d871-811d-9f0e-e7506ba961a3" class="">성균관대학교 K-디지털 트레이닝</h1><div id="13603d01-d871-81e6-abc3-d56cbd05a5ea" class="column-list"><div id="13603d01-d871-8130-a807-d923701c23f4" style="width:33.33333333333333%" class="column"><p id="13603d01-d871-8136-88a4-f196afd6f624" class=""><strong><a href="https://www.notion.so/b8a542ac6e864b44ae2afa9186b9adca?pvs=21">개인정보처리방침</a></strong><strong> </strong></p></div><div id="13603d01-d871-81e3-a3ff-f33118943fa9" style="width:33.33333333333333%" class="column"><p id="13603d01-d871-81d4-a2e0-ea7303573ea6" class="">
+</p></div><div id="13603d01-d871-81dd-9a21-e80f6e3e52a0" style="width:33.33333333333333%" class="column"><p id="13603d01-d871-816d-a480-e51890db432b" class="">
+</p></div></div><p id="13603d01-d871-81b8-b776-ec3e632d3e73" class=""><strong>🏠 [13488] 경기도 성남시 분당구 판교로 289번길 20 경기스타트업캠퍼스 1동 7층</strong></p><p id="13603d01-d871-81e9-937a-c467535056f2" class=""><strong>☎️ 031-299-6876</strong></p><p id="13603d01-d871-81be-a0c4-daf8911a7478" class=""><strong>2024 성균관대학교 산학협력단 All Rights Reserved</strong></p><p id="13603d01-d871-8129-88d4-d6e55e34460f" class=""><a href="https://www.notion.so/da514da42067402383c157147164c260?pvs=21">SKKU Academy</a></p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>

@@ -1,7 +1,7 @@
-const DeepInsightPage = () => {
+const AIPage = () => {
   return (
     <iframe
-      src="/deep-insight.html"
+      src="/academy1/index.html"
       width="100%"
       height="1000px"
       style={{ border: "none" }}
@@ -9,4 +9,4 @@ const DeepInsightPage = () => {
   );
 };
 
-export default DeepInsightPage;
+export default AIPage;

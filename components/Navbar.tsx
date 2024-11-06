@@ -18,9 +18,7 @@ const Navbar = () => {
   return (
     <>
       <header
-        className={`${styles.navbar} ${
-          hoveredMenu ? styles.noShadow : ""
-        }`}
+        className={`${styles.navbar} ${hoveredMenu ? styles.noShadow : ""}`}
         onMouseLeave={handleMouseLeave}
       >
         <div className={styles.logo}>
@@ -34,13 +32,13 @@ const Navbar = () => {
               className={styles.menuItem}
               onMouseEnter={() => handleMouseEnter("training")}
             >
-              <Link href="/training">K-디지털 트레이닝</Link>
+              <div>K-디지털 트레이닝</div>
             </li>
             <li
               className={styles.menuItem}
               onMouseEnter={() => handleMouseEnter("khp")}
             >
-              <Link href="/khp">KHP 재직자 과정</Link>
+              <div>KHP 재직자 과정</div>
             </li>
           </ul>
         </nav>

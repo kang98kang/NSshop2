@@ -1,10 +1,12 @@
-export default function Home() {
+const Home = () => {
   return (
     <iframe
-      src="/deep-insight.html"
+      src="/main/index.html"
       width="100%"
       height="1000px"
       style={{ border: "none" }}
     />
   );
-}
+};
+
+export default Home;
