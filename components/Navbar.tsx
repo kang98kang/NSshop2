@@ -2,12 +2,12 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { FaBars } from "react-icons/fa"; // FontAwesome Bars 아이콘 사용
+import { FaBars } from "react-icons/fa";
 import styles from "../styles/Navbar.module.css";
 
 const Navbar = () => {
   const [hoveredMenu, setHoveredMenu] = useState<string | null>(null);
-  const [isMenuOpen, setIsMenuOpen] = useState(false); // 사이드바 열림 상태
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleMouseEnter = (menu: string) => {
     setHoveredMenu(menu);
@@ -18,7 +18,7 @@ const Navbar = () => {
   };
 
   const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen); // 사이드바 열고 닫기
+    setIsMenuOpen(!isMenuOpen);
   };
 
   return (
@@ -62,7 +62,6 @@ const Navbar = () => {
         </div>
       </header>
 
-      {/* 사이드바 */}
       <div
         className={`${styles.sidebar} ${isMenuOpen ? styles.showSidebar : ""}`}
       >
@@ -93,7 +92,6 @@ const Navbar = () => {
         </ul>
       </div>
 
-      {/* 기존 hoveredMenu 로직 유지 */}
       {hoveredMenu && (
         <div
           className={styles.submenuWrapper}
