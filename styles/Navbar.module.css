@@ -68,7 +68,7 @@
 }
 
 .submenuWrapper {
-  position: absolute;
+  position: fixed;
   top: 70px;
   left: 0;
   height: 70px;

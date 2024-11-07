@@ -1,11 +1,10 @@
+import IframeComponent from "../../../components/IframeWrapper";
+
 const SemiconductorPage = () => {
   return (
-    <iframe
-      src="/academy2/index.html"
-      width="100%"
-      height="1000px"
-      style={{ border: "none", padding: "30px" }}
-    />
+    <div style={{ width: "100%", padding: "30px", overflow: "hidden" }}>
+      <IframeComponent src="/academy2/index.html" />
+    </div>
   );
 };
 

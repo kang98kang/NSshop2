@@ -1,11 +1,10 @@
+import IframeComponent from "../../../components/IframeWrapper";
+
 const Academy3Page = () => {
   return (
-    <iframe
-      src="/academy3/index.html"
-      width="100%"
-      height="1000px"
-      style={{ border: "none", padding: "30px" }}
-    />
+    <div style={{ width: "100%", padding: "30px", overflow: "hidden" }}>
+      <IframeComponent src="/academy3/index.html" />
+    </div>
   );
 };
 
