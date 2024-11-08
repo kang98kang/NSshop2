@@ -70,24 +70,34 @@ const Navbar = () => {
         </button>
         <ul className={styles.sidebarMenu}>
           <li>
-            <Link href="/training/ai">자연어처리 기반 AI 과정</Link>
+            <Link href="/training/ai" onClick={toggleMenu}>
+              자연어처리 기반 AI 과정
+            </Link>
           </li>
           <li>
-            <Link href="/training/semiconductor">
+            <Link href="/training/semiconductor" onClick={toggleMenu}>
               첨단 시스템반도체 설계 과정
             </Link>
           </li>
           <li>
-            <Link href="/training/digitaltwin">유니티기반 디지털트윈 과정</Link>
+            <Link href="/training/digitaltwin" onClick={toggleMenu}>
+              유니티기반 디지털트윈 과정
+            </Link>
           </li>
           <li>
-            <Link href="/khp/academy1">반도체 설계 실습 과정</Link>
+            <Link href="/khp/academy1" onClick={toggleMenu}>
+              반도체 설계 실습 과정
+            </Link>
           </li>
           <li>
-            <Link href="/khp/academy2">MS 인공지능/빅데이터 과정</Link>
+            <Link href="/khp/academy2" onClick={toggleMenu}>
+              MS 인공지능/빅데이터 과정
+            </Link>
           </li>
           <li>
-            <Link href="/khp/academy3">Google 인공지능 서비스 활용 과정</Link>
+            <Link href="/khp/academy3" onClick={toggleMenu}>
+              Google 인공지능 서비스 활용 과정
+            </Link>
           </li>
         </ul>
       </div>

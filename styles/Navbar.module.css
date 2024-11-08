@@ -125,7 +125,23 @@
   display: none;
 }
 
-@media (max-width: 780px) {
+@media (max-width: 1280px) {
+  .navbar {
+    padding: 0 50px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 0 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0 30px;
+  }
+
   .iconButton {
     display: block;
   }
@@ -143,7 +159,7 @@
 
 @media (max-width: 480px) {
   .navbar {
-    padding: 0 18px;
+    padding: 0 30px;
   }
 }
 
