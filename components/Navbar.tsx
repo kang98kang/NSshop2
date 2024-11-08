@@ -38,20 +38,11 @@ const Navbar = () => {
               className={styles.menuItem}
               onMouseEnter={() => handleMouseEnter("training")}
             >
-              <div>K-디지털 트레이닝</div>
-            </li>
-            <li
-              className={styles.menuItem}
-              onMouseEnter={() => handleMouseEnter("khp")}
-            >
-              <div>KHP 재직자 과정</div>
+              <div>문의</div>
             </li>
           </ul>
         </nav>
         <div className={styles.actions}>
-          <button className={styles.iconButton} aria-label="Search">
-            <i className="xi-search"></i>
-          </button>
           <button
             className={styles.iconButton}
             aria-label="Menu"
@@ -61,7 +52,6 @@ const Navbar = () => {
           </button>
         </div>
       </header>
-
       <div
         className={`${styles.sidebar} ${isMenuOpen ? styles.showSidebar : ""}`}
       >
@@ -71,32 +61,12 @@ const Navbar = () => {
         <ul className={styles.sidebarMenu}>
           <li>
             <Link href="/training/ai" onClick={toggleMenu}>
-              자연어처리 기반 AI 과정
+              Contact
             </Link>
           </li>
           <li>
-            <Link href="/training/semiconductor" onClick={toggleMenu}>
-              첨단 시스템반도체 설계 과정
-            </Link>
-          </li>
-          <li>
-            <Link href="/training/digitaltwin" onClick={toggleMenu}>
-              유니티기반 디지털트윈 과정
-            </Link>
-          </li>
-          <li>
-            <Link href="/khp/academy1" onClick={toggleMenu}>
-              반도체 설계 실습 과정
-            </Link>
-          </li>
-          <li>
-            <Link href="/khp/academy2" onClick={toggleMenu}>
-              MS 인공지능/빅데이터 과정
-            </Link>
-          </li>
-          <li>
-            <Link href="/khp/academy3" onClick={toggleMenu}>
-              Google 인공지능 서비스 활용 과정
+            <Link href="/terms" onClick={toggleMenu}>
+              개인정보처리방침
             </Link>
           </li>
         </ul>
@@ -111,32 +81,10 @@ const Navbar = () => {
           {hoveredMenu === "training" && (
             <ul className={styles.submenu}>
               <li>
-                <Link href="/training/ai">자연어처리 기반 AI 과정</Link>
+                <Link href="/training/ai">Contact</Link>
               </li>
               <li>
-                <Link href="/training/semiconductor">
-                  첨단 시스템반도체 설계 과정
-                </Link>
-              </li>
-              <li>
-                <Link href="/training/digitaltwin">
-                  유니티기반 디지털트윈 과정
-                </Link>
-              </li>
-            </ul>
-          )}
-          {hoveredMenu === "khp" && (
-            <ul className={styles.submenu}>
-              <li>
-                <Link href="/khp/academy1">반도체 설계 실습 과정</Link>
-              </li>
-              <li>
-                <Link href="/khp/academy2">MS 인공지능/빅데이터 과정</Link>
-              </li>
-              <li>
-                <Link href="/khp/academy3">
-                  Google 인공지능 서비스 활용 과정
-                </Link>
+                <Link href="/terms">개인정보처리방침</Link>
               </li>
             </ul>
           )}
