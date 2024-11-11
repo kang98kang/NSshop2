@@ -62,7 +62,7 @@ export default function Home() {
             />
           </a>
         </figure>
-        <div className={styles.columnList}>
+        <div className={`${styles.columnList} ${styles.verticalList}`}>
           <div className={styles.column} style={{ width: "100%" }}>
             <figure
               className={`${styles.blockColorDefault} ${styles.callout}`}
@@ -444,7 +444,7 @@ export default function Home() {
               <tr>
                 <td>3일차</td>
                 <td>반도체 소자 구조, 동작 및 특성</td>
-                <td>시스템 반도체 제조공정 개발</td>
+                <td>시스템 반도체 제조���정 개발</td>
                 <td>
                   메모리 반도체 공정흐름도 해석하기
                   <br />
@@ -454,7 +454,7 @@ export default function Home() {
               </tr>
               <tr>
                 <td>4일차</td>
-                <td>반도체 디자인 룰 및 DRC 검증</td>
+                <td>반도체 디��인 룰 및 DRC 검증</td>
                 <td>커스텀 레이아웃 설계</td>
                 <td>
                   회로도 이해하기

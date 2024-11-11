@@ -94,25 +94,23 @@
   background-color: transparent;
 }
 
-/* 컬럼 레이아웃 */
 .columnList {
   display: flex;
-  flex-direction: column;
-  gap: 16px;
+  flex-wrap: wrap;
+  margin: -8px;
 }
 
 .column {
-  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
 }
 
-.callout {
-  margin: 0;
+.verticalList {
+  flex-direction: column;
 }
 
-@media (max-width: 768px) {
-  .column {
-    width: 100% !important; /* 모바일에서는 세로로 쌓이도록 */
-  }
+.verticalList .column {
+  width: 100% !important;
 }
 
 /* 테이블 스타일 */
