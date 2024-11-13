@@ -371,6 +371,12 @@
   cursor: pointer;
   padding-left: 1em;
   list-style: none;
+  -webkit-appearance: none;
+  appearance: none; /* 표준 속성 추가 */
+}
+
+.toggle > li > details > summary::-webkit-details-marker {
+  display: none; /* Safari의 기본 마커 숨기기 */
 }
 
 .toggle > li > details > summary:before {
