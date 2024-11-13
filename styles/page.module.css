@@ -497,3 +497,30 @@
 .selectValueColorBlue {
   background-color: rgba(211, 229, 239, 1);
 }
+
+.floatingButtonContainer {
+  position: fixed;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+}
+
+.floatingButton {
+  background-color: #1a237e;
+  color: white;
+  padding: 15px 30px;
+  width: 50vw;
+  border: none;
+  border-radius: 25px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.floatingButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}

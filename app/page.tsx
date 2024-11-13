@@ -1,3 +1,4 @@
+import FloatingButton from "@/components/common/FloatingButton";
 import styles from "../styles/page.module.css";
 
 export default function Home() {
@@ -1405,11 +1406,12 @@ export default function Home() {
         <p className={styles.p}>
           <strong>© MONSTERA. ALL RIGHTS RESERVED.</strong>
         </p>
-        <p className={styles.p}>
+        <p className={styles.p} style={{ marginBottom: "9rem" }}>
           <a href="https://monsteratech.com" target="_blank">
             홈페이지
           </a>
         </p>
+        <FloatingButton url="https://www.monsteratech.com/education/detail/UnityKorea_unity" />
       </div>
     </article>
   );

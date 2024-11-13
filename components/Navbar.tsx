@@ -81,7 +81,7 @@ const Navbar = () => {
           {hoveredMenu === "training" && (
             <ul className={styles.submenu}>
               <li>
-                <Link href="/training/ai">Contact</Link>
+                <Link href="https://www.monsteratech.com/contact">Contact</Link>
               </li>
               <li>
                 <Link href="/terms">개인정보처리방침</Link>

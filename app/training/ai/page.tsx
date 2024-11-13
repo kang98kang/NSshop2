@@ -8,7 +8,7 @@ import ImageWithCaption from "@/components/ui/ImageWithCaption";
 import SectionTitle from "@/components/ui/SectionTitle";
 import Paragraph from "@/components/ui/Paragraph";
 import InstructorProfile from "@/components/ui/InstructorProfile";
-import Footer from "@/components/Footer";
+import Footer from "@/components/common/Footer";
 import CompanyInfo from "@/components/ui/CompanyInfo";
 
 export default function Home() {
