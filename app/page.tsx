@@ -9,12 +9,7 @@ export default function Home() {
       </header>
       <div className={styles.pageBody}>
         <figure className={styles.image}>
-          <a href="/main/images/skku_academy2.png">
-            <img
-              style={{ width: "707.95px" }}
-              src="/main/images/monstera.png"
-            />
-          </a>
+          <img style={{ width: "707.95px" }} src="/main/images/monstera.png" />
         </figure>
         <figure
           className={`${styles.blockColorDefault} ${styles.callout}`}
@@ -41,26 +36,11 @@ export default function Home() {
             이 이루어집니다.
           </div>
         </figure>
-        <h2 className={styles.h2}>
-          <mark className={styles.highlightPink}>[모집중]</mark> GEN AI NETWORK
-          DAY에 초대합니다! (11/23)
-        </h2>
         <figure className={styles.image}>
-          <a href="/main/images/_EC_A0_9C_EB_AA_A9_EC_9D_84-_EC_9E_85_EB_A0_A5_ED_95_B4_EC_A3_BC_EC_84_B8_EC_9A_94_-002_(5).png">
-            <img
-              style={{ width: "707.93px" }}
-              src="/main/images/_EC_A0_9C_EB_AA_A9_EC_9D_84-_EC_9E_85_EB_A0_A5_ED_95_B4_EC_A3_BC_EC_84_B8_EC_9A_94_-002_(5).png"
-            />
-          </a>
-          <figcaption></figcaption>
-        </figure>
-        <figure className={styles.image}>
-          <a href="/academy1/images/_EC_A0_9C_EB_AA_A9_EC_9D_84-_EC_9E_85_EB_A0_A5_ED_95_B4_EC_A3_BC_EC_84_B8_EC_9A_94_-012.png">
-            <img
-              style={{ width: "708px" }}
-              src="/academy1/images/_EC_A0_9C_EB_AA_A9_EC_9D_84-_EC_9E_85_EB_A0_A5_ED_95_B4_EC_A3_BC_EC_84_B8_EC_9A_94_-012.png"
-            />
-          </a>
+          <img
+            style={{ width: "708px" }}
+            src="/academy1/images/_EC_A0_9C_EB_AA_A9_EC_9D_84-_EC_9E_85_EB_A0_A5_ED_95_B4_EC_A3_BC_EC_84_B8_EC_9A_94_-012.png"
+          />
         </figure>
         <div className={`${styles.columnList} ${styles.verticalList}`}>
           <div className={styles.column} style={{ width: "100%" }}>
@@ -151,6 +131,7 @@ export default function Home() {
             </figure>
           </div>
         </div>
+
         <h1 className={styles.h1}>
           성균관대학교,
           <br />
@@ -163,9 +144,7 @@ export default function Home() {
           국내 최고의 반도체 설계 전문 교육 역량을 보유하고 있습니다.
         </p>
         <figure className={styles.image}>
-          <a href="/academy1/images/004.png">
-            <img style={{ width: "720px" }} src="/academy1/images/004.png" />
-          </a>
+          <img style={{ width: "720px" }} src="/academy1/images/004.png" />
         </figure>
         <h1 className={styles.h1}>
           성균관대학교 아카데미만의
@@ -174,12 +153,10 @@ export default function Home() {
           <br />
         </h1>
         <figure className={styles.image}>
-          <a href="/academy1/images/_EB_B0_98_EB_8F_84_EC_B2_B43_EB_8C_80_EC_A7_80_953x.png">
-            <img
-              style={{ width: "6001px" }}
-              src="/academy1/images/_EB_B0_98_EB_8F_84_EC_B2_B43_EB_8C_80_EC_A7_80_953x.png"
-            />
-          </a>
+          <img
+            style={{ width: "720px" }}
+            src="/academy1/images/_EB_B0_98_EB_8F_84_EC_B2_B43_EB_8C_80_EC_A7_80_953x.png"
+          />
         </figure>
         <ul className={styles.toggle}>
           <li>
@@ -212,10 +189,9 @@ export default function Home() {
           실습을 통해 반도체 설계 전문가의 역량을 키우세요!
         </p>
         <figure className={styles.image}>
-          <a href="/academy1/images/8.png">
-            <img style={{ width: "708px" }} src="/academy1/images/8.png" />
-          </a>
+          <img style={{ width: "720px" }} src="/academy1/images/8.png" />
         </figure>
+
         <h1 className={styles.h1}>
           반도체 설계 실무 역량 강화를 위한
           <br />
@@ -224,8 +200,6 @@ export default function Home() {
         <p className={styles.p}>
           본 교육과정은 실습 중심 교육으로 이루어집니다.
         </p>
-
-        {/* 첫 번째 과정 */}
         <div className={styles.columnList}>
           <div className={styles.column} style={{ width: "37.5%" }}>
             <figure className={styles.image}>
@@ -236,7 +210,10 @@ export default function Home() {
               />
             </figure>
           </div>
-          <div className={styles.column} style={{ width: "62.5%" }}>
+          <div
+            className={styles.column}
+            style={{ width: "62.5%", marginTop: "-1rem" }}
+          >
             <h2 className={styles.h2}>반도체 소자 구조, 동작 및 특성</h2>
             <p className={styles.p}>
               반도체 설계에 필요한 반도체 소자의 구조와 특성을 학습하고, CMOS
@@ -281,7 +258,6 @@ export default function Home() {
           </div>
         </div>
 
-        {/* 두 번째 과정 */}
         <div className={styles.columnList}>
           <div className={styles.column} style={{ width: "37.5%" }}>
             <figure className={styles.image}>
@@ -292,7 +268,10 @@ export default function Home() {
               />
             </figure>
           </div>
-          <div className={styles.column} style={{ width: "62.5%" }}>
+          <div
+            className={styles.column}
+            style={{ width: "62.5%", marginTop: "-1rem" }}
+          >
             <h2 className={styles.h2}>반도체 디자인 룰 및 DRC 검증</h2>
             <p className={styles.p}>
               반도체의 수직 구조를 이해하고, 레이아웃 디자인 후 설계 규칙(DRC,
@@ -344,8 +323,6 @@ export default function Home() {
             </ul>
           </div>
         </div>
-
-        {/* 세 번째 과정 */}
         <div className={styles.columnList}>
           <div className={styles.column} style={{ width: "37.5%" }}>
             <figure className={styles.image}>
@@ -356,7 +333,10 @@ export default function Home() {
               />
             </figure>
           </div>
-          <div className={styles.column} style={{ width: "62.5%" }}>
+          <div
+            className={styles.column}
+            style={{ width: "62.5%", marginTop: "-1rem" }}
+          >
             <h2 className={styles.h2}>반도체 회로설계</h2>
             <p className={styles.p}>
               반도체 Digital/Analog 회로설계를 위한 시스템 사양 분석 및 설계공정
@@ -398,7 +378,8 @@ export default function Home() {
           </div>
         </div>
 
-        {/* NCS 상세 정보 토글 */}
+        <br></br>
+
         <details className={styles.toggle}>
           <summary>
             <span
@@ -444,7 +425,7 @@ export default function Home() {
               <tr>
                 <td>3일차</td>
                 <td>반도체 소자 구조, 동작 및 특성</td>
-                <td>시스템 반도체 제조���정 개발</td>
+                <td>시스템 반도체 제조공정 개발</td>
                 <td>
                   메모리 반도체 공정흐름도 해석하기
                   <br />
@@ -454,7 +435,7 @@ export default function Home() {
               </tr>
               <tr>
                 <td>4일차</td>
-                <td>반도체 디��인 룰 및 DRC 검증</td>
+                <td>반도체 디자인 룰 및 DRC 검증</td>
                 <td>커스텀 레이아웃 설계</td>
                 <td>
                   회로도 이해하기
@@ -531,8 +512,6 @@ export default function Home() {
             </tbody>
           </table>
         </details>
-
-        {/* 프로젝트 내용 토글 */}
         <details className={styles.toggle}>
           <summary>
             <span
@@ -544,57 +523,44 @@ export default function Home() {
             <span className={styles.highlightBlueBackground}>👀👇</span>
           </summary>
           <figure className={styles.image}>
-            <a href="/academy1/images/Untitled.png">
-              <img
-                style={{ width: "951px" }}
-                src="/academy1/images/Untitled.png"
-                alt=""
-              />
-            </a>
+            <img
+              style={{ width: "951px" }}
+              src="/academy1/images/Untitled.png"
+              alt=""
+            />
           </figure>
           <figure className={styles.image}>
-            <a href="/academy1/images/2-stage_comparator_simulation__ED_99_98_EA_B2_BD.png">
-              <img
-                style={{ width: "672px" }}
-                src="/academy1/images/2-stage_comparator_simulation__ED_99_98_EA_B2_BD.png"
-                alt=""
-              />
-            </a>
+            <img
+              style={{ width: "672px" }}
+              src="/academy1/images/2-stage_comparator_simulation__ED_99_98_EA_B2_BD.png"
+              alt=""
+            />
           </figure>
           <p className={styles.p}>&lt;2-stage comparator_simulation 환경&gt;</p>
-
           <figure className={styles.image}>
-            <a href="/academy1/images/2-stage_comparator.png">
-              <img
-                style={{ width: "720px" }}
-                src="/academy1/images/2-stage_comparator.png"
-                alt=""
-              />
-            </a>
+            <img
+              style={{ width: "720px" }}
+              src="/academy1/images/2-stage_comparator.png"
+              alt=""
+            />
           </figure>
           <p className={styles.p}>&lt;2-stage comparator&gt;</p>
-
           <figure className={styles.image}>
-            <a href="/academy1/images/2-stage_comparator_EC_9D_98_AC_simulation__EA_B2_B0_EA_B3_BC.png">
-              <img
-                style={{ width: "1502px" }}
-                src="/academy1/images/2-stage_comparator_EC_9D_98_AC_simulation__EA_B2_B0_EA_B3_BC.png"
-                alt=""
-              />
-            </a>
+            <img
+              style={{ width: "1502px" }}
+              src="/academy1/images/2-stage_comparator_EC_9D_98_AC_simulation__EA_B2_B0_EA_B3_BC.png"
+              alt=""
+            />
           </figure>
           <p className={styles.p}>
             &lt;2-stage comparator의 AC simulation 결과&gt;
           </p>
-
           <figure className={styles.image}>
-            <a href="/academy1/images/2-stage_comparator_EC_9D_98_transient_simulation__EA_B2_B0_EA_B3_BC.png">
-              <img
-                style={{ width: "1763px" }}
-                src="/academy1/images/2-stage_comparator_EC_9D_98_transient_simulation__EA_B2_B0_EA_B3_BC.png"
-                alt=""
-              />
-            </a>
+            <img
+              style={{ width: "1763px" }}
+              src="/academy1/images/2-stage_comparator_EC_9D_98_transient_simulation__EA_B2_B0_EA_B3_BC.png"
+              alt=""
+            />
           </figure>
           <p className={styles.p}>
             &lt;2-stage comparator의 transient simulation 결과&gt;
@@ -616,9 +582,7 @@ export default function Home() {
         <div className={styles.columnList}>
           <div className={styles.column} style={{ width: "31.25%" }}>
             <figure className={styles.image}>
-              <a href="/academy1/images/5.png">
-                <img style={{ width: "2449px" }} src="/academy1/images/5.png" />
-              </a>
+              <img style={{ width: "2449px" }} src="/academy1/images/5.png" />
             </figure>
           </div>
           <div className={styles.column} style={{ width: "68.75%" }}>
@@ -633,13 +597,11 @@ export default function Home() {
         <div className={styles.columnList}>
           <div className={styles.column} style={{ width: "31.25%" }}>
             <figure className={styles.image}>
-              <a href="/academy1/images/4.png">
-                <img
-                  style={{ width: "2449px" }}
-                  src="/academy1/images/4.png"
-                  alt="윤△△ 강사"
-                />
-              </a>
+              <img
+                style={{ width: "2449px" }}
+                src="/academy1/images/4.png"
+                alt="윤△△ 강사"
+              />
             </figure>
           </div>
           <div className={styles.column} style={{ width: "68.75%" }}>
@@ -654,13 +616,11 @@ export default function Home() {
         <div className={styles.columnList}>
           <div className={styles.column} style={{ width: "31.25%" }}>
             <figure className={styles.image}>
-              <a href="/academy1/images/7.png">
-                <img
-                  style={{ width: "2449px" }}
-                  src="/academy1/images/7.png"
-                  alt="이ㅁㅁ 강사"
-                />
-              </a>
+              <img
+                style={{ width: "2449px" }}
+                src="/academy1/images/7.png"
+                alt="이ㅁㅁ 강사"
+              />
             </figure>
           </div>
           <div className={styles.column} style={{ width: "68.75%" }}>
@@ -680,13 +640,11 @@ export default function Home() {
         <div className={styles.columnList}>
           <div className={styles.column} style={{ width: "31.25%" }}>
             <figure className={styles.image}>
-              <a href="/academy1/images/_EC_83_81_EC_84_B8_ED_8E_98_EC_9D_B4_EC_A7_80-13.png">
-                <img
-                  style={{ width: "100%", maxWidth: "1920px" }}
-                  src="/academy1/images/_EC_83_81_EC_84_B8_ED_8E_98_EC_9D_B4_EC_A7_80-13.png"
-                  alt="혜택1"
-                />
-              </a>
+              <img
+                style={{ width: "100%", maxWidth: "1920px" }}
+                src="/academy1/images/_EC_83_81_EC_84_B8_ED_8E_98_EC_9D_B4_EC_A7_80-13.png"
+                alt="혜택1"
+              />
             </figure>
           </div>
           <div className={styles.column} style={{ width: "68.75%" }}>
@@ -705,16 +663,17 @@ export default function Home() {
         <div className={styles.columnList}>
           <div className={styles.column} style={{ width: "31.25%" }}>
             <figure className={styles.image}>
-              <a href="/academy1/images/_EC_83_81_EC_84_B8_ED_8E_98_EC_9D_B4_EC_A7_80-14.png">
-                <img
-                  style={{ width: "100%", maxWidth: "2429px" }}
-                  src="/academy1/images/_EC_83_81_EC_84_B8_ED_8E_98_EC_9D_B4_EC_A7_80-14.png"
-                  alt="혜택2"
-                />
-              </a>
+              <img
+                style={{ width: "100%", maxWidth: "2429px" }}
+                src="/academy1/images/_EC_83_81_EC_84_B8_ED_8E_98_EC_9D_B4_EC_A7_80-14.png"
+                alt="혜택2"
+              />
             </figure>
           </div>
-          <div className={styles.column} style={{ width: "68.75%" }}>
+          <div
+            className={styles.column}
+            style={{ width: "68.75%", marginTop: "-0.8rem" }}
+          >
             <h2 className={styles.h2}>노트북 제공 및 다양한 교육 편의 제공</h2>
             <p className={styles.p}>최신 노트북과 듀얼 모니터 제공!</p>
             <p className={styles.p}>
@@ -728,63 +687,63 @@ export default function Home() {
         <div className={styles.columnList}>
           <div className={styles.column} style={{ width: "31.25%" }}>
             <figure className={styles.image}>
-              <a href="/academy1/images/_EC_83_81_EC_84_B8_ED_8E_98_EC_9D_B4_EC_A7_80-17.png">
-                <img
-                  style={{ width: "100%", maxWidth: "2429px" }}
-                  src="/academy1/images/_EC_83_81_EC_84_B8_ED_8E_98_EC_9D_B4_EC_A7_80-17.png"
-                  alt="혜택3"
-                />
-              </a>
+              <img
+                style={{ width: "100%", maxWidth: "2429px" }}
+                src="/academy1/images/_EC_83_81_EC_84_B8_ED_8E_98_EC_9D_B4_EC_A7_80-17.png"
+                alt="혜택3"
+              />
             </figure>
           </div>
-          <div className={styles.column} style={{ width: "68.75%" }}>
+          <div
+            className={styles.column}
+            style={{ width: "68.75%", marginTop: "-0.8rem" }}
+          >
             <h2 className={styles.h2}>다양한 교육 혜택</h2>
             <p className={styles.p}>100% 실습비 지원 무료 교육!</p>
-            <p className={styles.p}>수료시 성균관대 수료증과 기념픔 제공!</p>
+            <p className={styles.p}>수료시 성균관대 수료증과 기념품 제공!</p>
             <p className={styles.p}>3권의 반도체 시중 교재 무료 제공!</p>
           </div>
         </div>
         <hr className={styles.hr} />
+
         <h1 className={styles.h1}>교육 선발 대상</h1>
         <div className={styles.columnList}>
-          <div className={styles.column} style={{ width: "50%" }}>
+          <div className={styles.column} style={{ width: "45%" }}>
             <figure className={styles.image}>
-              <a href="/academy1/images/_EC_83_81_EC_84_B8_ED_8E_98_EC_9D_B4_EC_A7_80-20.png">
-                <img
-                  style={{ width: "100%" }}
-                  src="/academy1/images/_EC_83_81_EC_84_B8_ED_8E_98_EC_9D_B4_EC_A7_80-20.png"
-                  alt="선발대상1"
-                />
-              </a>
+              <img
+                style={{ width: "100%" }}
+                src="/academy1/images/_EC_83_81_EC_84_B8_ED_8E_98_EC_9D_B4_EC_A7_80-20.png"
+                alt="선발대상1"
+              />
             </figure>
             <h3 className={styles.h3}>반도체 관련 기업 재직자</h3>
-            <p className={styles.p}>
+            <p className={styles.p} style={{ marginTop: "-1rem" }}>
               본 과정은 재직자 과정으로, 반도체 관련 분야 기업에 재직중인 재직자
               및 신입 직원을 우선 선발하고 있습니다.
             </p>
           </div>
-          <div className={styles.column} style={{ width: "50%" }}>
+          &nbsp;
+          <div className={styles.column} style={{ width: "45%" }}>
             <figure className={styles.image}>
-              <a href="/academy1/images/_EC_83_81_EC_84_B8_ED_8E_98_EC_9D_B4_EC_A7_80-21.png">
-                <img
-                  style={{ width: "100%" }}
-                  src="/academy1/images/_EC_83_81_EC_84_B8_ED_8E_98_EC_9D_B4_EC_A7_80-21.png"
-                  alt="선발대상2"
-                />
-              </a>
+              <img
+                style={{ width: "100%" }}
+                src="/academy1/images/_EC_83_81_EC_84_B8_ED_8E_98_EC_9D_B4_EC_A7_80-21.png"
+                alt="선발대상2"
+              />
             </figure>
             <h3 className={styles.h3}>
               10시-17시 교육 시간에
               <br />
               풀타임 참여 가능한 분
             </h3>
-            <p className={styles.p}>
+            <p className={styles.p} style={{ marginTop: "-1rem" }}>
               매주 토요일, 하루 6시간, 10주 동안 교육이 이루어집니다. 해당 기간
               동안 풀타임으로 참여가 가능하신 분들을 선발합니다. (80% 이상 출석
               시 수료)
             </p>
           </div>
         </div>
+        <br></br>
         <figure
           className={styles.callout}
           style={{ whiteSpace: "pre-wrap", display: "flex" }}
@@ -860,6 +819,7 @@ export default function Home() {
             </ul>
           </div>
         </figure>
+
         <h1 className={styles.h1}>선발 과정</h1>
         <div className={styles.columnList}>
           <div
@@ -945,54 +905,46 @@ export default function Home() {
             <span className={styles.icon}>📢</span>
           </div>
           <div style={{ width: "100%" }}>
+            <br />
+            <br />
             <figure className={styles.image}>
-              <a href="/academy1/images/_EC_8B_9C_EC_84_A4__EC_9D_B4_EB_AF_B8_EC_A7_80(1).png">
-                <img
-                  style={{ width: "100%", maxWidth: "378px" }}
-                  src="/academy1/images/_EC_8B_9C_EC_84_A4__EC_9D_B4_EB_AF_B8_EC_A7_80(1).png"
-                  alt="시설1"
-                />
-              </a>
+              <img
+                style={{ width: "100%", maxWidth: "378px" }}
+                src="/academy1/images/_EC_8B_9C_EC_84_A4__EC_9D_B4_EB_AF_B8_EC_A7_80(1).png"
+                alt="시설1"
+              />
             </figure>
 
             <figure className={styles.image}>
-              <a href="/academy1/images/KakaoTalk_20230615_091146853_02.jpg">
-                <img
-                  style={{ width: "100%", maxWidth: "700px" }}
-                  src="/academy1/images/KakaoTalk_20230615_091146853_02.jpg"
-                  alt="시설2"
-                />
-              </a>
+              <img
+                style={{ width: "100%", maxWidth: "700px" }}
+                src="/academy1/images/KakaoTalk_20230615_091146853_02.jpg"
+                alt="시설2"
+              />
             </figure>
 
             <figure className={styles.image}>
-              <a href="/academy1/images/_EC_8B_9C_EC_84_A4__EC_9D_B4_EB_AF_B8_EC_A7_80(3).png">
-                <img
-                  style={{ width: "100%", maxWidth: "378px" }}
-                  src="/academy1/images/_EC_8B_9C_EC_84_A4__EC_9D_B4_EB_AF_B8_EC_A7_80(3).png"
-                  alt="시설3"
-                />
-              </a>
+              <img
+                style={{ width: "100%", maxWidth: "378px" }}
+                src="/academy1/images/_EC_8B_9C_EC_84_A4__EC_9D_B4_EB_AF_B8_EC_A7_80(3).png"
+                alt="시설3"
+              />
             </figure>
 
             <figure className={styles.image}>
-              <a href="/academy1/images/KakaoTalk_20230421_145934567_03.jpg">
-                <img
-                  style={{ width: "100%", maxWidth: "700px" }}
-                  src="/academy1/images/KakaoTalk_20230421_145934567_03.jpg"
-                  alt="시설4"
-                />
-              </a>
+              <img
+                style={{ width: "100%", maxWidth: "700px" }}
+                src="/academy1/images/KakaoTalk_20230421_145934567_03.jpg"
+                alt="시설4"
+              />
             </figure>
 
             <figure className={styles.image}>
-              <a href="/academy1/images/_EA_B5_AC_EB_82_B4_EC_8B_9D_EB_8B_B9.jpg">
-                <img
-                  style={{ width: "100%", maxWidth: "672px" }}
-                  src="/academy1/images/_EA_B5_AC_EB_82_B4_EC_8B_9D_EB_8B_B9.jpg"
-                  alt="구내식당"
-                />
-              </a>
+              <img
+                style={{ width: "100%", maxWidth: "672px" }}
+                src="/academy1/images/_EA_B5_AC_EB_82_B4_EC_8B_9D_EB_8B_B9.jpg"
+                alt="구내식당"
+              />
             </figure>
           </div>
         </figure>
@@ -1402,6 +1354,7 @@ export default function Home() {
             </details>
           </li>
         </ul>
+
         <h2 className={styles.h2}>
           📕<strong>교육문의</strong>
         </h2>

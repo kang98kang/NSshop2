@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { Rubik } from "next/font/google";
+import { Noto_Sans_KR } from "next/font/google";
 import Head from "next/head";
 import Navbar from "../components/Navbar";
 import "./globals.css";
 
-const rubik = Rubik({
+const noto = Noto_Sans_KR({
   subsets: ["latin"],
   weight: ["400"],
 });
@@ -30,7 +30,7 @@ export default function RootLayout({
         <title>MONSTERATECH EDU</title>
         <meta name="description" content="몬스테라텍 디지털 트레이닝" />
       </Head>
-      <body className={`${rubik.className} antialiased`}>
+      <body className={`${noto.className} antialiased`}>
         <Navbar />
         {children}
       </body>

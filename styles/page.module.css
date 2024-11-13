@@ -11,10 +11,10 @@
     padding: 0 1.5rem; /* 모바일에서 좌우 패딩 추가 */
   }
 
-  .pageTitle,
+  /* .pageTitle,
   h1.h1 {
     font-size: 1.5rem !important;
-  }
+  } */
 
   .column {
     width: 100% !important;
@@ -346,8 +346,8 @@
   border-radius: 3px;
   border-width: 1px;
   border-style: solid;
-  border-color: transparent;
-  background: rgba(235, 236, 237, 0.3);
+  border-color: rgba(235, 236, 237, 1);
+  background: transparent;
 }
 
 /* 토글 리스트 스타일 */
