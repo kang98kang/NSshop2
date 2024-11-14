@@ -7,6 +7,10 @@
 }
 
 @media (max-width: 768px) {
+  .floatingButton {
+    width: 70vw !important;
+  }
+
   .pageBody {
     padding: 0 1.5rem; /* 모바일에서 좌우 패딩 추가 */
   }
