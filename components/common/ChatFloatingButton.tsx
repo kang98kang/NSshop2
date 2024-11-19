@@ -2,18 +2,21 @@ interface ChatFloatingButtonProps {
   url: string;
   icon?: string;
   style?: React.CSSProperties;
+  className?: string;
 }
 
 export default function ChatFloatingButton({
   url,
   icon = "📝",
   style,
+  className,
 }: ChatFloatingButtonProps) {
   return (
     <a
       href={url}
       target="_blank"
       rel="noopener noreferrer"
+      className={className}
       style={{
         position: "fixed",
         right: "40px",

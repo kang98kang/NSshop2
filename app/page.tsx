@@ -787,6 +787,7 @@ export default function Home() {
         <ChatFloatingButton
           url="http://pf.kakao.com/_cpxopG/chat"
           icon="💬"
+          className={styles.chattingButton}
         />
       </div>
     </article>

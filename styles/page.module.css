@@ -8,11 +8,17 @@
 
 @media (max-width: 768px) {
   .floatingButton {
-    width: 70vw !important;
+    width: 60vw !important;
   }
 
   .pageBody {
     padding: 0 1.5rem; /* 모바일에서 좌우 패딩 추가 */
+  }
+
+  .chattingButton {
+    width: 50px !important;
+    height: 50px !important;
+    right: 20px !important;
   }
 
   /* .pageTitle,
