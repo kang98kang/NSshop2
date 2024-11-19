@@ -60,7 +60,7 @@ const Navbar = () => {
         </button>
         <ul className={styles.sidebarMenu}>
           <li>
-            <Link href="/training/ai" onClick={toggleMenu}>
+            <Link href="http://pf.kakao.com/_cpxopG/" target="_blank" onClick={toggleMenu}>
               Contact
             </Link>
           </li>
@@ -81,7 +81,7 @@ const Navbar = () => {
           {hoveredMenu === "training" && (
             <ul className={styles.submenu}>
               <li>
-                <Link href="https://www.monsteratech.com/contact">Contact</Link>
+                <Link href="http://pf.kakao.com/_cpxopG/" target="_blank">Contact</Link>
               </li>
               <li>
                 <Link href="/terms">개인정보처리방침</Link>

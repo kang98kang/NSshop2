@@ -775,9 +775,6 @@ export default function Home() {
           <strong>🏠 (06045) 서울특별시 강남구 학동로161 4층, 406호</strong>
         </p>
         <p className={styles.p}>
-          <strong>☎️ 010-9936-3490</strong>
-        </p>
-        <p className={styles.p}>
           <strong>© MONSTERA. ALL RIGHTS RESERVED.</strong>
         </p>
         <p className={styles.p} style={{ marginBottom: "9rem" }}>
@@ -785,7 +782,7 @@ export default function Home() {
             홈페이지
           </a>
         </p>
-        <FloatingButton url="https://www.monsteratech.com/education/detail/UnityKorea_unity" />
+        <FloatingButton url="https://forms.gle/Ct5RWx4ocb8DiYdv8" />
       </div>
     </article>
   );
