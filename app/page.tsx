@@ -20,11 +20,12 @@ export default function Home() {
             <span className={styles.icon}>👩‍🎓</span>
           </div>
           <div style={{ width: "100%" }}>
-            [Unity Korea] Unity 부트캠프는 <strong>몬스테라텍 캠퍼스</strong>
+            [Unity Korea] Unity 부트캠프는{" "}
+            <strong>몬스테라텍 강남 캠퍼스</strong>
             에서 진행됩니다.
             <br />
             <mark className={styles.highlightBlue}>
-              <strong>교육전문가</strong>
+              <strong>유니티 공인 강사</strong>
             </mark>
             의 커리큘럼과
             <mark className={styles.highlightBlue}>
@@ -57,8 +58,8 @@ export default function Home() {
                   교육 기간
                   <br />
                 </strong>
-                - 2024년 10월 19일(토) ~ 12월 21일(토) / 매주 토요일 (총 10주)
-                <br />- 교육 시간 : 10:00 - 17:00 (6시간/점심시간 1시간)
+                - 2025년 01월 13일(월) ~ 2025년 07월 14일(월) / 총 960시간
+                <br />- 교육 시간 : 월~금 09:00 - 18:00 (8시간/점심시간 1시간)
               </div>
             </figure>
           </div>
@@ -76,8 +77,7 @@ export default function Home() {
                   교육 장소
                   <br />
                 </strong>
-                : 판교 경기스타트업캠퍼스 7층 (성균관대 판교캠퍼스) 또는
-                킨스타워(정자역 3분거리)
+                : 몬스테라텍 강남 캠퍼스 (선릉역 또는 강남구청역)
               </div>
             </figure>
           </div>
@@ -95,15 +95,17 @@ export default function Home() {
                   교육 대상
                   <br />
                 </strong>
-                : 반도체 관련 기업 재직자(선착순 40명 모집)
+                : 컴퓨터 공학 관련 전공 또는 재직자 1반(24명) / 디자인 전공 또는
+                비전공자 1반(24명)
                 <br />
                 <mark className={styles.highlightGray}>
-                  - Cadence, PSpice, Quartus 등 반도체 설계 툴 실습을 통해 설계
-                  역량을 강화하고 싶은 재직자
+                  - 대학 전공 이상의 심화 컴퓨터 공학과 유니티 활용 역량을
+                  강화하고 싶은 전공자 또는 기존 전공에 유니티를 접목시켜서
+                  활용하거나, 유니티 콘텐츠 제작으로의 이직을 희망하는 비전공자
                   <br />
-                  ✅ 재직증명서 확인 필수
-                  <br />✅ 재직중인 기업이 고용보험에 가입되어 있지 않으면
-                  수강이 불가능합니다.
+                  ✅ 내일배움카드 소지 필수
+                  <br />✅ 최근 5년 이내 다른 KDT 수강 이력이 있으신 경우 수강이
+                  불가능합니다.
                 </mark>
               </div>
             </figure>
@@ -134,23 +136,23 @@ export default function Home() {
         </div>
 
         <h1 className={styles.h1}>
-          성균관대학교,
+          UNITY BOOTCAMP,
           <br />
-          국내 최고 명문 반도체 교육 대학
+          유니티 코리아와 대한상공회의소가 함께합니다
           <br />
         </h1>
         <p className={styles.p}>
-          성균관대학교는 국내 최초로 삼성전자와 공동으로 시스템반도체공학과를
-          신설하여, 회로 및 소자 설계, 시스템 아키텍처, 시스템 소프트웨어 등
-          국내 최고의 반도체 설계 전문 교육 역량을 보유하고 있습니다.
+          유니티 부트캠프는 유니티 코리아와 대한상공회의소뿐만 아니라 유니티
+          공인강사, 국내 게임회사(N사 등) 경력자, 20년 이상의 실무자와의 협업을
+          통해 국내 최고의 전문 교육 역량을 보유하고 있습니다.
         </p>
         <figure className={styles.image}>
           <img style={{ width: "720px" }} src="/academy1/images/004.png" />
         </figure>
         <h1 className={styles.h1}>
-          성균관대학교 아카데미만의
+          유니티 부트캠프만의
           <br />
-          반도체 레이아웃/회로설계 실습과정은?
+          체계적이고 탄탄한 커리큘럼
           <br />
         </h1>
         <figure className={styles.image}>
@@ -169,415 +171,26 @@ export default function Home() {
                 </mark>
               </summary>
               <p className={styles.p}>
-                산업인력공단 주관 하에 성균관대학교에서 운영되는 재직자 과정은
-                각 기업에서 납부하고 있는 고용보험기금을 통해 운영됩니다. 따라서
-                고용보험기금을 납부하는 회사에 재직하고 있는 모든 분들은 교육을
-                무료로 받으실 수 있습니다.
+                본 과정은 전액 무료 과정으로 고용노동부가 청년 취업희망자를
+                대상으로 실시하는 실무 프로젝트 중심 K-Digital Training
+                교육입니다. VR/AR기술기반의 실감형콘텐츠 제작전문과 교육과
+                실무제작 기술을 함양하고 산업현장에서 바로 적용할 수 있는 능력을
+                갖출 수 있도록 지원하고 있습니다. ICT 기업 참여 실무 프로젝트를
+                통해 비전공자라도 IT전문가로 취업할 수 있으니 지금 바로
+                지원해보세요
               </p>
             </details>
           </li>
         </ul>
+
         <h1 className={styles.h1}>
-          반도체 설계 실무 환경 100% 재현
-          <br />
-          마음껏 사용 가능한 Cadence 실습 환경 제공
+          실제 산업 분야 재직자의 노하우를 그대로!
           <br />
         </h1>
         <p className={styles.p}>
-          본 교육 과정은 현업과 동일한 리눅스 서버를 구축하여, 실무에서 가장
-          많이 사용되고 있는 Cadence, PSpice 설계 라이선스를 교육생들에게
-          무상으로 제공하고 있습니다. 현업과 동일한 반도체 설계 환경에서 충분한
-          실습을 통해 반도체 설계 전문가의 역량을 키우세요!
-        </p>
-        <figure className={styles.image}>
-          <img style={{ width: "720px" }} src="/academy1/images/8.png" />
-        </figure>
-
-        <h1 className={styles.h1}>
-          반도체 설계 실무 역량 강화를 위한
-          <br />
-          핵심 커리큘럼
-        </h1>
-        <p className={styles.p}>
-          본 교육과정은 실습 중심 교육으로 이루어집니다.
-        </p>
-        <div className={styles.columnList}>
-          <div className={styles.column} style={{ width: "37.5%" }}>
-            <figure className={styles.image}>
-              <img
-                src="/academy1/images/13.png"
-                alt="반도체 소자 구조"
-                style={{ width: "336px" }}
-              />
-            </figure>
-          </div>
-          <div
-            className={styles.column}
-            style={{ width: "62.5%", marginTop: "-1rem" }}
-          >
-            <h2 className={styles.h2}>반도체 소자 구조, 동작 및 특성</h2>
-            <p className={styles.p}>
-              반도체 설계에 필요한 반도체 소자의 구조와 특성을 학습하고, CMOS
-              인버터의 구조와 특성 이해를 통한 레이아웃 설계 및 회로설계 실습을
-              진행합니다.
-            </p>
-            <p className={styles.p}>- 훈련시간 : 18h (3 Days)</p>
-            <ul className={styles.toggle}>
-              <li>
-                <details>
-                  <summary>세부내용</summary>
-                  <ul className={styles.bulletedList}>
-                    <li style={{ listStyleType: "disc" }}>
-                      반도체 소자 구조, 동작 및 특성
-                      <ul className={styles.bulletedList}>
-                        <li style={{ listStyleType: "circle" }}>
-                          PN접합, 다이오드 구조, 동작 및 특성
-                        </li>
-                        <li style={{ listStyleType: "circle" }}>
-                          BJT 구조, 동작 및 특성
-                        </li>
-                        <li style={{ listStyleType: "circle" }}>
-                          MOSFET 구조 및 특성
-                        </li>
-                      </ul>
-                    </li>
-                    <li style={{ listStyleType: "disc" }}>
-                      CMOS 인버터 구조 및 특성
-                      <ul className={styles.bulletedList}>
-                        <li style={{ listStyleType: "circle" }}>
-                          CMOS 인버터 구조, 동작 및 특성
-                        </li>
-                        <li style={{ listStyleType: "circle" }}>
-                          CMOS 인버터 Design Process
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                </details>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div className={styles.columnList}>
-          <div className={styles.column} style={{ width: "37.5%" }}>
-            <figure className={styles.image}>
-              <img
-                src="/academy1/images/12.png"
-                alt="반도체 디자인 룰"
-                style={{ width: "336px" }}
-              />
-            </figure>
-          </div>
-          <div
-            className={styles.column}
-            style={{ width: "62.5%", marginTop: "-1rem" }}
-          >
-            <h2 className={styles.h2}>반도체 디자인 룰 및 DRC 검증</h2>
-            <p className={styles.p}>
-              반도체의 수직 구조를 이해하고, 레이아웃 디자인 후 설계 규칙(DRC,
-              Design Rule Check) 오류를 해석하여 안전한 설계를 하는 것을 목표로
-              실습을 진행합니다.
-            </p>
-            <p className={styles.p}>- 훈련시간 : 24h (4 Days)</p>
-            <ul className={styles.toggle}>
-              <li>
-                <details>
-                  <summary>세부내용</summary>
-                  <ul className={styles.bulletedList}>
-                    <li style={{ listStyleType: "disc" }}>
-                      반도체 소자의 수직 구조
-                      <ul className={styles.bulletedList}>
-                        <li style={{ listStyleType: "circle" }}>
-                          NWell의 수직 구조
-                        </li>
-                        <li style={{ listStyleType: "circle" }}>
-                          Active/Gate의 수직 구조
-                        </li>
-                      </ul>
-                    </li>
-                    <li style={{ listStyleType: "disc" }}>
-                      Design Rule 및 DRC
-                      <ul className={styles.bulletedList}>
-                        <li style={{ listStyleType: "circle" }}>
-                          Implant D/R 및 DRC
-                        </li>
-                        <li style={{ listStyleType: "circle" }}>
-                          Contact D/R 및 DRC
-                        </li>
-                      </ul>
-                    </li>
-                    <li style={{ listStyleType: "disc" }}>
-                      DRC 프로젝트
-                      <ul className={styles.bulletedList}>
-                        <li style={{ listStyleType: "circle" }}>
-                          Metal Space DRC 실습
-                        </li>
-                        <li style={{ listStyleType: "circle" }}>
-                          Metal Density DRC 실습
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                </details>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div className={styles.columnList}>
-          <div className={styles.column} style={{ width: "37.5%" }}>
-            <figure className={styles.image}>
-              <img
-                src="/academy1/images/11.png"
-                alt="반도체 회로설계"
-                style={{ width: "336px" }}
-              />
-            </figure>
-          </div>
-          <div
-            className={styles.column}
-            style={{ width: "62.5%", marginTop: "-1rem" }}
-          >
-            <h2 className={styles.h2}>반도체 회로설계</h2>
-            <p className={styles.p}>
-              반도체 Digital/Analog 회로설계를 위한 시스템 사양 분석 및 설계공정
-              분석 실습을 진행합니다.
-            </p>
-            <p className={styles.p}>- 훈련시간 : 18h (3 Days)</p>
-            <ul className={styles.toggle}>
-              <li>
-                <details>
-                  <summary>세부내용</summary>
-                  <ul className={styles.bulletedList}>
-                    <li style={{ listStyleType: "disc" }}>
-                      Digital 회로 및 Analog 회로 특성 이해
-                      <ul className={styles.bulletedList}>
-                        <li style={{ listStyleType: "circle" }}>
-                          Digital 회로 특성
-                        </li>
-                        <li style={{ listStyleType: "circle" }}>
-                          Analog 회로 특성
-                        </li>
-                      </ul>
-                    </li>
-                    <li style={{ listStyleType: "disc" }}>
-                      Cadence(Virtuoso Schematic Editor 및 Spectre, ADE)의 툴을
-                      활용한 직접회로 설계
-                      <ul className={styles.bulletedList}>
-                        <li style={{ listStyleType: "circle" }}>
-                          Digital IC 회로설계
-                        </li>
-                        <li style={{ listStyleType: "circle" }}>
-                          Analog IC 회로설계
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                </details>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <br></br>
-
-        <details className={styles.toggle}>
-          <summary>
-            <span
-              style={{ cursor: "pointer" }}
-              className={styles.highlightPurpleBackground}
-            >
-              <strong>세부 NCS 확인하기</strong>
-            </span>
-          </summary>
-          <table className={styles.simpleTable}>
-            <thead>
-              <tr>
-                <th style={{ width: "71px" }}>Day</th>
-                <th style={{ width: "213px" }}>
-                  <strong>교과목명</strong>
-                </th>
-                <th style={{ width: "213px" }}>
-                  <strong>NCS 능력단위</strong>
-                </th>
-                <th style={{ width: "249px" }}>
-                  <strong>NCS 능력단위요소</strong>
-                </th>
-                <th style={{ width: "89px" }}>
-                  <strong>교육 시간</strong>
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>1일차</td>
-                <td>반도체 소자 구조, 동작 및 특성</td>
-                <td>메모리 반도체 제조공정 개발</td>
-                <td>메모리 반도체 단위소자 개발하기</td>
-                <td>6시간</td>
-              </tr>
-              <tr>
-                <td>2일차</td>
-                <td>반도체 소자 구조, 동작 및 특성</td>
-                <td>시스템 반도체 제조공정 개발</td>
-                <td>시스템 반도체 단위소자 개발하기</td>
-                <td>6시간</td>
-              </tr>
-              <tr>
-                <td>3일차</td>
-                <td>반도체 소자 구조, 동작 및 특성</td>
-                <td>시스템 반도체 제조공정 개발</td>
-                <td>
-                  메모리 반도체 공정흐름도 해석하기
-                  <br />
-                  시스템 반도체 공정흐름도 해석하기
-                </td>
-                <td>6시간</td>
-              </tr>
-              <tr>
-                <td>4일차</td>
-                <td>반도체 디자인 룰 및 DRC 검증</td>
-                <td>커스텀 레이아웃 설계</td>
-                <td>
-                  회로도 이해하기
-                  <br />
-                  레이아웃 방법 결정하기
-                </td>
-                <td>6시간</td>
-              </tr>
-              <tr>
-                <td>5일차</td>
-                <td>반도체 디자인 룰 및 DRC 검증</td>
-                <td>커스텀 레이아웃 설계</td>
-                <td>
-                  레이아웃 설계툴 사용하기
-                  <br />
-                  커스텀 레이아웃 수행하기
-                </td>
-                <td>6시간</td>
-              </tr>
-              <tr>
-                <td>6일차</td>
-                <td>반도체 디자인 룰 및 DRC 검증</td>
-                <td>커스텀 레이아웃 설계</td>
-                <td>
-                  DRC 검증하기
-                  <br />
-                  LVS 검증하기
-                </td>
-                <td>6시간</td>
-              </tr>
-              <tr>
-                <td>7일차</td>
-                <td>반도체 디자인 룰 및 DRC 검증</td>
-                <td>커스텀 레이아웃 설계</td>
-                <td>
-                  LVS 검증하기
-                  <br />
-                  LPE 검증하기
-                </td>
-                <td>6시간</td>
-              </tr>
-              <tr>
-                <td>8일차</td>
-                <td>반도체 회로설계</td>
-                <td>아날로그 회로 아키텍처 설계</td>
-                <td>시스템 사양 분석하기</td>
-                <td>6시간</td>
-              </tr>
-              <tr>
-                <td>9일차</td>
-                <td>반도체 회로설계</td>
-                <td>아날로그 회로 아키텍처 설계</td>
-                <td>설계공정 분석하기</td>
-                <td>6시간</td>
-              </tr>
-              <tr>
-                <td>10일차</td>
-                <td>반도체 회로설계</td>
-                <td>아날로그 회로 아키텍처 설계</td>
-                <td>블록단위 설계하기</td>
-                <td>6시간</td>
-              </tr>
-              <tr>
-                <td className={styles.blockColorPinkBackground}>
-                  <strong>Total</strong>
-                </td>
-                <td className={styles.blockColorPinkBackground}></td>
-                <td className={styles.blockColorPinkBackground}></td>
-                <td className={styles.blockColorPinkBackground}></td>
-                <td className={styles.blockColorPinkBackground}>
-                  <strong>60시간</strong>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </details>
-        <details className={styles.toggle}>
-          <summary>
-            <span
-              style={{ cursor: "pointer" }}
-              className={styles.highlightBlueBackground}
-            >
-              <strong>프로젝트 내용 엿보기</strong>
-            </span>
-            <span className={styles.highlightBlueBackground}>👀👇</span>
-          </summary>
-          <figure className={styles.image}>
-            <img
-              style={{ width: "951px" }}
-              src="/academy1/images/Untitled.png"
-              alt=""
-            />
-          </figure>
-          <figure className={styles.image}>
-            <img
-              style={{ width: "672px" }}
-              src="/academy1/images/2-stage_comparator_simulation__ED_99_98_EA_B2_BD.png"
-              alt=""
-            />
-          </figure>
-          <p className={styles.p}>&lt;2-stage comparator_simulation 환경&gt;</p>
-          <figure className={styles.image}>
-            <img
-              style={{ width: "720px" }}
-              src="/academy1/images/2-stage_comparator.png"
-              alt=""
-            />
-          </figure>
-          <p className={styles.p}>&lt;2-stage comparator&gt;</p>
-          <figure className={styles.image}>
-            <img
-              style={{ width: "1502px" }}
-              src="/academy1/images/2-stage_comparator_EC_9D_98_AC_simulation__EA_B2_B0_EA_B3_BC.png"
-              alt=""
-            />
-          </figure>
-          <p className={styles.p}>
-            &lt;2-stage comparator의 AC simulation 결과&gt;
-          </p>
-          <figure className={styles.image}>
-            <img
-              style={{ width: "1763px" }}
-              src="/academy1/images/2-stage_comparator_EC_9D_98_transient_simulation__EA_B2_B0_EA_B3_BC.png"
-              alt=""
-            />
-          </figure>
-          <p className={styles.p}>
-            &lt;2-stage comparator의 transient simulation 결과&gt;
-          </p>
-        </details>
-
-        <h1 className={styles.h1}>
-          전원 S전자 출신의 전문 강사진
-          <br />
-          반도체 설계 분야 현업 노하우를 그대로!
-          <br />
-        </h1>
-        <p className={styles.p}>
-          S전자 반도체 패널 설계 및 면접 위원으로 10년 이상 근무한 강사진부터,
-          12년 이상 반도체 연구소에서 근무 후 갓 퇴사한 강사진까지! 반도체 설계
-          핵심 전문가들로 강사진을 구성했습니다.
+          국내 게임 대기업 재직자 대상으로 게임 엔진 강의를 진행하시는
+          강사님부터 스마트팩토리, VR/AR 등 각종 분야의 전문성을 가진
+          강사진까지! 유니티 핵심 전문가들로 강사진을 구성했습니다.
         </p>
         <hr className={styles.hr} />
         <div className={styles.columnList}>
@@ -587,11 +200,11 @@ export default function Home() {
             </figure>
           </div>
           <div className={styles.column} style={{ width: "68.75%" }}>
-            <h2 className={styles.h2}>안○○ 강사</h2>
+            <h2 className={styles.h2}>강○○ 강사</h2>
             <p className={styles.p}>
-              S전자 반도체 Panel DDI 설계팀 / 면접위원 출신
+              S전자, N게임사, N소프트 등 국내 대기업 게임 엔진 출강
             </p>
-            <p className={styles.p}>성균관대학교 전자전기 박사</p>
+            <p className={styles.p}>25년 경력을 가진 소프트웨어 개발 전문가</p>
           </div>
         </div>
         <hr className={styles.hr} />
@@ -606,11 +219,12 @@ export default function Home() {
             </figure>
           </div>
           <div className={styles.column} style={{ width: "68.75%" }}>
-            <h2 className={styles.h2}>윤△△ 강사</h2>
+            <h2 className={styles.h2}>조ㅁㅁ 강사</h2>
+            <p className={styles.p}>유니티 공인강사 / 스마트팩토리 기업 대표</p>
             <p className={styles.p}>
-              S전자 반도체 연구소 플래시 개발 / 레이아웃 담당 출신
+              {" "}
+              Hydraulic Injection Molding Machine PLC 및 HMI 개발
             </p>
-            <p className={styles.p}>서울대학교 전기컴퓨터 박사</p>
           </div>
         </div>
         <hr className={styles.hr} />
@@ -625,84 +239,12 @@ export default function Home() {
             </figure>
           </div>
           <div className={styles.column} style={{ width: "68.75%" }}>
-            <h2 className={styles.h2}>이ㅁㅁ 강사</h2>
-            <p className={styles.p}>S전자 반도체 DDI PA팀 출신</p>
-            <p className={styles.p}>플로리다대학교 박사</p>
-          </div>
-        </div>
-        <hr className={styles.hr} />
-        <h1 className={styles.h1}>
-          성대 반도체 설계 교육만의
-          <br />
-          혜택 풀패키지
-          <br />
-        </h1>
-        <hr className={styles.hr} />
-        <div className={styles.columnList}>
-          <div className={styles.column} style={{ width: "31.25%" }}>
-            <figure className={styles.image}>
-              <img
-                style={{ width: "100%", maxWidth: "1920px" }}
-                src="/academy1/images/_EC_83_81_EC_84_B8_ED_8E_98_EC_9D_B4_EC_A7_80-13.png"
-                alt="혜택1"
-              />
-            </figure>
-          </div>
-          <div className={styles.column} style={{ width: "68.75%" }}>
-            <h2 className={styles.h2}>
-              반도체 설계 실무 현장과 동일한 환경 조성
-            </h2>
+            <h2 className={styles.h2}>윤△△ 강사</h2>
             <p className={styles.p}>
-              리눅스 서버 구축 및 Cadence, PSpice, Quartus2 설계 라이선스 제공!
+              {" "}
+              현) 글로벌 IT 기업 한국지사 게임엔진 프로젝트 리딩
             </p>
-            <p className={styles.p}>
-              실제 반도체 설계 현업과 동일한 환경에서 맘껏 실습 가능!
-            </p>
-          </div>
-        </div>
-        <hr className={styles.hr} />
-        <div className={styles.columnList}>
-          <div className={styles.column} style={{ width: "31.25%" }}>
-            <figure className={styles.image}>
-              <img
-                style={{ width: "100%", maxWidth: "2429px" }}
-                src="/academy1/images/_EC_83_81_EC_84_B8_ED_8E_98_EC_9D_B4_EC_A7_80-14.png"
-                alt="혜택2"
-              />
-            </figure>
-          </div>
-          <div
-            className={styles.column}
-            style={{ width: "68.75%", marginTop: "-0.8rem" }}
-          >
-            <h2 className={styles.h2}>노트북 제공 및 다양한 교육 편의 제공</h2>
-            <p className={styles.p}>최신 노트북과 듀얼 모니터 제공!</p>
-            <p className={styles.p}>
-              넓은 강의실, 프로젝트실, 구내식당 등 교육에만 집중할 수 있는
-              최적의 교육 장소!
-            </p>
-            <p className={styles.p}>중식 제공과 주차 지원!</p>
-          </div>
-        </div>
-        <hr className={styles.hr} />
-        <div className={styles.columnList}>
-          <div className={styles.column} style={{ width: "31.25%" }}>
-            <figure className={styles.image}>
-              <img
-                style={{ width: "100%", maxWidth: "2429px" }}
-                src="/academy1/images/_EC_83_81_EC_84_B8_ED_8E_98_EC_9D_B4_EC_A7_80-17.png"
-                alt="혜택3"
-              />
-            </figure>
-          </div>
-          <div
-            className={styles.column}
-            style={{ width: "68.75%", marginTop: "-0.8rem" }}
-          >
-            <h2 className={styles.h2}>다양한 교육 혜택</h2>
-            <p className={styles.p}>100% 실습비 지원 무료 교육!</p>
-            <p className={styles.p}>수료시 성균관대 수료증과 기념품 제공!</p>
-            <p className={styles.p}>3권의 반도체 시중 교재 무료 제공!</p>
+            <p className={styles.p}> Robotics AI 애플리케이션 빌더 개발</p>
           </div>
         </div>
         <hr className={styles.hr} />
@@ -717,10 +259,9 @@ export default function Home() {
                 alt="선발대상1"
               />
             </figure>
-            <h3 className={styles.h3}>반도체 관련 기업 재직자</h3>
+            <h3 className={styles.h3}>개발 관련 전공자 또는 재직자</h3>
             <p className={styles.p} style={{ marginTop: "-1rem" }}>
-              본 과정은 재직자 과정으로, 반도체 관련 분야 기업에 재직중인 재직자
-              및 신입 직원을 우선 선발하고 있습니다.
+              Class 1 : 24명 정원
             </p>
           </div>
           &nbsp;
@@ -732,94 +273,13 @@ export default function Home() {
                 alt="선발대상2"
               />
             </figure>
-            <h3 className={styles.h3}>
-              10시-17시 교육 시간에
-              <br />
-              풀타임 참여 가능한 분
-            </h3>
+            <h3 className={styles.h3}>개발 비전공자 또는 디자인 전공자</h3>
             <p className={styles.p} style={{ marginTop: "-1rem" }}>
-              매주 토요일, 하루 6시간, 10주 동안 교육이 이루어집니다. 해당 기간
-              동안 풀타임으로 참여가 가능하신 분들을 선발합니다. (80% 이상 출석
-              시 수료)
+              Class 2 : 24명 정원
             </p>
           </div>
         </div>
         <br></br>
-        <figure
-          className={styles.callout}
-          style={{ whiteSpace: "pre-wrap", display: "flex" }}
-        >
-          <div style={{ fontSize: "1.5em" }}>
-            <span className={styles.icon}>✅</span>
-          </div>
-          <div style={{ width: "100%" }}>
-            <mark className={styles.highlightDefault}>
-              <strong>교육 신청 전 체크리스트!</strong>
-            </mark>
-            <ul className={styles.toggle}>
-              <li>
-                <details>
-                  <summary>
-                    <mark className={styles.highlightDefault}>
-                      본 교육 과정은 재직자 대상 과정으로, 반도체/IT 관련 기업
-                      재직자 분들만 교육 신청이 가능합니다.
-                    </mark>
-                  </summary>
-                  <ul className={styles.bulletedList}>
-                    <li style={{ listStyleType: "disc" }}>
-                      <mark className={styles.highlightGray}>
-                        교육 진행 시 재직증명서 제출 필수
-                      </mark>
-                    </li>
-                    <li style={{ listStyleType: "disc" }}>
-                      <mark className={styles.highlightGray}>
-                        재직중인 기업이 고용보험에 가입되어 있지 않으면 수강이
-                        불가능합니다.
-                      </mark>
-                    </li>
-                    <li style={{ listStyleType: "disc" }}>
-                      <mark className={styles.highlightGray}>
-                        고용보험에 가입되어 있지 않는 인턴의 경우 수강이
-                        불가능합니다.
-                      </mark>
-                    </li>
-                  </ul>
-                </details>
-              </li>
-            </ul>
-            <ul className={styles.toggle}>
-              <li>
-                <details>
-                  <summary>
-                    <mark className={styles.highlightDefault}>
-                      풀타임으로 교육에 참여가 가능하신 경우에만 선발하고
-                      있습니다.
-                    </mark>
-                  </summary>
-                  <ul className={styles.bulletedList}>
-                    <li style={{ listStyleType: "disc" }}>
-                      <mark className={styles.highlightGray}>
-                        실습 프로젝트 중심 과정으로, 결석 시 프로젝트 진행에
-                        어려움이 있을 수 있습니다.
-                      </mark>
-                    </li>
-                    <li style={{ listStyleType: "disc" }}>
-                      <mark className={styles.highlightGray}>
-                        대면으로 진행되는 교육으로 진행됩니다.
-                      </mark>
-                    </li>
-                    <li style={{ listStyleType: "disc" }}>
-                      <mark className={styles.highlightGray}>
-                        80% 미만 출석으로 인한 미수료 시, 추후 해당 기업에 대한
-                        교육 신청이 제한될 수 있습니다.
-                      </mark>
-                    </li>
-                  </ul>
-                </details>
-              </li>
-            </ul>
-          </div>
-        </figure>
 
         <h1 className={styles.h1}>선발 과정</h1>
         <div className={styles.columnList}>
@@ -837,9 +297,9 @@ export default function Home() {
               <div style={{ width: "100%" }}>
                 <strong>신청서 작성</strong>
                 <br />
-                *구글폼 작성을 통해 신청해주세요.
+                *구글폼 작성을 통해 신청.
                 <br />
-                (~10/13 마감)
+                (~12/31 마감)
                 <br />
               </div>
             </figure>
@@ -856,11 +316,11 @@ export default function Home() {
                 <span className={styles.icon}>2️⃣</span>
               </div>
               <div style={{ width: "100%" }}>
-                <strong>재직 확인</strong>
+                <strong>내일배움카드 확인</strong>
                 <br />
                 *개별 안내 문자 드립니다.
                 <br />
-                (10월 초 재직증명서 요청)
+                (사전 발급 권장)
                 <br />
               </div>
             </figure>
@@ -885,70 +345,7 @@ export default function Home() {
             </figure>
           </div>
         </div>
-        <h1 className={styles.h1}>
-          한국의 실리콘밸리,
-          <br />
-          판교 캠퍼스에서 교육이 진행됩니다.
-        </h1>
-        <p className={styles.p}>
-          본 교육은 전면 대면 수업으로 진행되며, 교육 기간 동안 대면 출석이
-          가능하신 분만 수강하실 수 있습니다.
-        </p>
-        <p className={styles.p}>
-          *성균관대 판교캠퍼스 이전으로 인해 경기스타트업캠퍼스 또는
-          킨스타워(정자역 3분거리)에서 교육이 진행됩니다.
-        </p>
-        <figure
-          className={`${styles.blockColorGrayBackground} ${styles.callout}`}
-          style={{ whiteSpace: "pre-wrap", display: "flex" }}
-        >
-          <div style={{ fontSize: "1.5em" }}>
-            <span className={styles.icon}>📢</span>
-          </div>
-          <div style={{ width: "100%" }}>
-            <br />
-            <br />
-            <figure className={styles.image}>
-              <img
-                style={{ width: "100%", maxWidth: "378px" }}
-                src="/academy1/images/_EC_8B_9C_EC_84_A4__EC_9D_B4_EB_AF_B8_EC_A7_80(1).png"
-                alt="시설1"
-              />
-            </figure>
 
-            <figure className={styles.image}>
-              <img
-                style={{ width: "100%", maxWidth: "700px" }}
-                src="/academy1/images/KakaoTalk_20230615_091146853_02.jpg"
-                alt="시설2"
-              />
-            </figure>
-
-            <figure className={styles.image}>
-              <img
-                style={{ width: "100%", maxWidth: "378px" }}
-                src="/academy1/images/_EC_8B_9C_EC_84_A4__EC_9D_B4_EB_AF_B8_EC_A7_80(3).png"
-                alt="시설3"
-              />
-            </figure>
-
-            <figure className={styles.image}>
-              <img
-                style={{ width: "100%", maxWidth: "700px" }}
-                src="/academy1/images/KakaoTalk_20230421_145934567_03.jpg"
-                alt="시설4"
-              />
-            </figure>
-
-            <figure className={styles.image}>
-              <img
-                style={{ width: "100%", maxWidth: "672px" }}
-                src="/academy1/images/_EA_B5_AC_EB_82_B4_EC_8B_9D_EB_8B_B9.jpg"
-                alt="구내식당"
-              />
-            </figure>
-          </div>
-        </figure>
         <h1 className={styles.h1}>FAQ</h1>
         <hr className={styles.hr} />
         <h3 className={styles.h3}>(K-디지털 트레이닝)자주 묻는 질문</h3>
@@ -1116,9 +513,8 @@ export default function Home() {
               </summary>
               <p className={styles.p}>
                 <mark className={styles.highlightGray}>
-                  본 교육 과정은 전면 대면 수업으로 평일 월-금 9:30-18:30 대면
-                  출석이 가능한 분만 수강이 가능합니다. 수업은 판교
-                  스타트업캠퍼스에서 진행됩니다.
+                  본 교육 과정은 전면 대면 수업으로 평일 월-금 9:00-18:00 대면
+                  출석이 가능한 분만 수강이 가능합니다.
                 </mark>
               </p>
             </details>
@@ -1314,28 +710,6 @@ export default function Home() {
           <li>
             <details>
               <summary>
-                <mark className={styles.highlightGrayBackground}>노트북</mark>을
-                제공해주나요?
-              </summary>
-              <p className={styles.p}>
-                <mark className={styles.highlightGray}>
-                  최신형 개발자 노트북을 제공해드립니다! 그 외 교육생 1인마다
-                  모니터, 마우스, 키보드, 멀티허브 등을 제공합니다.
-                </mark>
-              </p>
-              <p className={styles.p}>
-                <mark className={styles.highlightGray}>
-                  단, 반출은 불가능합니다.
-                </mark>
-              </p>
-            </details>
-          </li>
-        </ul>
-
-        <ul className={styles.toggle}>
-          <li>
-            <details>
-              <summary>
                 <mark className={styles.highlightGrayBackground}>
                   개인 노트북
                 </mark>
@@ -1365,7 +739,7 @@ export default function Home() {
         </h3>
         <p className={styles.p}>
           <mark className={styles.highlightGrayBackground}>
-            담당자 : lessingohoi@monsteraedu.co.kr
+            담당자 : hj.kwon@monsteraedu.co.kr
           </mark>
         </p>
         <p className={styles.p}></p>
