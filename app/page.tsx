@@ -1,4 +1,5 @@
 import FloatingButton from "@/components/common/FloatingButton";
+import ChatFloatingButton from "@/components/common/ChatFloatingButton";
 import styles from "../styles/page.module.css";
 
 export default function Home() {
@@ -783,6 +784,10 @@ export default function Home() {
           </a>
         </p>
         <FloatingButton url="https://forms.gle/Ct5RWx4ocb8DiYdv8" />
+        <ChatFloatingButton
+          url="http://pf.kakao.com/_cpxopG/chat"
+          icon="💬"
+        />
       </div>
     </article>
   );
