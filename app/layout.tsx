@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Noto_Sans_KR } from "next/font/google";
-import Head from "next/head";
 import Navbar from "../components/Navbar";
 import "./globals.css";
 
@@ -23,6 +22,7 @@ export const metadata: Metadata = {
         alt: "Unity Bootcamp",
       },
     ],
+    type: "website",
   },
 };
 
@@ -33,13 +33,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ko">
-      <Head>
-        <meta charSet="utf-8" />
-        <meta
-          name="viewport"
-          content="width=device-width, height=device-height, initial-scale=1, maximum-scale=8, viewport-fit=cover"
-        />
-      </Head>
       <body className={`${noto.className} antialiased`}>
         <Navbar />
         {children}
