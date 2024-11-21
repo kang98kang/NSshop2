@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     description: "Unity Bootcamp 홍보 페이지",
     images: [
       {
-        url: "https://unity.monsteratech.com/og-image.png",
+        url: "https://unitybootcamp.monsteratech.com/og-image.png",
         width: 1200,
         height: 630,
         alt: "Unity Bootcamp",
