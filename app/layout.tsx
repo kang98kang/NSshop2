@@ -10,8 +10,20 @@ const noto = Noto_Sans_KR({
 });
 
 export const metadata: Metadata = {
-  title: "Monstera",
-  description: "몬스테라텍 디지털 트레이닝",
+  title: "Unity Bootcamp",
+  description: "Unity Bootcamp 홍보 페이지",
+  openGraph: {
+    title: "Unity Bootcamp",
+    description: "Unity Bootcamp 홍보 페이지",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Unity Bootcamp",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
@@ -27,8 +39,6 @@ export default function RootLayout({
           name="viewport"
           content="width=device-width, height=device-height, initial-scale=1, maximum-scale=8, viewport-fit=cover"
         />
-        <title>Monstera</title>
-        <meta name="description" content="몬스테라텍 디지털 트레이닝" />
       </Head>
       <body className={`${noto.className} antialiased`}>
         <Navbar />
