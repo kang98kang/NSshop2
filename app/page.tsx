@@ -1,5 +1,4 @@
 import FloatingButton1 from '@/components/common/FloatingButton1';
-import FloatingButton2 from '@/components/common/FloatingButton2';
 import ChatFloatingButton from '@/components/common/ChatFloatingButton';
 import styles from '../styles/page.module.css';
 
@@ -12,7 +11,7 @@ export default function Home() {
       </header>
       <div className={styles.pageBody}>
         <figure className={styles.image}>
-          <img style={{ width: '707.95px' }} src="/main/images/monstera.png" />
+          <img style={{ width: '707.95px' }} src="/main/images/unreal.png" />
         </figure>
         <figure
           className={`${styles.blockColorDefault} ${styles.callout}`}
@@ -653,8 +652,7 @@ export default function Home() {
           </a>
         </p>
         <div className={styles.floatingButtonContainer}>
-          <FloatingButton1 url="https://forms.gle/C3h7Vpd5ZfCwwRxj7" />
-          <FloatingButton2 url="https://forms.gle/ztcxsJbaS6Q5Ywzg7" />
+          <FloatingButton1 url="https://forms.gle/ztcxsJbaS6Q5Ywzg7" />
         </div>
         <ChatFloatingButton url="http://pf.kakao.com/_cpxopG/chat" icon="💬" className={styles.chattingButton} />
       </div>
