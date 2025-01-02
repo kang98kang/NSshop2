@@ -21,7 +21,7 @@ export default function Home() {
           <div style={{ fontSize: '1.5em' }}>
             <span className={styles.icon}>👩‍🎓</span>
           </div>
-          <div style={{ width: '100%' }}>
+          <div style={{ width: '100%', marginBottom: '10px' }}>
             [NS홈쇼핑] Unreal Engine 부트캠프는 <strong>몬스테라텍 강남 캠퍼스</strong>
             에서 진행됩니다.
             <br />
@@ -39,13 +39,13 @@ export default function Home() {
             이 이루어집니다.
           </div>
         </figure>
-        <figure className={styles.image}>
+        {/* <figure className={styles.image}>
           <img
             style={{ width: '708px' }}
             src="/academy1/images/_EC_A0_9C_EB_AA_A9_EC_9D_84-_EC_9E_85_EB_A0_A5_ED_95_B4_EC_A3_BC_EC_84_B8_EC_9A_94_-012.png"
           />
-        </figure>
-        <div className={`${styles.columnList} ${styles.verticalList}`}>
+        </figure> */}
+        <div className={`${styles.columnList} ${styles.verticalList}`} style={{ marginTop: '8px' }}>
           <div className={styles.column} style={{ width: '100%' }}>
             <figure
               className={`${styles.blockColorDefault} ${styles.callout}`}
@@ -149,21 +149,21 @@ export default function Home() {
           언리얼엔진 부트캠프는 대한상공회의소뿐만 아니라 언리얼엔진 공인강사, 국내 게임회사(N사 등) 경력자, 20년 이상의
           실무자와의 협업을 통해 국내 최고의 전문 교육 역량을 보유하고 있습니다.
         </p>
-        <figure className={styles.image}>
+        {/* <figure className={styles.image}>
           <img style={{ width: '720px' }} src="/academy1/images/004.png" />
-        </figure>
+        </figure> */}
         <h1 className={styles.h1}>
           언리얼엔진 부트캠프만의
           <br />
           체계적이고 탄탄한 커리큘럼
           <br />
         </h1>
-        <figure className={styles.image}>
+        {/* <figure className={styles.image}>
           <img
             style={{ width: '720px' }}
             src="/academy1/images/_EB_B0_98_EB_8F_84_EC_B2_B43_EB_8C_80_EC_A7_80_953x.png"
           />
-        </figure>
+        </figure> */}
         <ul className={styles.toggle}>
           <li>
             <details>
@@ -205,7 +205,7 @@ export default function Home() {
           </div>
         </div>
         <hr className={styles.hr} />
-        <div className={styles.columnList}>
+        {/* <div className={styles.columnList}>
           <div className={styles.column} style={{ width: '31.25%' }}>
             <figure className={styles.image}>
               <img style={{ width: '2449px' }} src="/academy1/images/4.png" alt="윤△△ 강사" />
@@ -216,7 +216,7 @@ export default function Home() {
             <p className={styles.p}>유니티 공인강사 / 스마트팩토리 기업 대표</p>
             <p className={styles.p}> Hydraulic Injection Molding Machine PLC 및 HMI 개발</p>
           </div>
-        </div>
+        </div> */}
         <hr className={styles.hr} />
         <div className={styles.columnList}>
           <div className={styles.column} style={{ width: '31.25%' }}>
