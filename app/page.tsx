@@ -1,6 +1,7 @@
 import FloatingButton1 from '@/components/common/FloatingButton1';
 import ChatFloatingButton from '@/components/common/ChatFloatingButton';
 import styles from '../styles/page.module.css';
+import Image from 'next/image';
 
 export default function Home() {
   return (
@@ -11,158 +12,10 @@ export default function Home() {
       </header>
       <div className={styles.pageBody}>
         <figure className={styles.image}>
-          <img style={{ width: '707.95px' }} src="/main/images/unreal.png" />
+          <img style={{ width: '880px' }} src="/main/images/1.png" />
+          <img style={{ width: '880px' }} src="/main/images/2.png" />
+          <img style={{ width: '880px' }} src="/main/images/3.png" />
         </figure>
-        <figure
-          className={`${styles.blockColorDefault} ${styles.callout}`}
-          style={{ whiteSpace: 'pre-wrap', display: 'flex' }}
-        >
-          <div style={{ fontSize: '1.5em' }}>
-            <span className={styles.icon}>👩‍🎓</span>
-          </div>
-          <div style={{ width: '100%', marginBottom: '10px' }}>
-            [NS홈쇼핑] Unreal Engine 부트캠프는 <strong>몬스테라텍 강남 캠퍼스</strong>
-            에서 진행됩니다.
-            <br />
-            <mark className={styles.highlightBlue}>
-              <strong>언리얼엔진 공인 강사</strong>
-            </mark>
-            의 커리큘럼과
-            <mark className={styles.highlightBlue}>
-              <strong> IT기업 실무자</strong>
-            </mark>
-            의 경험을 기반으로
-            <mark className={styles.highlight}>
-              <strong> 체계적인 실무 교육</strong>
-            </mark>
-            이 이루어집니다.
-          </div>
-        </figure>
-        {/* <figure className={styles.image}>
-          <img
-            style={{ width: '708px' }}
-            src="/academy1/images/_EC_A0_9C_EB_AA_A9_EC_9D_84-_EC_9E_85_EB_A0_A5_ED_95_B4_EC_A3_BC_EC_84_B8_EC_9A_94_-012.png"
-          />
-        </figure> */}
-        <div className={`${styles.columnList} ${styles.verticalList}`} style={{ marginTop: '8px' }}>
-          <div className={styles.column} style={{ width: '100%' }}>
-            <figure
-              className={`${styles.blockColorDefault} ${styles.callout}`}
-              style={{ whiteSpace: 'pre-wrap', display: 'flex' }}
-            >
-              <div style={{ fontSize: '1.5em' }}>
-                <span className={styles.icon}>📅</span>
-              </div>
-              <div style={{ width: '100%' }}>
-                <strong>
-                  교육 기간
-                  <br />
-                </strong>
-                - 2025년 2월 24일(월) ~ 2025년 8월 4일(월) / 총 5.5개월, 880시간
-                <br />- 교육 시간 : 월~금 09:00 - 18:00 (8시간/점심시간 1시간)
-              </div>
-            </figure>
-          </div>
-
-          <div className={styles.column} style={{ width: '100%' }}>
-            <figure
-              className={`${styles.blockColorDefault} ${styles.callout}`}
-              style={{ whiteSpace: 'pre-wrap', display: 'flex' }}
-            >
-              <div style={{ fontSize: '1.5em' }}>
-                <span className={styles.icon}>📍</span>
-              </div>
-              <div style={{ width: '100%' }}>
-                <strong>
-                  교육 장소
-                  <br />
-                </strong>
-                : 몬스테라텍 강남 캠퍼스 (서울특별시 서초구 서초대로74길 33)
-              </div>
-            </figure>
-          </div>
-
-          <div className={styles.column} style={{ width: '100%' }}>
-            <figure
-              className={`${styles.blockColorDefault} ${styles.callout}`}
-              style={{ whiteSpace: 'pre-wrap', display: 'flex' }}
-            >
-              <div style={{ fontSize: '1.5em' }}>
-                <span className={styles.icon}>👥</span>
-              </div>
-              <div style={{ width: '100%' }}>
-                <strong>
-                  교육 대상
-                  <br />
-                </strong>
-                : 아티스트 - 디자인 전공 또는 비전공자(24명) / 엔지니어 - 컴퓨터 공학 관련 전공 또는 재직자(24명)
-                <br />
-                <br />
-                <mark className={styles.highlightGray}>
-                  <strong>아티스트 트랙:</strong> 방송 제작이나 영상 편집 경험이 있거나, 가상 스튜디오나 메타휴먼 등
-                  최신 기술을 활용한 작업에 관심 있는 분! 생성형 AI를 활용한 그래픽 콘텐츠 제작에 흥미가 있는 분!
-                  <br />
-                  <br />
-                  <strong>엔지니어 트랙:</strong> Unreal Engine 개발자, XR 시스템 엔지니어, 방송 기술 엔지니어, 라이브
-                  커머스 기술 전문가를 희망하는 분! 실시간 콘텐츠 제작 및 시스템 구축에 대한 기본적인 이해를 가지고
-                  있으며, 가상 스튜디오 및 XR 콘텐츠 제작 기술을 배우고자 하는 분!
-                  <br />
-                  <br />✅ 내일배움카드 소지시 <strong>전액 무료</strong>
-                  <br />✅ 최근 5년 이내 다른 KDT 수강 이력이 있으신 경우 수강이 불가능합니다.
-                </mark>
-              </div>
-            </figure>
-          </div>
-
-          <div className={styles.column} style={{ width: '100%' }}>
-            <figure
-              className={`${styles.blockColorDefault} ${styles.callout}`}
-              style={{ whiteSpace: 'pre-wrap', display: 'flex' }}
-            >
-              <div style={{ fontSize: '1.5em' }}>
-                <span className={styles.icon}>💰</span>
-              </div>
-              <div style={{ width: '100%' }}>
-                <strong>
-                  교육비
-                  <br />
-                </strong>
-                : 전액 무료 (국비지원)
-                <br />
-                <mark className={styles.highlightGray}>
-                  - 국민내일배움카드 발급 필수
-                  <br />✅ 발급 방법은 아래 FAQ를 참고해주세요!
-                </mark>
-              </div>
-            </figure>
-          </div>
-        </div>
-
-        <h1 className={styles.h1}>
-          [NS홈쇼핑] 언리얼엔진 부트캠프,
-          <br />
-          대한상공회의소가 함께합니다
-          <br />
-        </h1>
-        <p className={styles.p}>
-          언리얼엔진 부트캠프는 대한상공회의소뿐만 아니라 언리얼엔진 공인강사, 국내 게임회사(N사 등) 경력자, 20년 이상의
-          실무자와의 협업을 통해 국내 최고의 전문 교육 역량을 보유하고 있습니다.
-        </p>
-        {/* <figure className={styles.image}>
-          <img style={{ width: '720px' }} src="/academy1/images/004.png" />
-        </figure> */}
-        <h1 className={styles.h1}>
-          언리얼엔진 부트캠프만의
-          <br />
-          체계적이고 탄탄한 커리큘럼
-          <br />
-        </h1>
-        {/* <figure className={styles.image}>
-          <img
-            style={{ width: '720px' }}
-            src="/academy1/images/_EB_B0_98_EB_8F_84_EC_B2_B43_EB_8C_80_EC_A7_80_953x.png"
-          />
-        </figure> */}
         <ul className={styles.toggle}>
           <li>
             <details>
@@ -204,18 +57,6 @@ export default function Home() {
           </div>
         </div>
         <hr className={styles.hr} />
-        {/* <div className={styles.columnList}>
-          <div className={styles.column} style={{ width: '31.25%' }}>
-            <figure className={styles.image}>
-              <img style={{ width: '2449px' }} src="/academy1/images/4.png" alt="윤△△ 강사" />
-            </figure>
-          </div>
-          <div className={styles.column} style={{ width: '68.75%' }}>
-            <h2 className={styles.h2}>조ㅁㅁ 강사</h2>
-            <p className={styles.p}>유니티 공인강사 / 스마트팩토리 기업 대표</p>
-            <p className={styles.p}> Hydraulic Injection Molding Machine PLC 및 HMI 개발</p>
-          </div>
-        </div> */}
         <hr className={styles.hr} />
         <div className={styles.columnList}>
           <div className={styles.column} style={{ width: '31.25%' }}>
@@ -274,9 +115,10 @@ export default function Home() {
                 <span className={styles.icon}>1️⃣</span>
               </div>
               <div style={{ width: '100%' }}>
-                <strong>신청서 작성</strong>
+                <strong> 신청서 작성</strong>
                 <br />
-                *구글폼 작성을 통해 신청.
+                &nbsp;구글폼 작성을 통해 신청.
+                <br />
                 <br />
               </div>
             </figure>
@@ -290,11 +132,11 @@ export default function Home() {
                 <span className={styles.icon}>2️⃣</span>
               </div>
               <div style={{ width: '100%' }}>
-                <strong>내일배움카드 확인</strong>
+                <strong> 내일배움카드 확인</strong>
                 <br />
-                *개별 안내 문자 드립니다.
+                &nbsp;개별 안내 문자 드립니다.
                 <br />
-                (사전 발급 권장)
+                &nbsp;(사전 발급 권장)
                 <br />
               </div>
             </figure>
@@ -308,9 +150,10 @@ export default function Home() {
                 <span className={styles.icon}>3️⃣</span>
               </div>
               <div style={{ width: '100%' }}>
-                <strong>교육 시작</strong>
+                <strong> 교육 시작</strong>
                 <br />
-                *사전 안내 문자 드립니다.
+                &nbsp;사전 안내 문자 드립니다.
+                <br />
                 <br />
               </div>
             </figure>
@@ -321,7 +164,7 @@ export default function Home() {
         <hr className={styles.hr} />
         <h3 className={styles.h3}>(K-디지털 트레이닝)자주 묻는 질문</h3>
         <p className={styles.p}>
-          <mark className={styles.highlightGray}>*▶버튼을 누르면 답변을 확인할 수 있습니다!</mark>
+          <mark className={styles.highlightGray}>▶&nbsp;&nbsp;&nbsp;버튼을 누르면 답변을 확인할 수 있습니다!</mark>
         </p>
         <ul className={styles.toggle}>
           <li>

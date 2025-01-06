@@ -1,9 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "export",
-  images: {
-    domains: ["oopy.lazyrockets.com"],
-  },
+  output: 'export',
 };
 
 module.exports = nextConfig;
