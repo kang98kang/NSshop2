@@ -1,7 +1,6 @@
 import FloatingButton1 from '@/components/common/FloatingButton1';
 import ChatFloatingButton from '@/components/common/ChatFloatingButton';
 import styles from '../styles/page.module.css';
-import Image from 'next/image';
 
 export default function Home() {
   return (
