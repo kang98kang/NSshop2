@@ -11,9 +11,9 @@ export default function Home() {
       </header>
       <div className={styles.pageBody}>
         <figure className={styles.image}>
-          <img style={{ width: '880px' }} src="/main/images/1.png" />
-          <img style={{ width: '880px' }} src="/main/images/2.png" />
-          <img style={{ width: '880px' }} src="/main/images/3.png" />
+          <img style={{ width: '880px' }} src="/main/images/1(fix).png" />
+          <img style={{ width: '880px' }} src="/main/images/2(fix).png" />
+          <img style={{ width: '880px' }} src="/main/images/3(fix).png" />
         </figure>
         <ul className={styles.toggle}>
           <li>
