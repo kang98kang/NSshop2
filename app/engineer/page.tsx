@@ -6,7 +6,9 @@ export default function Home() {
   return (
     <article className={styles.page}>
       <header>
-        <h1>엔지니어 페이지 테스트 입니다.</h1>
+        <h1 style={{ fontSize: "40px", backgroundColor: "red" }}>
+          엔지니어 페이지 테스트 입니다.
+        </h1>
         <h1 className={styles.pageTitle}></h1>
         <p className={styles.pageDescription}></p>
       </header>
