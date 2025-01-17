@@ -1,0 +1,52 @@
+@media (max-width: 768px) {
+  .floatingButtonContainer {
+    flex-direction: column;
+    gap: 10px !important;
+  }
+
+  .pageBody {
+    padding: 0 !important;
+  }
+
+  .pageBody img {
+    width: 27rem !important;
+  }
+
+  .chattingButton {
+    width: 50px !important;
+    height: 50px !important;
+    right: 20px !important;
+  }
+}
+
+.pageBody {
+  padding: 0 10rem;
+}
+
+.imgContainer {
+  padding-top: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.thumbnail {
+  position: absolute;
+  z-index: 1;
+}
+
+.rainbowCat {
+  position: absolute;
+  z-index: 2;
+}
+
+.floatingButtonContainer {
+  display: flex;
+  position: fixed;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  gap: 5vw;
+}
