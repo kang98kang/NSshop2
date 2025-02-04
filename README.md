@@ -25,15 +25,16 @@
 ```
 app/
  - artist/
-  - page.tsx // 아티스트 페이지입니다.
+    - page.tsx // unreal-bootcamp.monsteratech/artist 페이지
  - engineer/
-  - page.tsx // 엔지니어 페이지입니다.
- - page.tsx // 메인 페이지입니다.
+    - page.tsx // unreal-bootcamp.monsteratech/engineer 페이지
+ - page.tsx // unreal-bootcamp.monsteratech 페이지
 components/ // 여러 페이지에서 사용하는 공통 컴포넌트
 public/
+ - og-image.png // 메타데이터의 썸네일로 들어갈 사진입니다.
  - academy1/
  - main/
-  - images/ // 페이지에 들어갈 사진이 들어갑니다.
+    - images/ // 페이지에 들어갈 사진이 들어갑니다.
   ...
 styles/ //페이지 css 관련 폴더입니다.
 types/

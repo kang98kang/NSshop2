@@ -9,17 +9,18 @@ const noto = Noto_Sans_KR({
 });
 
 export const metadata: Metadata = {
-  title: 'NS 디지털선도기업아카데미',
-  description: 'NS 디지털선도기업아카데미 홍보 페이지',
+  title: 'UnrealEngine5 Bootcamp',
+  description:
+    '언리얼엔진5로 게임, 콘텐츠를 제작하며 프로그래밍/아트 직무별 전문성까지 챙길 수 있는 교육과정!! #취업교육 #취업 #구인 #구직 #미취업자 #교육',
   openGraph: {
-    title: 'NS 디지털선도기업아카데미',
-    description: 'NS 디지털선도기업아카데미 홍보 페이지',
+    title: 'UnrealEngine5 Bootcamp',
+    description: '언리얼엔진5로 게임, 콘텐츠를 제작하며 프로그래밍/아트 직무별 전문성까지 챙길 수 있는 교육과정!!',
     images: [
       {
         url: 'https://nsue.monsteratech.com/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'UnrealEngine Bootcamp',
+        alt: 'UnrealEngine5 Bootcamp',
       },
     ],
     type: 'website',
