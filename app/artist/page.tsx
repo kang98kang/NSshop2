@@ -6,15 +6,15 @@ export default function Home() {
   return (
     <article className={styles.page}>
       <header>
-        <h1 style={{ fontSize: '40px', backgroundColor: 'yellow' }}>아티스트 페이지 테스트 입니다.</h1>
         <h1 className={styles.pageTitle}></h1>
         <p className={styles.pageDescription}></p>
       </header>
       <div className={styles.pageBody}>
         <figure className={styles.image}>
-          <img style={{ width: '880px' }} src="/main/images/1(third_fix).png" />
-          <img style={{ width: '880px' }} src="/main/images/2(third_fix).png" />
-          <img style={{ width: '880px' }} src="/main/images/3(third_fix).png" />
+          <img style={{ width: '880px' }} src="/main/images/1(artist).png" />
+          <img style={{ width: '880px' }} src="/main/images/2(artist).png" />
+          <img style={{ width: '880px' }} src="/main/images/3(artist).png" />
+          <img style={{ width: '880px' }} src="/main/images/4(artist).png" />
         </figure>
         <ul className={styles.toggle}>
           <li>

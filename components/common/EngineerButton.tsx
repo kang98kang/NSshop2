@@ -12,7 +12,7 @@ export default function EngineerButton() {
 
   return (
     <button className={styles.floatingButton} onClick={handleClick}>
-      엔지니어 교육 보러가기
+      프로그래밍 교육 보러가기
     </button>
   );
 }
