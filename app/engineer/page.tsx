@@ -11,22 +11,25 @@ export default function Home() {
       </header>
       <div className={styles.pageBody}>
         <figure className={styles.image}>
-          <img style={{ width: '880px', display: 'block', borderRadius: '0px' }} src="/main/images/1(engineer).png" />
           <img
-            style={{ width: '880px', marginTop: '-1.5px', borderRadius: '0px' }}
-            src="/main/images/2(engineer).png"
+            style={{ width: '880px', display: 'block', borderRadius: '0px' }}
+            src="/main/images/unrealengine1(engineer).png"
           />
           <img
             style={{ width: '880px', marginTop: '-1.5px', borderRadius: '0px' }}
-            src="/main/images/3(engineer).png"
+            src="/main/images/unrealengine2(engineer).png"
           />
           <img
             style={{ width: '880px', marginTop: '-1.5px', borderRadius: '0px' }}
-            src="/main/images/4(engineer).png"
+            src="/main/images/unrealengine3(engineer).png"
           />
           <img
             style={{ width: '880px', marginTop: '-1.5px', borderRadius: '0px' }}
-            src="/main/images/5(engineer).png"
+            src="/main/images/unrealengine4(engineer).png"
+          />
+          <img
+            style={{ width: '880px', marginTop: '-1.5px', borderRadius: '0px' }}
+            src="/main/images/unrealengine5(engineer).png"
           />
         </figure>
         <ul className={styles.toggle}>

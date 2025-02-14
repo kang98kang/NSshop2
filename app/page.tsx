@@ -18,11 +18,11 @@ export default function Home() {
       >
         <img
           style={{ width: '50%', display: 'block', borderRadius: '0px', minWidth: '300px' }}
-          src="/main/images/main1.png"
+          src="/main/images/unrealengine(main)1.png"
         />
         <img
           style={{ width: '50%', display: 'block', borderRadius: '0px', minWidth: '300px' }}
-          src="/main/images/main2.png"
+          src="/main/images/unrealengine(main)2.png"
         />
       </figure>
       <div className={styles.floatingButtonContainer}>
