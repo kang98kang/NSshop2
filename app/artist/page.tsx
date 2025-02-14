@@ -11,10 +11,10 @@ export default function Home() {
       </header>
       <div className={styles.pageBody}>
         <figure className={styles.image}>
-          <img style={{ width: '880px' }} src="/main/images/unreal_engine1(artist).png" />
-          <img style={{ width: '880px' }} src="/main/images/unreal_engine2(artist).png" />
-          <img style={{ width: '880px' }} src="/main/images/unreal_engine3(artist).png" />
-          <img style={{ width: '880px' }} src="/main/images/unreal_engine4(artist).png" />
+          <img style={{ width: '880px' }} src="/main/images/unreal_engine_A1.png" />
+          <img style={{ width: '880px' }} src="/main/images/unreal_engine_A2.png" />
+          <img style={{ width: '880px' }} src="/main/images/unreal_engine_A3.png" />
+          <img style={{ width: '880px' }} src="/main/images/unreal_engine_A4.png" />
         </figure>
         <ul className={styles.toggle}>
           <li>

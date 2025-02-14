@@ -13,23 +13,19 @@ export default function Home() {
         <figure className={styles.image}>
           <img
             style={{ width: '880px', display: 'block', borderRadius: '0px' }}
-            src="/main/images/unrealengine1(engineer).png"
+            src="/main/images/unreal_engine_P1.png"
           />
           <img
             style={{ width: '880px', marginTop: '-1.5px', borderRadius: '0px' }}
-            src="/main/images/unrealengine2(engineer).png"
+            src="/main/images/unreal_engine_P2.png"
           />
           <img
             style={{ width: '880px', marginTop: '-1.5px', borderRadius: '0px' }}
-            src="/main/images/unrealengine3(engineer).png"
+            src="/main/images/unreal_engine_P3.png"
           />
           <img
             style={{ width: '880px', marginTop: '-1.5px', borderRadius: '0px' }}
-            src="/main/images/unrealengine4(engineer).png"
-          />
-          <img
-            style={{ width: '880px', marginTop: '-1.5px', borderRadius: '0px' }}
-            src="/main/images/unrealengine5(engineer).png"
+            src="/main/images/unreal_engine_P4.png"
           />
         </figure>
         <ul className={styles.toggle}>
