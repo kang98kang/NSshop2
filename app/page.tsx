@@ -17,12 +17,18 @@ export default function Home() {
         }}
       >
         <img
-          style={{ width: '50%', display: 'block', borderRadius: '0px', minWidth: '300px' }}
-          src="/main/images/unrealengine(main)1.png"
+          style={{
+            width: '45%',
+            display: 'block',
+            borderRadius: '0px',
+            minWidth: '300px',
+            border: '0.5px solid black',
+          }}
+          src="/main/images/Unreal engine.jpg"
         />
         <img
-          style={{ width: '50%', display: 'block', borderRadius: '0px', minWidth: '300px' }}
-          src="/main/images/unrealengine(main)2.png"
+          style={{ width: '45%', display: 'block', borderRadius: '0px', minWidth: '300px' }}
+          src="/main/images/Unreal engine2.jpg"
         />
       </figure>
       <div className={styles.floatingButtonContainer}>
