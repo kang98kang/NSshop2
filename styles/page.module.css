@@ -21,10 +21,34 @@
     padding: 0 1.5rem; /* 모바일에서 좌우 패딩 추가 */
   }
 
+  .image {
+    padding: 0;
+  }
+
   .chattingButton {
     width: 50px !important;
     height: 50px !important;
     right: 20px !important;
+  }
+
+  .h1 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .h2 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .str {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .p {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
   /* .pageTitle,

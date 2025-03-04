@@ -1,4 +1,4 @@
-import FloatingButton1 from '@/components/common/FloatingButton';
+import EngineerButton from '@/components/common/EngineerButton';
 import ChatFloatingButton from '@/components/common/ChatFloatingButton';
 import styles from '../../styles/page.module.css';
 
@@ -10,24 +10,205 @@ export default function Home() {
         <p className={styles.pageDescription}></p>
       </header>
       <div className={styles.pageBody}>
+        <h1 style={{ fontSize: '1.5rem', marginTop: '6rem' }} className={styles.h1}>
+          ​취업이 막막하다면?
+        </h1>
+        <h1 style={{ fontSize: '1.5rem', marginTop: '3rem' }} className={styles.h1}>
+          게임 개발 & 실시간 디지털 콘텐츠 기술을 배우고 <br />
+          새로운 시장으로 진출하세요! &nbsp;🚀
+          <br />
+        </h1>
+        <p style={{ marginTop: '2rem', fontSize: '1.2rem' }} className={styles.p}>
+          🔥 게임 개발 전공자이지만 취업이 어렵나요?
+        </p>
+        <p style={{ marginTop: '1rem', fontSize: '1.2rem' }} className={styles.p}>
+          🔥 비전공자로서 개발자로 전직하고 싶나요?
+        </p>
+        <p style={{ marginTop: '0.8rem', fontSize: '1.2rem' }} className={styles.p}>
+          🔥 게임업계뿐만 아니라 XR, 버추얼 프로덕션, 실시간 콘텐츠 시장까지 취업 기회를 넓히고 싶나요?
+        </p>
+
+        <p style={{ marginTop: '3rem', fontSize: '1.6rem' }} className={styles.p}>
+          <strong
+            style={{
+              textShadow: '0px 0px 12px rgba(255, 105, 180, 0.7)',
+            }}
+          >
+            언리얼 엔진
+          </strong>
+          을 활용한{' '}
+          <strong
+            style={{
+              textShadow: '0px 0px 12px rgb(243, 255, 16)',
+            }}
+          >
+            멀티플레이어 게임 개발
+          </strong>
+          과
+        </p>
+        <p style={{ fontSize: '1.6rem', marginTop: '3rem' }} className={styles.p}>
+          <strong
+            style={{
+              textShadow: '0px 0px 12px rgba(105, 218, 255, 0.7)',
+            }}
+          >
+            실시간 디지털 콘텐츠 시스템 구축 과정
+          </strong>
+          으로,
+        </p>
+        <br />
+        <p
+          style={{
+            fontSize: '1.6rem',
+            marginBottom: '3rem',
+            position: 'relative',
+            display: 'inline-block',
+          }}
+          className={styles.p}
+        >
+          <strong>새로운 시장에서 경쟁력을 확보하세요!</strong>
+        </p>
         <figure className={styles.image}>
           <img
             style={{ width: '880px', display: 'block', borderRadius: '0px' }}
-            src="/main/images/unreal_engine_P1.png"
-          />
-          <img
-            style={{ width: '880px', marginTop: '-1.5px', borderRadius: '0px' }}
-            src="/main/images/unreal_engine_P2.png"
-          />
-          <img
-            style={{ width: '880px', marginTop: '-1.5px', borderRadius: '0px' }}
-            src="/main/images/unreal_engine_P3.png"
-          />
-          <img
-            style={{ width: '880px', marginTop: '-1.5px', borderRadius: '0px' }}
-            src="/main/images/unreal_engine_P4.png"
+            src="/main/images/unrealengine_programming1.png"
           />
         </figure>
+        <ul style={{ marginLeft: '1rem', marginBottom: '2rem' }}>
+          <li style={{ marginTop: '2rem', fontSize: '1.2rem' }} className={styles.p}>
+            ✅ 멀티플레이어 게임 개발 & 서버 구축 – 실무 프로젝트 기반 학습!
+          </li>
+          <li style={{ marginTop: '2rem', fontSize: '1.2rem' }} className={styles.p}>
+            ✅ XR 기술을 활용한 실시간 콘텐츠 제작 및 버추얼 프로덕션 시스템 운영!
+          </li>
+          <li style={{ marginTop: '2rem', fontSize: '1.2rem' }} className={styles.p}>
+            ✅ 국내 최고 수준의 언리얼 엔진 공인 강사진 & 실무 멘토링 제공!
+          </li>
+          <li style={{ marginTop: '2rem', fontSize: '1.2rem' }} className={styles.p}>
+            ✅ 게임업계뿐만 아니라 XR, 버추얼 프로덕션, 실시간 콘텐츠 개발자로 취업 가능!
+          </li>
+        </ul>
+
+        <figure className={styles.image}>
+          <img
+            style={{ width: '880px', marginTop: '-1.5px', borderRadius: '0px' }}
+            src="/main/images/unrealengine_programming2.png"
+          />
+        </figure>
+        <h2
+          style={{
+            fontSize: '1.5rem',
+            marginTop: '4rem',
+            marginBottom: '1.5rem',
+          }}
+          className={styles.h2}
+        >
+          🏹
+          <strong
+            style={{
+              marginLeft: '0.8rem',
+              textDecoration: 'underline',
+              textDecorationColor: 'rgb(255, 253, 105)',
+              textDecorationThickness: '6px',
+              textDecorationSkipInk: 'none',
+            }}
+          >
+            이 과정이 특별한 이유
+          </strong>
+          <br />
+        </h2>
+        <p className={styles.str} style={{ marginTop: '1rem', fontSize: '1.3rem' }}>
+          🎯 1. 게임 개발 & XR 시스템 구축 – 2가지 핵심 기술을 한번에!
+        </p>
+        <ul style={{ marginBottom: '2rem' }}>
+          <li style={{ marginLeft: '2rem', fontSize: '1rem' }} className={styles.p}>
+            블루프린트 & C++을 활용한 서버-클라이언트 시스템 구축
+          </li>
+          <li style={{ marginLeft: '2rem', fontSize: '1rem' }} className={styles.p}>
+            멀티플레이어 네트워크 프로그래밍 & 실시간 XR 데이터 동기화 기술 학습
+          </li>
+          <li style={{ marginLeft: '2rem', fontSize: '1rem' }} className={styles.p}>
+            게임 서버 개발과 XR 시스템 운영을 모두 익혀 다양한 취업 기회 확보!
+          </li>
+        </ul>
+        <p className={styles.str} style={{ marginTop: '1rem', fontSize: '1.3rem' }}>
+          🎯 2. 취업이 어려운 전공자를 위한 실무 포트폴리오 완성
+        </p>
+        <ul style={{ marginBottom: '2rem' }}>
+          <li style={{ marginLeft: '2rem', fontSize: '1rem' }} className={styles.p}>
+            단순한 이론 강의가 아니라 실제 프로젝트를 통해 게임 & XR 콘텐츠 개발 경험 제공!
+          </li>
+          <li style={{ marginLeft: '2rem', fontSize: '1rem' }} className={styles.p}>
+            수료 후 바로 사용할 수 있는 포트폴리오 제작 & 현업 피드백 제공!
+          </li>
+          <li style={{ marginLeft: '2rem', fontSize: '1rem' }} className={styles.p}>
+            기존 게임업계 취업이 어려웠다면, XR 콘텐츠 제작자로 확장 가능!
+          </li>
+        </ul>
+        <p className={styles.str} style={{ marginTop: '1rem', fontSize: '1.3rem' }}>
+          🎯 3. 비전공자의 개발자 전직 기회 – 기초부터 실무까지!
+        </p>
+        <ul style={{ marginBottom: '2rem' }}>
+          <li style={{ marginLeft: '2rem', fontSize: '1rem' }} className={styles.p}>
+            프로그래밍 기초부터 시작해 블루프린트 & C++까지 체계적인 학습!
+          </li>
+          <li style={{ marginLeft: '2rem', fontSize: '1rem' }} className={styles.p}>
+            코딩 경험이 없어도 차근차근 배울 수 있도록 맞춤형 교육 진행!
+          </li>
+          <li style={{ marginLeft: '2rem', fontSize: '1rem' }} className={styles.p}>
+            실무형 프로젝트를 통해 개발자로서의 커리어 전환 가능!
+          </li>
+        </ul>
+        <p className={styles.str} style={{ marginTop: '1rem', fontSize: '1.3rem' }}>
+          🎯 4. XR / 버추얼 프로덕션 시스템 구축으로 차세대 개발자로 성장!
+        </p>
+        <ul style={{ marginBottom: '6rem' }}>
+          <li style={{ marginLeft: '2rem', fontSize: '1rem' }} className={styles.p}>
+            XR 환경에서 카메라 트래킹, 실시간 합성(Compositing), 실시간 네트워크 동기화 기술 학습
+          </li>
+          <li style={{ marginLeft: '2rem', fontSize: '1rem' }} className={styles.p}>
+            게임뿐만 아니라 메타버스, XR, 버추얼 프로덕션 시장까지 취업 기회 확장!
+          </li>
+          <li style={{ marginLeft: '2rem', fontSize: '1rem' }} className={styles.p}>
+            멀티플레이어 게임 개발 경험이 버추얼 프로덕션 기술로도 적용 가능!
+          </li>
+        </ul>
+        <figure style={{ padding: '0' }} className={styles.image}>
+          <img
+            style={{ width: '880px', marginTop: '-1.5px', borderRadius: '0px' }}
+            src="/main/images/unrealengine_programming3.png"
+          />
+        </figure>
+        <p style={{ marginTop: '1rem', fontSize: '1.3rem' }} className={styles.p}>
+          <strong style={{ marginTop: '1rem' }}>📍 교육 기간:</strong>&nbsp;2025년 3월 24일 ~ 9월 1일
+        </p>
+        <p style={{ marginTop: '1rem', fontSize: '1.3rem' }} className={styles.p}>
+          <strong style={{ marginTop: '1rem' }}>📍 교육 장소:</strong>&nbsp;서울 서초구 서초대로74길 33, 2층
+        </p>
+        <p
+          style={{
+            marginTop: '4rem',
+            fontSize: '1.6rem',
+            position: 'relative',
+            display: 'inline-block',
+          }}
+          className={styles.p}
+        >
+          <strong>게임 개발</strong>
+          <strong style={{ marginLeft: '1rem', marginRight: '1rem' }}>+</strong>
+          <strong>XR 시스템 구축</strong>
+        </p>
+        <p
+          style={{
+            fontSize: '1.6rem',
+            marginBottom: '4.5rem',
+            position: 'relative',
+            display: 'inline-block',
+          }}
+          className={styles.p}
+        >
+          <strong>두 가지 핵심 기술을 익혀 더 넓은 취업 기회를 잡으세요!</strong>
+        </p>
         <ul className={styles.toggle}>
           <li>
             <details>
@@ -46,7 +227,6 @@ export default function Home() {
             </details>
           </li>
         </ul>
-
         <h1 className={styles.h1}>
           실제 산업 분야 재직자의 노하우를 그대로!
           <br />
@@ -83,7 +263,6 @@ export default function Home() {
           </div>
         </div>
         <hr className={styles.hr} />
-
         <h1 className={styles.h1}>교육 선발 대상</h1>
         <div className={styles.columnList}>
           <div className={styles.column} style={{ width: '45%' }}>
@@ -115,7 +294,6 @@ export default function Home() {
           </div>
         </div>
         <br></br>
-
         <h1 className={styles.h1}>선발 과정</h1>
         <div className={styles.columnList}>
           <div className={styles.column} style={{ width: '33.333333333333336%' }}>
@@ -153,26 +331,101 @@ export default function Home() {
               </div>
             </figure>
           </div>
-          <div className={styles.column} style={{ width: '33.33333333333333%' }}>
-            <figure
-              className={`${styles.blockColorDefault} ${styles.callout}`}
-              style={{ whiteSpace: 'pre-wrap', display: 'flex' }}
-            >
-              <div style={{ fontSize: '1.5em' }}>
-                <span className={styles.icon}>3️⃣</span>
-              </div>
-              <div style={{ width: '100%' }}>
-                <strong> 교육 시작</strong>
-                <br />
-                &nbsp;사전 안내 문자 드립니다.
-                <br />
-                <br />
-              </div>
-            </figure>
-          </div>
+          <div className={styles.column} style={{ width: '33.33333333333333%' }}></div>
         </div>
-
         <h1 className={styles.h1}>FAQ</h1>
+        <hr className={styles.hr} />
+        <ul className={styles.toggle}>
+          <li>
+            <details>
+              <summary>
+                <mark className={styles.highlightYellowBackground}>자주 물어보시는 질문 모음</mark>
+              </summary>
+              <p style={{ lineHeight: 2.8 }} className={styles.p}>
+                Q1. 언리얼엔진 프로그래밍을 처음 배우는데, 어느 정도 수준까지 가능할까요?
+                <br /> A. 프로그래밍을 처음 배우는 비전공자도 참여할 수 있도록 기초부터 시작합니다.
+                <br />
+                블루프린트 기초 → C++ 프로그래밍 → 네트워크 프로그래밍 → 게임 서버 구축까지 학습하며,
+                <br />
+                최종적으로 멀티플레이어 게임 & 실시간 콘텐츠 시스템을 직접 개발하는 수준까지 도달합니다
+                <br />
+                Q2. 멀티플레이어 게임 개발과 버추얼 프로덕션 시스템 엔지니어링이 어떻게 연결되나요?
+                <br />
+                A. 두 분야 모두 실시간 데이터 동기화, 네트워크 최적화, 시스템 안정성이 중요한 공통점을 갖고 있습니다.
+                <br />
+                멀티플레이어 게임 개발에서는 플레이어의 입력을 서버에 반영하고, 모든 클라이언트에 동기화하는 것이
+                핵심입니다.
+                <br />
+                버추얼 프로덕션 시스템에서는 카메라 트래킹, 조명, 그래픽이 실시간으로 반영되어야 하며, 이는 네트워크를
+                통한 동기화가 필수적입니다.
+                <br />
+                서버-클라이언트 모델, 네트워크 지연(Latency) 보정, 데이터 패킷 최적화 등 게임 개발에서 배우는 기술이
+                버추얼 프로덕션에서도 그대로 활용됩니다.
+                <br />
+                📌 즉, 하나의 기술을 학습하면 두 분야에서 모두 활용할 수 있으며, 더 넓은 취업 기회를 가질 수 있습니다.
+                <br />
+                Q3. 수업 방식이 어떻게 진행되나요?
+                <br /> A. 이론 30% + 실습 70%로 구성된 프로젝트 기반 학습 방식입니다.
+                <br />각 개념을 배운 후 실제 게임 & XR 콘텐츠를 직접 개발하며 배우는 실무형 과정입니다.
+                <br />
+                Q4. 온라인 강의와 오프라인 강의의 차이는 무엇인가요?
+                <br /> A. 온라인 강의는 편리하지만, 실무 기술을 익히는 데 한계가 있을 수 있습니다.
+                <br />
+                게임 개발이나 XR 콘텐츠 제작은 실제 환경에서 직접 경험하는 것이 중요합니다.
+                <br />
+                버추얼 프로덕션과 네트워크 프로그래밍처럼 실시간 시스템을 다루는 과정은 실제 장비와 환경에서 학습해야
+                제대로 이해할 수 있습니다.
+                <br />
+                오프라인 강의에서는 실무 경험이 풍부한 강사가 바로 피드백을 주고, 팀 프로젝트를 통해 실제 협업 경험을
+                쌓을 수 있습니다.
+                <br />
+                📌 단순히 개념을 익히는 것이 아니라, 실습과 피드백을 통해 실무에서 바로 활용할 수 있는 능력을 기르는
+                것이 중요합니다.
+                <br />
+                📌 이 과정에서는 실제 현장에서 사용되는 장비와 시스템을 활용해, 보다 현실적인 실무 환경에서 학습할 수
+                있도록 구성되어 있습니다. 🚀
+                <br />
+                Q5. 프로그래밍 경험이 없어도 따라갈 수 있나요?
+                <br /> A. 네, 가능합니다!
+                <br />
+                처음부터 배우는 기초 과정이 포함되어 있으며, 프로그래밍 로직부터 C++까지 단계적으로 학습합니다.
+                <br />
+                Q6. 게임 개발 외에도 취업할 수 있는 분야가 있을까요? <br />
+                A. 네! XR 콘텐츠 제작, 메타버스 개발, 실시간 콘텐츠 시스템 개발자로도 취업할 수 있습니다.
+                <br />
+                Q7. 포트폴리오를 제작할 수 있나요?
+                <br /> A. 네, 과정 내에서 팀 프로젝트 & 개인 프로젝트를 진행하여 취업용 포트폴리오를 제작합니다. 실제
+                멀티플레이어 게임 & XR 콘텐츠를 만들어서 취업 시 활용할 수 있습니다. <br />
+                Q8. 사용되는 개발 환경과 장비는 어떤 것이 있나요?
+                <br /> A. 언리얼 엔진 5 기반으로 게임 개발 및 실시간 디지털 콘텐츠 제작을 진행할 수 있도록 최적화된 최신
+                장비를 제공합니다.
+                <br />
+                Visual Studio + GitHub + Unreal Engine 5 개발 환경 구축 → C++ 및 블루프린트 기반 프로그래밍 학습
+                <br />
+                모션 캡처 장비 활용 → 실시간 애니메이션 구현 & 언리얼 엔진과 데이터 스트리밍 연동 실습
+                <br />
+                카메라 트래킹 시스템 적용 → XR 콘텐츠 제작 및 실시간 버추얼 프로덕션 기술 학습
+                <br />
+                LED Wall 및 ICVFX (In-Camera VFX) 환경 제공 → 실시간 합성(Compositing) 및 버추얼 프로덕션 시스템 구축
+                실습 가능
+                <br />
+                📌 이 과정에서는 단순히 언리얼 엔진을 배우는 것이 아니라, 게임 개발 & 실시간 XR 콘텐츠 제작을 위한 최신
+                기술을 실습할 수 있는 환경을 제공합니다.
+                <br />
+                📌 언리얼 엔진 프로그래밍, 멀티플레이어 게임 개발, 버추얼 프로덕션 시스템 엔지니어링을 배우고 싶은
+                분들에게 최적화된 과정입니다. 🚀
+                <br />
+                Q9. 취업 지원은 어떻게 이루어지나요?
+                <br />
+                A. 게임, 디지털트윈, XR 기업 등과 연계하여 취업 컨설팅, 포트폴리오 피드백, 면접 대비 등을 지원합니다.
+                <br />
+                Q10. 지원 자격이 있나요?
+                <br /> A. 국민내일배움카드 소지자라면 누구나 지원할 수 있습니다. 게임 개발자 & XR 콘텐츠 개발자로 전환을
+                희망하는 분들에게 적합한 과정입니다.
+              </p>
+            </details>
+          </li>
+        </ul>
         <hr className={styles.hr} />
         <h3 className={styles.h3}>(K-디지털 트레이닝)자주 묻는 질문</h3>
         <p className={styles.p}>
@@ -205,7 +458,6 @@ export default function Home() {
             </details>
           </li>
         </ul>
-
         <ul className={styles.toggle}>
           <li>
             <details>
@@ -229,7 +481,6 @@ export default function Home() {
             </details>
           </li>
         </ul>
-
         <ul className={styles.toggle}>
           <li>
             <details>
@@ -288,7 +539,6 @@ export default function Home() {
             </details>
           </li>
         </ul>
-
         <ul className={styles.toggle}>
           <li>
             <details>
@@ -305,7 +555,6 @@ export default function Home() {
             </details>
           </li>
         </ul>
-
         <ul className={styles.toggle}>
           <li>
             <details>
@@ -326,7 +575,6 @@ export default function Home() {
             </details>
           </li>
         </ul>
-
         <ul className={styles.toggle}>
           <li>
             <details>
@@ -344,7 +592,6 @@ export default function Home() {
             </details>
           </li>
         </ul>
-
         <ul className={styles.toggle}>
           <li>
             <details>
@@ -410,7 +657,6 @@ export default function Home() {
             </details>
           </li>
         </ul>
-
         <ul className={styles.toggle}>
           <li>
             <details>
@@ -443,7 +689,6 @@ export default function Home() {
             </details>
           </li>
         </ul>
-
         <ul className={styles.toggle}>
           <li>
             <details>
@@ -461,7 +706,7 @@ export default function Home() {
             </details>
           </li>
         </ul>
-
+        <div></div>
         <h2 className={styles.h2}>
           📕<strong>교육문의</strong>
         </h2>
@@ -471,8 +716,9 @@ export default function Home() {
         </h3>
         <p className={styles.p}>
           <mark className={styles.highlightGrayBackground}>
-            담당자 : hj.kwon@monsteraedu.co.kr
-            <br /> 연락처 : 010 - 5146 - 5161
+            Email : hj.kwon@monsteraedu.co.kr
+            <br />
+            연락처 : 010 - 5146 - 5161
           </mark>
         </p>
         <p className={styles.p}></p>
@@ -507,7 +753,7 @@ export default function Home() {
           </a>
         </p>
         <div className={styles.floatingButtonContainer}>
-          <FloatingButton1 url="https://forms.gle/ztcxsJbaS6Q5Ywzg7" />
+          <EngineerButton />
         </div>
         <ChatFloatingButton url="http://pf.kakao.com/_cpxopG/chat" icon="💬" className={styles.chattingButton} />
       </div>

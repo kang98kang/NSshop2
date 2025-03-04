@@ -1,4 +1,4 @@
-import FloatingButton1 from '@/components/common/FloatingButton';
+import ArtistButton from '@/components/common/ArtistButton';
 import ChatFloatingButton from '@/components/common/ChatFloatingButton';
 import styles from '../../styles/page.module.css';
 
@@ -10,12 +10,205 @@ export default function Home() {
         <p className={styles.pageDescription}></p>
       </header>
       <div className={styles.pageBody}>
+        <h1 style={{ fontSize: '1.5rem', marginTop: '6rem' }} className={styles.h1}>
+          ​취업이 막막하다면?
+        </h1>
+        <h1 style={{ fontSize: '1.5rem', marginTop: '3rem' }} className={styles.h1}>
+          실시간 XR 콘텐츠 & 디지털 콘텐츠 기술을 배우고 <br />
+          새로운 시장으로 진출하세요! &nbsp;🚀
+          <br />
+        </h1>
+        <p style={{ marginTop: '2rem', fontSize: '1.2rem' }} className={styles.p}>
+          🔥 영상/디자인 전공자지만 취업이 어려운가요?
+        </p>
+        <p style={{ marginTop: '1rem', fontSize: '1.2rem' }} className={styles.p}>
+          🔥 비전공자로서 디지털 콘텐츠 크리에이터로 전환하고 싶나요?
+        </p>
+        <p style={{ marginTop: '0.8rem', fontSize: '1.2rem' }} className={styles.p}>
+          🔥 영상, 영화, 광고 업계뿐만 아니라 XR, 실시간 콘텐츠, 메타버스 시장까지 취업 기회를 넓히고 싶나요?
+        </p>
+
+        <p style={{ marginTop: '3rem', fontSize: '1.6rem' }} className={styles.p}>
+          <strong
+            style={{
+              textShadow: '0px 0px 12px rgba(255, 105, 180, 0.7)',
+            }}
+          >
+            언리얼 엔진
+          </strong>
+          을 활용한{' '}
+          <strong
+            style={{
+              textShadow: '0px 0px 12px rgb(243, 255, 16)',
+            }}
+          >
+            실시간 XR 콘텐츠 제작
+          </strong>
+          과
+        </p>
+        <p style={{ fontSize: '1.6rem', marginTop: '3rem' }} className={styles.p}>
+          <strong
+            style={{
+              textShadow: '0px 0px 12px rgba(105, 218, 255, 0.7)',
+            }}
+          >
+            실시간 디지털 콘텐츠 시스템 구축 과정
+          </strong>
+          으로,
+        </p>
+        <br />
+        <p
+          style={{
+            fontSize: '1.6rem',
+            marginBottom: '3rem',
+            position: 'relative',
+            display: 'inline-block',
+          }}
+          className={styles.p}
+        >
+          <strong>차세대 크리에이터로 성장하세요!</strong>
+        </p>
         <figure className={styles.image}>
-          <img style={{ width: '880px' }} src="/main/images/unreal_engine_A1.png" />
-          <img style={{ width: '880px' }} src="/main/images/unreal_engine_A2.png" />
-          <img style={{ width: '880px' }} src="/main/images/unreal_engine_A3.png" />
-          <img style={{ width: '880px' }} src="/main/images/unreal_engine_A4.png" />
+          <img
+            style={{ width: '880px', display: 'block', borderRadius: '0px' }}
+            src="/main/images/unrealengine_artist1.png"
+          />
         </figure>
+        <ul style={{ marginLeft: '1rem', marginBottom: '2rem' }}>
+          <li style={{ marginTop: '2rem', fontSize: '1.2rem' }} className={styles.p}>
+            ✅ 3D 모델링부터 메타휴먼, 모션 캡처, 실시간 합성까지!
+          </li>
+          <li style={{ marginTop: '2rem', fontSize: '1.2rem' }} className={styles.p}>
+            ✅ LED Wall, ICVFX, XR 기술을 활용한 실시간 콘텐츠 제작 실습!
+          </li>
+          <li style={{ marginTop: '2rem', fontSize: '1.2rem' }} className={styles.p}>
+            ✅ 실제 촬영 환경에서 프로젝트 진행 & 포트폴리오 완성!
+          </li>
+          <li style={{ marginTop: '2rem', fontSize: '1.2rem' }} className={styles.p}>
+            ✅ 영상 업계뿐만 아니라 XR, 실시간 디지털 콘텐츠 제작자로도 취업 가능!
+          </li>
+        </ul>
+
+        <figure className={styles.image}>
+          <img
+            style={{ width: '880px', marginTop: '-1.5px', borderRadius: '0px' }}
+            src="/main/images/unrealengine_artist2.png"
+          />
+        </figure>
+        <h2
+          style={{
+            fontSize: '1.5rem',
+            marginTop: '4rem',
+            marginBottom: '1.5rem',
+          }}
+          className={styles.h2}
+        >
+          🏹
+          <strong
+            style={{
+              marginLeft: '0.8rem',
+              textDecoration: 'underline',
+              textDecorationColor: 'rgb(255, 253, 105)',
+              textDecorationThickness: '6px',
+              textDecorationSkipInk: 'none',
+            }}
+          >
+            이 과정이 특별한 이유
+          </strong>
+          <br />
+        </h2>
+        <p className={styles.str} style={{ marginTop: '1rem', fontSize: '1.3rem' }}>
+          🎯 1. 실시간 XR 콘텐츠 & 디지털 콘텐츠 제작 ? (최신 기술 경험!)
+        </p>
+        <ul style={{ marginBottom: '2rem' }}>
+          <li style={{ marginLeft: '2rem', fontSize: '1rem' }} className={styles.p}>
+            언리얼 엔진을 활용한 실시간 합성(Compositing) & 환경 디자인!
+          </li>
+          <li style={{ marginLeft: '2rem', fontSize: '1rem' }} className={styles.p}>
+            LED Wall & ICVFX(In-Camera VFX) 기술을 활용한 고퀄리티 영상 제작 실습!
+          </li>
+          <li style={{ marginLeft: '2rem', fontSize: '1rem' }} className={styles.p}>
+            메타휴먼 & 모션 캡처 기술을 적용한 실시간 애니메이션 제작!
+          </li>
+        </ul>
+        <p className={styles.str} style={{ marginTop: '1rem', fontSize: '1.3rem' }}>
+          🎯 2. 취업이 어려운 전공자를 위한 실무 포트폴리오 완성
+        </p>
+        <ul style={{ marginBottom: '2rem' }}>
+          <li style={{ marginLeft: '2rem', fontSize: '1rem' }} className={styles.p}>
+            단순한 이론 강의가 아니라 실제 프로젝트를 통해 XR 콘텐츠 & 실시간 디지털 콘텐츠 제작 경험 제공!
+          </li>
+          <li style={{ marginLeft: '2rem', fontSize: '1rem' }} className={styles.p}>
+            수료 후 바로 사용할 수 있는 포트폴리오 제작 & 현업 피드백 제공!
+          </li>
+          <li style={{ marginLeft: '2rem', fontSize: '1rem' }} className={styles.p}>
+            기존 영상·광고 업계 취업이 어려웠다면, 실시간 콘텐츠 제작자로 확장 가능!
+          </li>
+        </ul>
+        <p className={styles.str} style={{ marginTop: '1rem', fontSize: '1.3rem' }}>
+          🎯 3. 비전공자의 디지털 콘텐츠 제작자 전직 기회 – 기초부터 실무까지!
+        </p>
+        <ul style={{ marginBottom: '2rem' }}>
+          <li style={{ marginLeft: '2rem', fontSize: '1rem' }} className={styles.p}>
+            3D 모델링, 애니메이션, 모션 캡처 등 최신 XR 기술을 체계적으로 학습!
+          </li>
+          <li style={{ marginLeft: '2rem', fontSize: '1rem' }} className={styles.p}>
+            영상 편집자, 디자이너도 쉽게 배울 수 있도록 맞춤형 교육 진행!
+          </li>
+          <li style={{ marginLeft: '2rem', fontSize: '1rem' }} className={styles.p}>
+            실무형 프로젝트를 통해 디지털 콘텐츠 크리에이터로 커리어 전환 가능!
+          </li>
+        </ul>
+        <p className={styles.str} style={{ marginTop: '1rem', fontSize: '1.3rem' }}>
+          🎯 4. 실시간 디지털 콘텐츠 시스템 구축으로 차세대 크리에이터 성장!
+        </p>
+        <ul style={{ marginBottom: '6rem' }}>
+          <li style={{ marginLeft: '2rem', fontSize: '1rem' }} className={styles.p}>
+            XR 환경에서 실시간 카메라 트래킹, 라이브 합성, 실시간 데이터 송수신 시스템 구축 학습
+          </li>
+          <li style={{ marginLeft: '2rem', fontSize: '1rem' }} className={styles.p}>
+            영상뿐만 아니라 메타버스, XR, 실시간 콘텐츠 시장까지 취업 기회 확장!
+          </li>
+          <li style={{ marginLeft: '2rem', fontSize: '1rem' }} className={styles.p}>
+            실시간 XR 콘텐츠 제작 경험이 광고, 영화, 방송 제작 기술로도 적용 가능!
+          </li>
+        </ul>
+        <figure className={styles.image}>
+          <img
+            style={{ width: '880px', marginTop: '-1.5px', borderRadius: '0px' }}
+            src="/main/images/unrealengine_artist3.png"
+          />
+        </figure>
+        <p style={{ marginTop: '1rem', fontSize: '1.3rem' }} className={styles.p}>
+          <strong style={{ marginTop: '1rem' }}>📍 교육 기간:</strong>&nbsp;2025년 3월 24일 ~ 9월 1일
+        </p>
+        <p style={{ marginTop: '1rem', fontSize: '1.3rem' }} className={styles.p}>
+          <strong style={{ marginTop: '1rem' }}>📍 교육 장소:</strong>&nbsp;서울 서초구 서초대로74길 33, 2층
+        </p>
+        <p
+          style={{
+            marginTop: '4rem',
+            fontSize: '1.6rem',
+            position: 'relative',
+            display: 'inline-block',
+          }}
+          className={styles.p}
+        >
+          <strong>영상 제작</strong>
+          <strong style={{ marginLeft: '1rem', marginRight: '1rem' }}>+</strong>
+          <strong>실시간 디지털 콘텐츠 제작</strong>
+        </p>
+        <p
+          style={{
+            fontSize: '1.6rem',
+            marginBottom: '4.5rem',
+            position: 'relative',
+            display: 'inline-block',
+          }}
+          className={styles.p}
+        >
+          <strong>두 가지 핵심 기술을 익혀 더 넓은 취업 기회를 잡으세요!</strong>
+        </p>
         <ul className={styles.toggle}>
           <li>
             <details>
@@ -34,7 +227,6 @@ export default function Home() {
             </details>
           </li>
         </ul>
-
         <h1 className={styles.h1}>
           실제 산업 분야 재직자의 노하우를 그대로!
           <br />
@@ -71,7 +263,6 @@ export default function Home() {
           </div>
         </div>
         <hr className={styles.hr} />
-
         <h1 className={styles.h1}>교육 선발 대상</h1>
         <div className={styles.columnList}>
           <div className={styles.column} style={{ width: '45%' }}>
@@ -103,7 +294,6 @@ export default function Home() {
           </div>
         </div>
         <br></br>
-
         <h1 className={styles.h1}>선발 과정</h1>
         <div className={styles.columnList}>
           <div className={styles.column} style={{ width: '33.333333333333336%' }}>
@@ -141,26 +331,66 @@ export default function Home() {
               </div>
             </figure>
           </div>
-          <div className={styles.column} style={{ width: '33.33333333333333%' }}>
-            <figure
-              className={`${styles.blockColorDefault} ${styles.callout}`}
-              style={{ whiteSpace: 'pre-wrap', display: 'flex' }}
-            >
-              <div style={{ fontSize: '1.5em' }}>
-                <span className={styles.icon}>3️⃣</span>
-              </div>
-              <div style={{ width: '100%' }}>
-                <strong> 교육 시작</strong>
-                <br />
-                &nbsp;사전 안내 문자 드립니다.
-                <br />
-                <br />
-              </div>
-            </figure>
-          </div>
+          <div className={styles.column} style={{ width: '33.33333333333333%' }}></div>
         </div>
-
         <h1 className={styles.h1}>FAQ</h1>
+        <hr className={styles.hr} />
+        <ul className={styles.toggle}>
+          <li>
+            <details>
+              <summary>
+                <mark className={styles.highlightYellowBackground}>자주 물어보시는 질문 모음</mark>
+              </summary>
+              <p style={{ lineHeight: 2.8 }} className={styles.p}>
+                Q1. 언리얼엔진 아트 과정에서는 어떤 기술을 배우나요?
+                <br /> A. 3D 모델링, 메타휴먼, 모션 캡처, 실시간 합성(Compositing), XR 콘텐츠 제작 기술을 배웁니다.
+                <br />
+                Q2. 버추얼 프로덕션과 일반 영상 제작의 차이점은 무엇인가요?
+                <br />
+                A. 버추얼 프로덕션은 실시간 엔진(언리얼 엔진)을 사용하여 합성 및 VFX를 즉시 적용할 수 있습니다. 따라서
+                촬영 후 후반 작업을 최소화하고, 실시간으로 그래픽을 반영할 수 있는 장점이 있습니다. <br />
+                Q3.포트폴리오 제작이 가능한가요?
+                <br /> A. 네! 수업 내에서 실무 프로젝트를 진행하여 포트폴리오를 완성합니다. 특히 실시간 합성 콘텐츠, XR
+                광고, 3D 애니메이션 등 다양한 작업을 포함할 수 있습니다.
+                <br />
+                Q4. 영상 제작 경험이 없어도 배울 수 있을까요?
+                <br /> A. 네! 초보자도 따라올 수 있도록 단계별 교육이 진행됩니다. 특히, 3D 모델링 & 애니메이션부터
+                실시간 콘텐츠 제작까지 모든 과정이 포함되어 있습니다.
+                <br />
+                Q5. 아티스트 과정에서는 프로그래밍을 배우나요?
+                <br /> A. 아트 중심 과정이므로 블루프린트 등 간단한 기능을 다루지만, 깊이 있는 프로그래밍 과정은
+                없습니다. 따라서 게임 개발 & 프로그래밍을 배우고 싶다면 프로그래밍 과정에 지원하는 것이 좋습니다.
+                <br />
+                Q6. 취업할 수 있는 직무가 궁금해요! <br />
+                A. 영상 제작, XR 콘텐츠 크리에이터, 디지털 아트, 버추얼 프로덕션 스페셜리스트 등 다양한 직무가 있습니다.
+                <br />
+                Q7. 어떤 소프트웨어를 배우게 되나요?
+                <br /> A. 언리얼 엔진 5(Unreal Engine 5)와 블렌더(Blender)를 집중적으로 학습합니다.언리얼 엔진 5: 실시간
+                렌더링, 버추얼 프로덕션, ICVFX(In-Camera VFX), 실시간 합성(Compositing) 블렌더(Blender): 3D 모델링,
+                텍스처링, 애니메이션, 환경 디자인
+                <br />
+                📌 이 과정에서는 언리얼 엔진과 블렌더를 활용한 실시간 XR 콘텐츠 & 디지털 콘텐츠 제작에 초점을 맞추고
+                있습니다.
+                <br />
+                📌 타 소프트웨어(After Effects, Nuke, Substance Painter 등)는 별도 과정에서 다루거나 추가적인 활용법을
+                가이드하는 형태로 진행됩니다.🚀 <br />
+                - 언리얼 엔진 5: 실시간 렌더링, 버추얼 프로덕션, ICVFX(In-Camera VFX), 실시간 합성(Compositing)
+                <br />- 블렌더(Blender): 3D 모델링, 텍스처링, 애니메이션, 환경 디자인 <br />
+                Q8. 실습 환경은 어떻게 제공되나요?
+                <br /> A. 모션 캡처 장비, LED Wall, ICVFX 환경에서 직접 실습할 수 있는 최신 장비를 제공합니다.
+                <br />
+                Q9. XR 콘텐츠 제작을 배우면 어떤 분야로 진출할 수 있나요?
+                <br />
+                A. 광고, 영화, 뮤직비디오, 메타버스 콘텐츠 제작, 실시간 방송 그래픽 등 다양한 산업으로 확장할 수
+                있습니다.
+                <br />
+                Q10. 지원 자격이 있나요?
+                <br /> A. 국민내일배움카드 소지자라면 누구나 지원 가능합니다. 특히, 영상·디자인 전공자 & 실무 경험을
+                쌓고 싶은 분들에게 적합합니다.
+              </p>
+            </details>
+          </li>
+        </ul>
         <hr className={styles.hr} />
         <h3 className={styles.h3}>(K-디지털 트레이닝)자주 묻는 질문</h3>
         <p className={styles.p}>
@@ -193,7 +423,6 @@ export default function Home() {
             </details>
           </li>
         </ul>
-
         <ul className={styles.toggle}>
           <li>
             <details>
@@ -217,7 +446,6 @@ export default function Home() {
             </details>
           </li>
         </ul>
-
         <ul className={styles.toggle}>
           <li>
             <details>
@@ -276,7 +504,6 @@ export default function Home() {
             </details>
           </li>
         </ul>
-
         <ul className={styles.toggle}>
           <li>
             <details>
@@ -293,7 +520,6 @@ export default function Home() {
             </details>
           </li>
         </ul>
-
         <ul className={styles.toggle}>
           <li>
             <details>
@@ -314,7 +540,6 @@ export default function Home() {
             </details>
           </li>
         </ul>
-
         <ul className={styles.toggle}>
           <li>
             <details>
@@ -332,7 +557,6 @@ export default function Home() {
             </details>
           </li>
         </ul>
-
         <ul className={styles.toggle}>
           <li>
             <details>
@@ -398,7 +622,6 @@ export default function Home() {
             </details>
           </li>
         </ul>
-
         <ul className={styles.toggle}>
           <li>
             <details>
@@ -431,7 +654,6 @@ export default function Home() {
             </details>
           </li>
         </ul>
-
         <ul className={styles.toggle}>
           <li>
             <details>
@@ -449,7 +671,7 @@ export default function Home() {
             </details>
           </li>
         </ul>
-
+        <div></div>
         <h2 className={styles.h2}>
           📕<strong>교육문의</strong>
         </h2>
@@ -459,8 +681,9 @@ export default function Home() {
         </h3>
         <p className={styles.p}>
           <mark className={styles.highlightGrayBackground}>
-            담당자 : hj.kwon@monsteraedu.co.kr
-            <br /> 연락처 : 010 - 5146 - 5161
+            Email : hj.kwon@monsteraedu.co.kr
+            <br />
+            연락처 : 010 - 5146 - 5161
           </mark>
         </p>
         <p className={styles.p}></p>
@@ -495,7 +718,7 @@ export default function Home() {
           </a>
         </p>
         <div className={styles.floatingButtonContainer}>
-          <FloatingButton1 url="https://forms.gle/ztcxsJbaS6Q5Ywzg7" />
+          <ArtistButton />
         </div>
         <ChatFloatingButton url="http://pf.kakao.com/_cpxopG/chat" icon="💬" className={styles.chattingButton} />
       </div>
